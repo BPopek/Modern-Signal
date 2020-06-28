@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+h5 {
+    text-align: center;
+}
+p {
+    font-size: 10px;
+    text-align: center;
+}
+.navStyles {
+    background-color: #23a2e0;
+}
+.askregs {
+    background-color: #a8bac4;
+    height: 50px;
+    width: 100%;
+    color: #cf0101;
+}
+.nav-link {
+    color: white;
+}
+.welcome {
+    background-color: #14567c;
+    color: white;
+    padding: 25px;
+}
+.dropdown-toggle {
+    margin: 0 50px;
+}
+.announcement {
+    background-color: #f7f7f7;
+    padding: 25px;
+}
+.card {
+    border: #dedede 5px solid;
+}
+.card-title {
+    text-align: left;
+}
+.card-text {
+    text-align: left;
+}
+.category {
+    background-color: #ebebeb;
+    text-align: left;
+    width: auto;
+    padding: 5px;
+    border: #BCBCBC solid 1px;
+}
