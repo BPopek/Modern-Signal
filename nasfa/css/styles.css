@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 h5 {
     text-align: center;
@@ -8,30 +9,93 @@ h5 {
 p {
     font-size: 10px;
     text-align: center;
+    line-height: 1.7;
 }
 .navStyles {
     background-color: #23a2e0;
 }
+.navbar-brand {
+    margin: auto 15vw auto 5vw
+}
+.navContainer {
+    justify-items: space-around;
+}
 .askregs {
     background-color: #a8bac4;
-    height: 50px;
-    width: 100%;
+    box-sizing: border-box;
+}
+#ask-regs-header {
     color: #cf0101;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600;
+}
+#ask-regs-all {
+    justify-content: center;
+    padding: 10px 50px;
+    z-index: 1;
+    width: 100%;
 }
 .nav-link {
     color: white;
+    font-size: 10px;
 }
 .welcome {
     background-color: #14567c;
     color: white;
     padding: 25px;
+    background-image: url(../images/AdobeStock_284672312_Preview.png);
+    background-size: cover;
 }
-.dropdown-toggle {
-    margin: 0 50px;
+.welcome-header {
+    font-weight: 700;
+    letter-spacing: .05em;
+}
+.search-field {
+    width: 80%;
+    margin: 35px auto 10px;
+}
+#search-input {
+    border-radius: 0;
+}
+.btn.btn-search {
+    background-color: #ec9825;
+    color: white;
+    padding: 0px 10px;
+}
+[data-toggle="collapse"] .fa:before {  
+    display: block;
+    content: " ";
+    background-image: url(../images/caret-square-down.svg);
+    background-size: 50px 50px;
+    height: 28px;
+    width: 28px;
+    right: 50px;
+  }
+  
+  [data-toggle="collapse"].collapsed .fa:before {
+    display: block;
+    content: " ";
+    background-image: url(../images/window-close.svg);
+    background-size: 50px 50px;
+    height: 28px;
+    width: 28px;
+    right: 50px;
 }
 .announcement {
-    background-color: #f7f7f7;
+    background-color: #dedede;
     padding: 25px;
+    margin: 25px auto;
+}
+.announcement-header {
+    font-weight: 300;
+}
+.main-area {
+    background-image: url(../images/Screened-Back-Logo.png);
+    background-position: 100% 115%;
+    background-size: 33%;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
 }
 .card {
     border: #dedede 5px solid;
@@ -42,10 +106,51 @@ p {
 .card-text {
     text-align: left;
 }
+.cardSize {
+    padding: 5px;
+}
 .category {
     background-color: #ebebeb;
     text-align: left;
-    width: auto;
     padding: 5px;
     border: #BCBCBC solid 1px;
+    border-radius: 0;
+    margin: 2px;
+}
+.category-text {
+    margin: 0;
+    font-weight: 500;
+    white-space: pre-wrap;
+}
+.btn-vmore {
+    text-align: center;
+    width: 100%;
+    display: block;
+    border-radius: 0;
+    padding: 2px 5px;
+}
+.bottomT {
+    background-color: #14567c;
+}
+.bottomB {
+    background-color: #0e3258
+}
+.btn.btn-social {
+    color: white;
+    padding: 0px 10px;
+    margin:  5px;
+}
+.fab {
+    color: white !important;
+}
+.address {
+    color: white;
+    text-align: left;
+    margin: 0;
+}
+
+@media only screen and (min-width: 575px) {
+    .navbar-brand {
+        margin: auto 5vw auto 2vw
+    }
 }
