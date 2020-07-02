@@ -9,66 +9,73 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 
-    <script src="https://use.fontawesome.com/d9b11a5bad.js"></script>
-
+    <!-- FontAwesome -->
+    <link href="css/all.css" rel="stylesheet">
+    
     <title>NASFAA</title>
   </head>
 
   <body>
-    <nav class='navbar navbar-expand-sm navStyles'>
-        <div class='navbar-nav'>
-            <a class='navbar-brand' href='#'>
-                <img src='images/Layer 6.png' alt='logo' style='width: 25vw'>
-            </a>
-            <div class='container navContainer'>
+    <nav class='navbar navbar-dark navbar-expand-sm navStyles px-5'>
+        <a class='navbar-brand' href='#'>
+            <img src='images/nasfaa_white.png' alt='logo' class='logo'>
+            <img src='images/nasfaa_askregs_green.png' alt='logo' class='logo'>
+        </a>
+        <button class='navbar-toggler' 
+            type='button' 
+            data-toggle='collapse' 
+            data-target='#toggleNav'
+            aria-controls='toggleNav'
+            aria-expanded='false'
+            aria-label='Toggle Navigation'>
+            <span class='fas fa-bars'></span>    
+        </button>
+        <div class='collapse navbar-collapse navLinkContainer' id='toggleNav'>
+            <div class="navbar-nav">
                 <a class='nav-item nav-link' href="#">Search Knowledgebase</a>
                 <a class='nav-item nav-link' href="#">Resources</a>
                 <a class='nav-item nav-link' href="#">Ask a Question</a>
                 <a class='nav-item nav-link' href="#">MyAskRegs</a>
-            </div>
-        </div> <!-- navbar-nav -->
+            </div> <!-- navbar-nav -->
+        </div> <!-- collapse navbar-collapse navContainer -->
     </nav>
-    <div  class='accordion askregs' id="ask-regs-accordion">
-        <div class='container-flex'>
-            <div class='row'>
+    <div class='container-flex m-0 p-0' id="ask-regs-accordion">
+            <div class='row askregs m-0' onclick="showHideRegs()">
                 <a href='#ask-regs-all' 
                     id='ask-regs-header' 
-                    class='container collapsed fa' 
-                    data-toggle='collapse'
-                    aria-controls='ask-regs' 
-                    aria-expanded='false'> 
+                    class='fa px-5'> 
                     AskRegs Alerts
                 </a>
-                <div id="ask-regs-all"
-                    class="collapse "
-                    data-parent="#ask-regs-accordion"
-                    aria-labelledby="ask-regs-header">
-                    <div class="row row-cols-4 justify-content-center">
-                        <div class="col">
-                            <h6>Coronavirus: </h6>
-                            <p>Refer to AskRegs Knowledgebase Q&A, Where Can I Find Guidance Related to the Coronavirus (COVID-19)?</p>
-                        </div>
-                        <div class="col">  
-                            <h6>Broken IFAP Links:  </h6>
-                            <p>Due to site-wide changes on the Information for Financial Aid Professionals (IFAP) website in February, links from Knowledgebase Q&As may be broken. We are working to reconnect these as soon as possible. In the meantime, if you need to find the referenced documents, please visit the IFAP home page and navigate to the intended item.</p>
-                        </div>
-                        <div class="col">
-                            <h6>Revised Term Lengths:</h6>
-                            <p>In the November 5, 2019 Electronic Announcement, Revised Policy for Standard Term Length, ED revised the definitions of standard terms. This guidance became effective immediately on the date of posting. As you review Q&As within the AskRegs Knowledgebase, please consider the answers within the context of ED’s new guidance and examples. We will be updating affected Knowledgebase Q&As over the coming weeks.</p>
-                        </div>
-                        <div class="col">
-                                <h6>Coronavirus:  </h6>
-                            <p>Refer to AskRegs Knowledgebase Q&A, Where Can I Find Guidance Related to the Coronavirus (COVID-19)?</p>
-                        </div>
-                    </div><!-- row -->
-                </div><!-- collapse container -->
+                    <i class="far fa-caret-square-down alert-toggle-style" id='toggle-alert-iconCaret' ></i>
+                    <i class="far fa-window-close alert-toggle-style"  id='toggle-alert-iconX'></i>
             </div><!-- row -->
-        </div><!-- container -->
-    </div><!-- accordion askregs -->
-    <div class="welcome">
+            <div id="ask-regs-all"
+                class="regs hide-all-regs"
+                onclick="hideRegs()">
+                <div class="row row-cols-1 row-cols-lg-5 regs v-separator-alert" >
+                    <div class="col alert-col">
+                        <h6 class='alert-header'>Coronavirus: </h6>
+                        <p class='alert-content'>Refer to AskRegs Knowledgebase Q&A, Where Can I Find Guidance Related to the Coronavirus (COVID-19)?</p>
+                    </div>
+                    <div class="col alert-col">  
+                        <h6 class='alert-header'>Broken IFAP Links:  </h6>
+                        <p class='alert-content'>Due to site-wide changes on the Information for Financial Aid Professionals (IFAP) website in February, links from Knowledgebase Q&As may be broken. We are working to reconnect these as soon as possible. In the meantime, if you need to find the referenced documents, please visit the IFAP home page and navigate to the intended item.</p>
+                    </div>
+                    <div class="col alert-col">
+                        <h6 class='alert-header'>Revised Term Lengths:</h6>
+                        <p class='alert-content'>In the November 5, 2019 Electronic Announcement, Revised Policy for Standard Term Length, ED revised the definitions of standard terms. This guidance became effective immediately on the date of posting. As you review Q&As within the AskRegs Knowledgebase, please consider the answers within the context of ED’s new guidance and examples. We will be updating affected Knowledgebase Q&As over the coming weeks.</p>
+                    </div>
+                    <div class="col alert-col">
+                        <h6 class='alert-header'>Coronavirus:  </h6>
+                        <p class='alert-content'>Refer to AskRegs Knowledgebase Q&A, Where Can I Find Guidance Related to the Coronavirus (COVID-19)?</p>
+                    </div>
+                </div><!-- row -->
+            </div><!-- ask-regs-all container -->
+    </div><!-- accordion askregs -->    
+    <div class="welcome ">
         <div class="container">
             <h5 class='welcome-header'>Welcome to NASFAA’s AskRegs Knowledgebase!</h5>
-            <p>NASFAA’s AskRegs provides a searchable Knowledgebase of answers to financial aid administrators' questions. Get started by browsing or searching the large library of questions and responses for an immediate answer. If you can't find an answer to your specific question, select “Questions” above to begin the submission process.
+            <p class='px-4'>NASFAA’s AskRegs provides a searchable Knowledgebase of answers to financial aid administrators' questions. Get started by browsing or searching the large library of questions and responses for an immediate answer. If you can't find an answer to your specific question, select “Questions” above to begin the submission process.
 
                 Our experts will thoroughly research your question and provide you a comprehensive answer, including any applicable regulatory citations. That question and answer may then be added (without identifying information) as appropriate to further expand the Knowledgebase Q&A library.
             </p>
@@ -93,9 +100,9 @@
     </div><!-- container announcement-->
 
     <div class="container main-area">
-        <div class="row row-cols-1 row-cols-sm-2">
-            <div class="col col-sm-8">
-                <div class="row row-cols-1 row-cols-sm-2">
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col  col-md-8">
+                <div class="row row-cols-1 row-cols-md-2">
                     <div class="col cardSize">
                         <section class='card' id='timely'>
                             <div class="card-header">
@@ -206,7 +213,7 @@
                     </div><!-- col cardSize -->
                 </div><!-- row row-cols-1 row-cols-sm-2 -->      
             </div><!-- col col-sm-8 -->
-            <div class="col col-sm-4">
+            <div class="col  col-md-4">
                 <div class="row row-cols-1">
                     <div class="col cardSize">
                         <section class='card' id='explore-categories'>
@@ -244,53 +251,59 @@
             </div><!-- col col-sm-4" -->
         </div><!-- row row-cols-1 row-cols-sm-2 -->
     </div><!-- container main-area-->
-
-    <div class='row bottomT'>
-        <div class='container'>
-            <nav class='navbar navStylesFooter'>
+    <nav class='navbar navbar-dark navbar-expand-lg bottomT'>
+        <section class='v-separator'>
+            <div class='collapse navbar-collapse' id='toggleFoot'>
                 <div class='navbar-nav'>
-                    <div class="container">
-                        <div class="row row-cols-3">
-                            <div class="col">
-                               <p class='address'>
-                                1801 Pennsylvania Avenue NW, Suite 850 <br>
-                                Washington, DC 20006-3606 <br>
-                                T: (202) 785-0453 <br>
-                                F: (202) 785-1487 <br>
-                                E: info@nasfaa.org 
-                               </p>
-                            </div><!-- col -->
-                            <div class="col">
-                                <a class='nav-item nav-link' href="#">Search Knowledgebase</a>
-                                <a class='nav-item nav-link' href="#">Resources</a>
-                                <a class='nav-item nav-link' href="#">Ask a Question</a>
-                                <a class='nav-item nav-link' href="#">MyAskRegs</a>
-                            </div><!-- col -->
-                            <div class="col">
-                                <button class="btn btn-social" type="button">
-                                    <i class="fab fa-linkedin"></i>                                
-                                </button>
-                                <button class="btn btn-social" type="button">
-                                    <i class="fab fa-facebook-f"></i>
-                                </button>
-                                <button class="btn btn-social" type="button">
-                                    <i class="fab fa-twitter"></i>
-                                </button>                                
-                            </div><!-- col -->
-                        </div><!-- row row-cols-3 -->
-                    </div><!-- container -->
+                    <div class="footerNav">
+                        <p class='address'>
+                        1801 Pennsylvania Avenue NW, Suite 850 <br>
+                        Washington, DC 20006-3606 <br>
+                        T: (202) 785-0453 <br>
+                        F: (202) 785-1487 <br>
+                        E: info@nasfaa.org 
+                        </p>
+                    </div>
+                    <div class="footerNav">
+                        <a class='nav-item nav-link footer-link' href="#">Search Knowledgebase</a>
+                        <a class='nav-item nav-link footer-link' href="#">Resources</a>
+                        <a class='nav-item nav-link footer-link' href="#">Ask a Question</a>
+                        <a class='nav-item nav-link footer-link' href="#">MyAskRegs</a>
+                    </div>
+                    <div class="footerNav">
+                        <a class='social' href="#">
+                            <i class="fab fa-linkedin"></i>                                
+                        </a>
+                        <a class='social' href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class='social' href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>                                
+                    </div>
                 </div><!-- navbar-nav -->
-            </nav>
+            </div><!-- collapse navbar-collapse -->
+        </section>
+        <button class='navbar-toggler footer-toggler' 
+            type='button' 
+            data-toggle='collapse' 
+            data-target='#toggleFoot'
+            aria-controls='toggleFoot'
+            aria-expanded='false'
+            aria-label='Toggle Navigation'>
+            <span class='fas fa-bars'></span>    
+        </button>
+    </nav>
+    <div class='row bottomB m-0'>
+        <div class='container'>
+            <p class='copyright'>© 2020 NASFAA. All rights reserved.</p>
         </div><!-- container -->
-    </div><!-- row bottomT -->
-        <div class='row bottomB'>
-            <div class='container'>
-                <p style='color: white'>© 2020 NASFAA. All rights reserved.</p>
-            </div><!-- container -->
-        </div><!-- row bottomB -->
+    </div><!-- row bottomB -->
 
 
     <!-- Optional JavaScript -->
+    <script src="app.js"></script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
