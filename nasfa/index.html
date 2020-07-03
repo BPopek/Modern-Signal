@@ -1,23 +1,23 @@
 <!doctype html>
-<html lang="en">
+<html lang='en'>
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel='stylesheet' href='css/bootstrap.min.css'>
+    <link rel='stylesheet' href='css/styles.css'>
 
     <!-- FontAwesome -->
-    <link href="css/all.css" rel="stylesheet">
+    <link href='css/all.css' rel='stylesheet'>
     
     <title>NASFAA</title>
   </head>
 
   <body>
       <nav class='navbar navbar-dark navbar-expand-md navStyles px-5'>
-          <div class="container position-absolute loginContainer">
+          <div class='container position-absolute loginContainer'>
               <div class='dropdown login-dropdown'>
                   <a class='nav-link dropdown-toggle' 
                   data-toggle='dropdown' id='loginDropdown'
@@ -42,83 +42,83 @@
             <span class='fas fa-bars'></span>    
         </button>
         <div class='collapse navbar-collapse navLinkContainer' id='toggleNav'>
-            <div class="navbar-nav">
-                <a class='nav-item nav-link' href="#">Search Knowledgebase</a>
-                <a class='nav-item nav-link' href="#">Resources</a>
-                <a class='nav-item nav-link' href="#">Ask a Question</a>
-                <a class='nav-item nav-link' href="#">MyAskRegs</a>
+            <div class='navbar-nav'>
+                <a class='nav-item nav-link' href='#'>Search Knowledgebase</a>
+                <a class='nav-item nav-link' href='#'>Resources</a>
+                <a class='nav-item nav-link' href='#'>Ask a Question</a>
+                <a class='nav-item nav-link' href='#'>MyAskRegs</a>
             </div> <!-- navbar-nav -->
         </div> <!-- collapse navbar-collapse navContainer -->
     </nav>
     
-    <div class='container-flex m-0 p-0' id="ask-regs-accordion">
+    <div class='container-flex m-0 p-0' id='ask-regs-accordion'>
         <div class='row askregs m-0' 
-            onclick="showHideRegs()">
+            onclick='showHideRegs()'>
             <a id='ask-regs-header' 
                 class='fa px-5  colHide collapsed-header'> 
                 AskRegs Alerts
-                <i class="far fa-caret-square-down alert-icons" id='toggle-alert-iconCaret' ></i>
-                <i class="far fa-window-close alert-icons"  id='toggle-alert-iconX'></i>
+                <i class='far fa-caret-square-down alert-icons' id='toggle-alert-iconCaret' ></i>
+                <i class='far fa-window-close alert-icons'  id='toggle-alert-iconX'></i>
             </a>
         </div><!-- row -->
-            <div id="ask-regs-all"
-                class="regs hide-all-regs"
-                onclick="showHideRegs()">
-                <div class="row row-cols-1 row-cols-lg-5 regs v-separator-alert" >
-                    <div class="col alert-col">
+            <div id='ask-regs-all'
+                class='regs hide-all-regs'
+                onclick='showHideRegs()'>
+                <div class='row row-cols-1 row-cols-lg-5 regs v-separator-alert' >
+                    <div class='col alert-col'>
                         <h6 class='alert-header'>Coronavirus: </h6>
                         <p class='alert-content'>Refer to AskRegs Knowledgebase Q&A, Where Can I Find Guidance Related to the Coronavirus (COVID-19)?</p>
                     </div>
-                    <div class="col alert-col">  
+                    <div class='col alert-col'>  
                         <h6 class='alert-header'>Broken IFAP Links:  </h6>
                         <p class='alert-content'>Due to site-wide changes on the Information for Financial Aid Professionals (IFAP) website in February, links from Knowledgebase Q&As may be broken. We are working to reconnect these as soon as possible. In the meantime, if you need to find the referenced documents, please visit the IFAP home page and navigate to the intended item.</p>
                     </div>
-                    <div class="col alert-col">
+                    <div class='col alert-col'>
                         <h6 class='alert-header'>Revised Term Lengths:</h6>
                         <p class='alert-content'>In the November 5, 2019 Electronic Announcement, Revised Policy for Standard Term Length, ED revised the definitions of standard terms. This guidance became effective immediately on the date of posting. As you review Q&As within the AskRegs Knowledgebase, please consider the answers within the context of ED’s new guidance and examples. We will be updating affected Knowledgebase Q&As over the coming weeks.</p>
                     </div>
-                    <div class="col alert-col">
+                    <div class='col alert-col'>
                         <h6 class='alert-header'>Coronavirus:  </h6>
                         <p class='alert-content'>Refer to AskRegs Knowledgebase Q&A, Where Can I Find Guidance Related to the Coronavirus (COVID-19)?</p>
                     </div>
                 </div><!-- row -->
             </div><!-- ask-regs-all container -->
     </div><!-- accordion askregs -->    
-    <div class="welcome ">
-        <div class="container">
+    <div class='welcome '>
+        <div class='container'>
             <h5 class='welcome-header'>Welcome to NASFAA’s AskRegs Knowledgebase!</h5>
             <p class='px-4'>NASFAA’s AskRegs provides a searchable Knowledgebase of answers to financial aid administrators' questions. Get started by browsing or searching the large library of questions and responses for an immediate answer. If you can't find an answer to your specific question, select “Questions” above to begin the submission process.
 
                 Our experts will thoroughly research your question and provide you a comprehensive answer, including any applicable regulatory citations. That question and answer may then be added (without identifying information) as appropriate to further expand the Knowledgebase Q&A library.
             </p>
-            <div class="row search-field">
-                <div class="input-group">
-                    <input class="form-control py-2" 
-                            type="search" 
-                            id="search-input"
+            <div class='row search-field'>
+                <div class='input-group'>
+                    <input class='form-control py-2' 
+                            type='search' 
+                            id='search-input'
                             placeholder='Research Your Topic'>
-                    <span class="input-group-append">
-                        <button class="btn btn-search" type="button">
-                            <i class="fa fa-search"></i>
+                    <span class='input-group-append'>
+                        <button class='btn btn-search' type='button'>
+                            <i class='fa fa-search'></i>
                         </button>
                     </span>
                 </div><!-- input-group -->
             </div><!-- row -->
         </div><!-- container -->
     </div><!-- welcome -->
-    <div class="container announcement">
+    <div class='container announcement'>
         <h5 class='announcement-header'>Announcement Header Here</h5>
         <p>Lorem ipsum dolor sit amet, consectetur, adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div><!-- container announcement-->
 
-    <div class="container main-area ">
-        <div class="row row-cols-1 row-cols-md-2">
-            <div class="col  col-md-8">
-                <div class="row row-cols-1 row-cols-md-2">
-                    <div class="col cardSize">
+    <div class='container main-area '>
+        <div class='row row-cols-1 row-cols-md-2'>
+            <div class='col  col-md-8'>
+                <div class='row row-cols-1 row-cols-md-2'>
+                    <div class='col cardSize'>
                         <section class='card' id='timely'>
-                            <div class="card-header">
-                                <h5  class="card-title" style='color: #ec9825'>Timely</h5>
+                            <div class='card-header'>
+                                <h5  class='card-title' style='color: #ec9825'>Timely</h5>
                                 <p class='card-text'>
                                     Is a Student in Temporary Guardianship Automatically Considered Independent?
                                 </p>
@@ -142,10 +142,10 @@
                             </div>
                         </section>
                     </div><!-- col cardSize -->
-                    <div class="col cardSize">
+                    <div class='col cardSize'>
                         <section class='card' id='most-recent'>
-                            <div class="card-header">
-                                <h5  class="card-title" style='color: #7d0065'>Most Recent</h5>
+                            <div class='card-header'>
+                                <h5  class='card-title' style='color: #7d0065'>Most Recent</h5>
                                 <p class='card-text'>
                                     Is a Student in Temporary Guardianship Automatically Considered Independent?
                                 </p>
@@ -169,10 +169,10 @@
                             </div><!-- card-header -->
                         </section>
                     </div><!-- col cardSize -->
-                    <div class="col cardSize">
+                    <div class='col cardSize'>
                         <section class='card' id='trending'>
-                            <div class="card-header">
-                                <h5  class="card-title" style='color: #0d67a1'>Trending</h5>
+                            <div class='card-header'>
+                                <h5  class='card-title' style='color: #0d67a1'>Trending</h5>
                                 <p class='card-text'>
                                     Is a Student in Temporary Guardianship Automatically Considered Independent?
                                 </p>
@@ -196,10 +196,10 @@
                             </div><!-- card-header -->
                         </section>
                     </div><!-- col cardSize -->
-                    <div class="col cardSize">
+                    <div class='col cardSize'>
                         <section class='card' id='most-helpful'>
-                            <div class="card-header">
-                                <h5  class="card-title"  style='color: #78c06d'>Most Helpful</h5>
+                            <div class='card-header'>
+                                <h5  class='card-title'  style='color: #78c06d'>Most Helpful</h5>
                                 <p class='card-text'>
                                     Is a Student in Temporary Guardianship Automatically Considered Independent?
                                 </p>
@@ -225,12 +225,12 @@
                     </div><!-- col cardSize -->
                 </div><!-- row row-cols-1 row-cols-sm-2 -->      
             </div><!-- col col-sm-8 -->
-            <div class="col  col-md-4">
-                <div class="row row-cols-1">
-                    <div class="col cardSize">
+            <div class='col  col-md-4'>
+                <div class='row row-cols-1'>
+                    <div class='col cardSize'>
                         <section class='card' id='explore-categories'>
-                            <div class="card-header">
-                                <h5  class="card-title">Explore Categories</h5>
+                            <div class='card-header'>
+                                <h5  class='card-title'>Explore Categories</h5>
                                 <span class='badge category'><p class='category-text'>Administrative Capability</p></span>
                                 <span class='badge category'><p class='category-text'>Agreements Between Schools</p></span>
                                 <span class='badge category'><p class='category-text'>Application Processing</p></span>
@@ -260,14 +260,14 @@
                         </section>
                     </div><!-- col cardSize -->
                 </div><!-- row row-cols-1-->
-            </div><!-- col col-sm-4" -->
+            </div><!-- col col-sm-4' -->
         </div><!-- row row-cols-1 row-cols-sm-2 -->
     </div><!-- container main-area-->
     <nav class='navbar navbar-dark navbar-expand-lg bottomT'>
         <section class='v-separator'>
             <div class='collapse navbar-collapse' id='toggleFoot'>
                 <div class='navbar-nav'>
-                    <div class="footerNav">
+                    <div class='footerNav'>
                         <p class='address'>
                         1801 Pennsylvania Avenue NW, Suite 850 <br>
                         Washington, DC 20006-3606 <br>
@@ -276,21 +276,21 @@
                         E: info@nasfaa.org 
                         </p>
                     </div>
-                    <div class="footerNav">
-                        <a class='nav-item nav-link footer-link' href="#">Search Knowledgebase</a>
-                        <a class='nav-item nav-link footer-link' href="#">Resources</a>
-                        <a class='nav-item nav-link footer-link' href="#">Ask a Question</a>
-                        <a class='nav-item nav-link footer-link' href="#">MyAskRegs</a>
+                    <div class='footerNav'>
+                        <a class='nav-item nav-link footer-link' href='#'>Search Knowledgebase</a>
+                        <a class='nav-item nav-link footer-link' href='#'>Resources</a>
+                        <a class='nav-item nav-link footer-link' href='#'>Ask a Question</a>
+                        <a class='nav-item nav-link footer-link' href='#'>MyAskRegs</a>
                     </div>
-                    <div class="footerNav">
-                        <a class='social' href="#">
-                            <i class="fab fa-linkedin"></i>                                
+                    <div class='footerNav'>
+                        <a class='social' href='#'>
+                            <i class='fab fa-linkedin'></i>                                
                         </a>
-                        <a class='social' href="#">
-                            <i class="fab fa-facebook-f"></i>
+                        <a class='social' href='#'>
+                            <i class='fab fa-facebook-f'></i>
                         </a>
-                        <a class='social' href="#">
-                            <i class="fab fa-twitter"></i>
+                        <a class='social' href='#'>
+                            <i class='fab fa-twitter'></i>
                         </a>                                
                     </div>
                 </div><!-- navbar-nav -->
@@ -314,11 +314,11 @@
 
 
     <!-- Optional JavaScript -->
-    <script src="app.js"></script>
+    <script src='app.js'></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src='js/jquery.slim.min.js'></script>
+    <script src='js/popper.min.js'></script>
+    <script src='js/bootstrap.min.js'></script>
   </body>
 </html>
