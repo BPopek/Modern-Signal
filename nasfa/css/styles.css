@@ -81,6 +81,7 @@ div.dropdown-menu.show {
     background-color: #a8bac4;
     box-sizing: border-box;
     width: 100%;
+    display: relative;
     -webkit-user-select: none;        
     -moz-user-select: none; 
     -ms-user-select: none;
@@ -104,13 +105,15 @@ div.dropdown-menu.show {
 .regs {
     background-color: #a8bac4;
     justify-content: center;
-    padding: 30px 10px;
+    padding: 15px 10px;
     z-index: 999 !important;
     width: 100%;
     margin: 0;
 }
-.alert-col {
-    margin: 0;
+.col.alert-col {
+    margin-bottom: 0 !important;
+    padding: 5px 5px 0 !important;
+
     padding: 5px;
 }
 .alert-header {
@@ -120,6 +123,7 @@ div.dropdown-menu.show {
 .alert-content {
     text-align: left;
     font-size: 14px;
+    margin: 0;
 }
 .alert-icons {
     position: absolute;
@@ -157,6 +161,7 @@ div.dropdown-menu.show {
 }
 .regs.toggle-show-all-regs {
     display: block;
+    position: relative;
     z-index: 1000 !important;
     background-color: #a8bac4;
     -webkit-animation: slide-in-top 1s  ease-in-out both;
@@ -207,6 +212,7 @@ div.dropdown-menu.show {
 }
 .regs.toggle-hide-all-regs {
     display: block;
+    position: relative;
     z-index: 1000 !important;
 	-webkit-animation: slide-out-top 1s  ease-in-out both;
         animation: slide-out-top 1s  ease-in-out both;
@@ -280,6 +286,7 @@ div.dropdown-menu.show {
 #search-input.form-control {
     border-radius: 0;
     z-index: 0;
+    display: relative;
 }
 .input-group {
     z-index: 0 !important;
@@ -375,8 +382,12 @@ p.category-text {
     padding: 2px 5px;
 }
 .footerNav {
+    margin: 0 50px 0 0 !important;
+    justify-content: flex-start;
+}
+.footerNavSocial {
     padding: 20px 50px 25px 0;
-    margin-bottom: 0 !important;
+    margin-bottom:0 !important;
     justify-content: flex-start;
 }
 .footer-toggler {
@@ -387,7 +398,7 @@ p.category-text {
 .bottomT {
     background-color: #14567c;
     width: 100%;
-    padding: 15px 50px;
+    padding: 25px 50px;
     justify-content: space-between;
 }
 .bottomB {
@@ -481,7 +492,7 @@ p.category-text {
         margin: 25px 100px;
     }
     .bottomT {
-        padding: 15px 100px;
+        padding: 25px 100px;
     }
     .copyright {
         padding: 10px 60px;
@@ -489,6 +500,7 @@ p.category-text {
     .v-separator .footerNav:first-child {
         border-right: 1px solid white;
         padding-right: 40px;
+        padding-bottom: 0;
         margin-right: 40px;
         position: relative;
         border-bottom: none;
@@ -496,6 +508,7 @@ p.category-text {
     .v-separator .footerNav:nth-child(2) {
         border-right: 1px solid white;
         padding-right: 40px;
+        padding-bottom: 0;
         margin-right: 40px;
         position: relative;
         border-bottom: none;
