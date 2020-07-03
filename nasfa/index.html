@@ -40,18 +40,18 @@
         </div> <!-- collapse navbar-collapse navContainer -->
     </nav>
     <div class='container-flex m-0 p-0' id="ask-regs-accordion">
-            <div class='row askregs m-0' onclick="showHideRegs()">
-                <a href='#ask-regs-all' 
-                    id='ask-regs-header' 
-                    class='fa px-5'> 
-                    AskRegs Alerts
-                </a>
-                    <i class="far fa-caret-square-down alert-toggle-style" id='toggle-alert-iconCaret' ></i>
-                    <i class="far fa-window-close alert-toggle-style"  id='toggle-alert-iconX'></i>
-            </div><!-- row -->
+        <div class='row askregs m-0' 
+            onclick="showHideRegs()">
+            <a id='ask-regs-header' 
+                class='fa px-5  colHide collapsed-header'> 
+                AskRegs Alerts
+                <i class="far fa-caret-square-down alert-icons" id='toggle-alert-iconCaret' ></i>
+                <i class="far fa-window-close alert-icons"  id='toggle-alert-iconX'></i>
+            </a>
+        </div><!-- row -->
             <div id="ask-regs-all"
                 class="regs hide-all-regs"
-                onclick="hideRegs()">
+                onclick="showHideRegs()">
                 <div class="row row-cols-1 row-cols-lg-5 regs v-separator-alert" >
                     <div class="col alert-col">
                         <h6 class='alert-header'>Coronavirus: </h6>
