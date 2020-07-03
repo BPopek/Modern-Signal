@@ -16,7 +16,18 @@
   </head>
 
   <body>
-    <nav class='navbar navbar-dark navbar-expand-sm navStyles px-5'>
+      <nav class='navbar navbar-dark navbar-expand-md navStyles px-5'>
+          <div class="container position-absolute loginContainer">
+              <div class='dropdown login-dropdown'>
+                  <a class='nav-link dropdown-toggle' 
+                  data-toggle='dropdown' id='loginDropdown'
+                  aria-haspopup='true' aria-expanded='false'
+                  >Carrie</a>
+                  <div class='dropdown-menu' aria-labelledby='loginDropdown'>
+                      <button class='btn btn-orange'>Logout</button>
+                  </div>
+              </div>
+          </div>
         <a class='navbar-brand' href='#'>
             <img src='images/nasfaa_white.png' alt='logo' class='logo'>
             <img src='images/nasfaa_askregs_green.png' alt='logo' class='logo'>
@@ -39,6 +50,7 @@
             </div> <!-- navbar-nav -->
         </div> <!-- collapse navbar-collapse navContainer -->
     </nav>
+    
     <div class='container-flex m-0 p-0' id="ask-regs-accordion">
         <div class='row askregs m-0' 
             onclick="showHideRegs()">
@@ -99,7 +111,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur, adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div><!-- container announcement-->
 
-    <div class="container main-area">
+    <div class="container main-area ">
         <div class="row row-cols-1 row-cols-md-2">
             <div class="col  col-md-8">
                 <div class="row row-cols-1 row-cols-md-2">
