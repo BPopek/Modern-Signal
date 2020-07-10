@@ -22,3 +22,12 @@ function showHideRegs() {
         iconElements.classList.toggle('collapsed-header'); 
     }
 }
+
+$(document).ready(function() {
+
+    var childWidth = $(".category-tag").height()
+    $(".tag-right").width(childWidth);
+
+    var childHeight = $(".category-tag").height()
+    $(".tag-right").height(childHeight);
+})

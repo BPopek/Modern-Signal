@@ -5,57 +5,62 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
 
+    <link rel='stylesheet' href='node_modules/jquery/dist/jquery.js'> 
+
     <!-- Bootstrap CSS -->
     <link rel='stylesheet' href='css/bootstrap.min.css'>
     <link rel='stylesheet' href='css/styles.css'>
-
+   
     <!-- FontAwesome -->
     <link href='css/all.css' rel='stylesheet'>
-    
+
+
     <title>NASFAA</title>
   </head>
 
   <body>
-      <nav class='navbar navbar-dark navbar-expand-md navStyles px-5'>
-          <div class='container position-absolute loginContainer'>
-              <div class='dropdown login-dropdown'>
-                  <a class='nav-link dropdown-toggle' 
-                  data-toggle='dropdown' id='loginDropdown'
-                  aria-haspopup='true' aria-expanded='false'
-                  >Carrie</a>
-                  <div class='dropdown-menu' aria-labelledby='loginDropdown'>
-                      <button class='btn btn-orange'>Logout</button>
-                  </div>
-              </div>
-          </div>
-        <a class='navbar-brand' href='#'>
-            <img src='images/nasfaa_white.png' alt='logo' class='logo'>
-            <img src='images/nasfaa_askregs_green.png' alt='logo' class='logo'>
-        </a>
-        <button class='navbar-toggler' 
-            type='button' 
-            data-toggle='collapse' 
-            data-target='#toggleNav'
-            aria-controls='toggleNav'
-            aria-expanded='false'
-            aria-label='Toggle Navigation'>
-            <span class='fas fa-bars'></span>    
-        </button>
-        <div class='collapse navbar-collapse navLinkContainer' id='toggleNav'>
-            <div class='navbar-nav'>
-                <a class='nav-item nav-link' href='#'>Search Knowledgebase</a>
-                <a class='nav-item nav-link' href='#'>Resources</a>
-                <a class='nav-item nav-link' href='#'>Ask a Question</a>
-                <a class='nav-item nav-link' href='#'>MyAskRegs</a>
-            </div> <!-- navbar-nav -->
-        </div> <!-- collapse navbar-collapse navContainer -->
+    <nav class='navbar navbar-dark navbar-expand-lg navStyles'>
+        <div class="container navContainer">
+            <a class='navbar-brand' href='#'>
+                <img src='images/nasfaa_white.png' alt='logo' class='logo'>
+                <img src='images/nasfaa_askregs_white.png' alt='logo' class='logo'>
+            </a>
+            <button class='navbar-toggler' 
+                type='button' 
+                data-toggle='collapse' 
+                data-target='#toggleNav'
+                aria-controls='toggleNav'
+                aria-expanded='false'
+                aria-label='Toggle Navigation'>
+                <span class='fas fa-bars'></span>    
+            </button>
+            <div class='collapse navbar-collapse navLinkContainer' id='toggleNav'>
+                <div class='navbar-nav'>
+                    <a class='nav-item nav-link' href='#'>Search Knowledgebase</a>
+                    <a class='nav-item nav-link' href='#'>Resources</a>
+                    <a class='nav-item nav-link' href='#'>Ask a Question</a>
+                    <a class='nav-item nav-link' href='#'>MyAskRegs</a>
+                </div> <!-- navbar-nav -->
+            </div> <!-- collapse navbar-collapse navContainer -->
+            <div class='loginContainer'>
+                <div class='dropdown login-dropdown'>
+                    <a class='nav-link dropdown-toggle' 
+                    data-toggle='dropdown' id='loginDropdown'
+                    aria-haspopup='true' aria-expanded='false'
+                    >Carrie</a>
+                    <div class='dropdown-menu' aria-labelledby='loginDropdown'>
+                        <button class='btn btn-orange'>Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>  
     </nav>
     
-    <div class='container-flex m-0 p-0' id='ask-regs-accordion'>
+    <div class='my-0 py-0' id='ask-regs-accordion'>
         <div class='row askregs m-0' 
             onclick='showHideRegs()'>
             <a id='ask-regs-header' 
-                class='fa px-5  colHide collapsed-header'> 
+                class='container fa colHide collapsed-header'> 
                 AskRegs Alerts
                 <i class='far fa-caret-square-down alert-icons' id='toggle-alert-iconCaret' ></i>
                 <i class='far fa-window-close alert-icons'  id='toggle-alert-iconX'></i>
@@ -64,7 +69,7 @@
             <div id='ask-regs-all'
                 class='regs hide-all-regs'
                 onclick='showHideRegs()'>
-                <div class='row row-cols-1 row-cols-lg-5 regs v-separator-alert' >
+                <div class='row row-cols-1 row-cols-lg-4 v-separator-alert' >
                     <div class='col alert-col'>
                         <h6 class='alert-header'>Coronavirus: </h6>
                         <p class='alert-content'>Refer to AskRegs Knowledgebase Q&A, Where Can I Find Guidance Related to the Coronavirus (COVID-19)?</p>
@@ -87,7 +92,7 @@
     <div class='welcome '>
         <div class='container'>
             <h5 class='welcome-header'>Welcome to NASFAA’s AskRegs Knowledgebase!</h5>
-            <p class='px-4'>NASFAA’s AskRegs provides a searchable Knowledgebase of answers to financial aid administrators' questions. Get started by browsing or searching the large library of questions and responses for an immediate answer. If you can't find an answer to your specific question, select “Questions” above to begin the submission process.
+            <p class='welcome-text'>NASFAA’s AskRegs provides a searchable Knowledgebase of answers to financial aid administrators' questions. Get started by browsing or searching the large library of questions and responses for an immediate answer. If you can't find an answer to your specific question, select “Questions” above to begin the submission process.
 
                 Our experts will thoroughly research your question and provide you a comprehensive answer, including any applicable regulatory citations. That question and answer may then be added (without identifying information) as appropriate to further expand the Knowledgebase Q&A library.
             </p>
@@ -113,12 +118,12 @@
 
     <div class='container main-area '>
         <div class='row row-cols-1 row-cols-md-2'>
-            <div class='col  col-md-8'>
+            <div class='main-inside-left col col-md-8'>
                 <div class='row row-cols-1 row-cols-md-2'>
                     <div class='col cardSize'>
                         <section class='card' id='timely'>
                             <div class='card-header'>
-                                <h5  class='card-title' style='color: #ec9825'>Timely</h5>
+                                <h4  class='card-title' style='color: #ec9825'>Timely</h4>
                                 <p class='card-text'>
                                     Is a Student in Temporary Guardianship Automatically Considered Independent?
                                 </p>
@@ -138,14 +143,14 @@
                                 <p class='card-text'> 
                                     Is a Student in Temporary Guardianship Automatically Considered Independent?
                                 </p>
-                                <button class='btn btn-sm btn-vmore' style='background-color: #ec9825; color: white'> VIEW MORE</button>
+                                <button class='btn btn-vmore' style='background-color: #ec9825; color: white'> VIEW MORE</button>
                             </div>
                         </section>
                     </div><!-- col cardSize -->
                     <div class='col cardSize'>
                         <section class='card' id='most-recent'>
                             <div class='card-header'>
-                                <h5  class='card-title' style='color: #7d0065'>Most Recent</h5>
+                                <h4  class='card-title' style='color: #7d0065'>Most Recent</h4>
                                 <p class='card-text'>
                                     Is a Student in Temporary Guardianship Automatically Considered Independent?
                                 </p>
@@ -165,14 +170,14 @@
                                 <p class='card-text'> 
                                     Is a Student in Temporary Guardianship Automatically Considered Independent?
                                 </p>
-                                <button class='btn btn-sm btn-vmore' style='background-color: #7d0065; color: white'> VIEW MORE</button>
+                                <button class='btn btn-vmore' style='background-color: #7d0065; color: white'> VIEW MORE</button>
                             </div><!-- card-header -->
                         </section>
                     </div><!-- col cardSize -->
                     <div class='col cardSize'>
                         <section class='card' id='trending'>
                             <div class='card-header'>
-                                <h5  class='card-title' style='color: #0d67a1'>Trending</h5>
+                                <h4  class='card-title' style='color: #0d67a1'>Trending</h4>
                                 <p class='card-text'>
                                     Is a Student in Temporary Guardianship Automatically Considered Independent?
                                 </p>
@@ -192,14 +197,14 @@
                                 <p class='card-text'> 
                                     Is a Student in Temporary Guardianship Automatically Considered Independent?
                                 </p>
-                                <button class='btn btn-sm btn-vmore'  style='background-color: #0d67a1; color: white'> VIEW MORE</button>
+                                <button class='btn btn-vmore'  style='background-color: #0d67a1; color: white'> VIEW MORE</button>
                             </div><!-- card-header -->
                         </section>
                     </div><!-- col cardSize -->
                     <div class='col cardSize'>
                         <section class='card' id='most-helpful'>
                             <div class='card-header'>
-                                <h5  class='card-title'  style='color: #78c06d'>Most Helpful</h5>
+                                <h4  class='card-title'  style='color: #78c06d'>Most Helpful</h4>
                                 <p class='card-text'>
                                     Is a Student in Temporary Guardianship Automatically Considered Independent?
                                 </p>
@@ -219,25 +224,31 @@
                                 <p class='card-text'> 
                                     Is a Student in Temporary Guardianship Automatically Considered Independent?
                                 </p>
-                                <button class='btn btn-sm btn-vmore' style='background-color: #78c06d; color: white'> VIEW MORE</button>
+                                <button class='btn btn-vmore' style='background-color: #78c06d; color: white'> VIEW MORE</button>
                             </div>
                         </section>
                     </div><!-- col cardSize -->
                 </div><!-- row row-cols-1 row-cols-sm-2 -->      
             </div><!-- col col-sm-8 -->
-            <div class='col  col-md-4'>
+            <div class='main-inside-right col col-md-4'>
                 <div class='row row-cols-1'>
                     <div class='col cardSize'>
                         <section class='card' id='explore-categories'>
                             <div class='card-header'>
-                                <h5  class='card-title'>Explore Categories</h5>
+                                <h4  class='card-title'>Explore Categories</h4>
 
 
-                                <div class='badge category container'>
-                                    <span class='category-br'>   
+                                <div class='category'>
+                                    <span class='category-tag'>   
+                                        <p class='category-text'>Administrative Capability</p>
+                                        <div class='tag-right'></div>
+                                    </span>
+                                </div>
+                                    <!-- <span class='category-br'>   
                                         <p class='category-text'>Administrative Capability</p>
                                     </span>
-                                    <img src='./images/outlined-01.svg' class='tag-image'></img>
+                                    <img src='./images/outlined-01.svg' class='tag-image'></img> -->
+
                                     <!-- <span class='tag'>
                                         <img src='./images/outlined_top.svg' 
 
@@ -250,150 +261,150 @@
                                             class='tag-image-bottom'></img>
                                     </span> -->
                                                                
-                                </div>
-                                <div class='badge category'>
-                                    <span class='category-br'>   
+                                <!-- </div> -->
+                                <div class='category'>
+                                    <span class='category-tag'>   
                                         <p class='category-text'>Agreements Between Schools</p>
+                                        <div class='tag-right'></div>
                                     </span>
-                                    <img src='./images/outlined-01.svg' class='tag-image'></img>
                                 </div>
-                                <div class='badge category'>
-                                    <span class='category-br'>   
+                                <div class='category'>
+                                    <span class='category-tag'>   
                                         <p class='category-text'>Application Processing</p>
+                                        <div class='tag-right'></div>
                                     </span>
-                                    <img src='./images/outlined-01.svg' class='tag-image'></img>
                                 </div>
-                                <div class='badge category'>
-                                    <span class='category-br'>   
+                                <div class='category'>
+                                    <span class='category-tag'>   
                                         <p class='category-text'>Cash Management</p>
+                                        <div class='tag-right'></div>
                                     </span>
-                                    <img src='./images/outlined-01.svg' class='tag-image'></img>
                                 </div>
-                                <div class='badge category'>
-                                    <span class='category-br'>   
-                                        <p class='category-text'>Consumer Information</p>
-                                    </span>
-                                    <img src='./images/outlined-01.svg' class='tag-image'></img>
+                                <div class='category'>
+                                    <span class='category-tag'>   
+<p class='category-text'>Consumer Information</p>
+
+                                        <div class='tag-right'></div>                                    </span>
                                 </div>
-                                <div class='badge category'>
-                                    <span class='category-br'>   
+                                <div class='category'>
+                                    <span class='category-tag'>   
                                         <p class='category-text'>Cost of Attendance</p>
+                                        <div class='tag-right'></div>
                                     </span>
-                                    <img src='./images/outlined-01.svg' class='tag-image'></img>
                                 </div>
-                                <div class='badge category'>
-                                    <span class='category-br'>   
+                                <div class='category'>
+                                    <span class='category-tag'>   
                                         <p class='category-text'>Direct Loan/FFEL</p>
+                                        <div class='tag-right'></div>
                                     </span>
-                                    <img src='./images/outlined-01.svg' class='tag-image'></img>
                                 </div>
-                                <div class='badge category'>
-                                    <span class='category-br'>   
+                                <div class='category'>
+                                    <span class='category-tag'>   
                                         <p class='category-text'>FSEOG</p>
+                                        <div class='tag-right'></div>
                                     </span>
-                                    <img src='./images/outlined-01.svg' class='tag-image'></img>
                                 </div>
-                                <div class='badge category'>
-                                    <span class='category-br'>   
+                                <div class='category'>
+                                    <span class='category-tag'>   
                                         <p class='category-text'>FWS</p>
+                                        <div class='tag-right'></div>
                                     </span>
-                                    <img src='./images/outlined-01.svg' class='tag-image'></img>
                                 </div>
-                                <div class='badge category'>
-                                    <span class='category-br'>   
+                                <div class='category'>
+                                    <span class='category-tag'>   
                                         <p class='category-text'>Institutional Eligibility</p>
+                                        <div class='tag-right'></div>
                                     </span>
-                                    <img src='./images/outlined-01.svg' class='tag-image'></img>
                                 </div>
-                                <div class='badge category'>
-                                    <span class='category-br'>   
+                                <div class='category'>
+                                    <span class='category-tag'>   
                                         <p class='category-text'>Need Analysis</p>
+                                        <div class='tag-right'></div>
                                     </span>
-                                    <img src='./images/outlined-01.svg' class='tag-image'></img>
                                 </div>
-                                <div class='badge category'>
-                                    <span class='category-br'>   
+                                <div class='category'>
+                                    <span class='category-tag'>   
                                         <p class='category-text'>Non-Title IV Aid</p>
+                                        <div class='tag-right'></div>
                                     </span>
-                                    <img src='./images/outlined-01.svg' class='tag-image'></img>
                                 </div>
-                                <div class='badge category'>
-                                    <span class='category-br'>   
+                                <div class='category'>
+                                    <span class='category-tag'>   
                                         <p class='category-text'>Overawards/Overpackaging</p>
+                                        <div class='tag-right'></div>
                                     </span>
-                                    <img src='./images/outlined-01.svg' class='tag-image'></img>
                                 </div>
-                                <div class='badge category'>
-                                    <span class='category-br'>   
+                                <div class='category'>
+                                    <span class='category-tag'>   
                                         <p class='category-text'>Packaging</p>
+                                        <div class='tag-right'></div>
                                     </span>
-                                    <img src='./images/outlined-01.svg' class='tag-image'></img>
                                 </div>
-                                <div class='badge category'>
-                                    <span class='category-br'>   
+                                <div class='category'>
+                                    <span class='category-tag'>   
                                         <p class='category-text'>Perkins</p>
+                                        <div class='tag-right'></div>
                                     </span>
-                                    <img src='./images/outlined-01.svg' class='tag-image'></img>
                                 </div>
-                                <div class='badge category'>
-                                    <span class='category-br'>   
+                                <div class='category'>
+                                    <span class='category-tag'>   
                                         <p class='category-text'>Professional Judgment</p>
+                                        <div class='tag-right'></div>
                                     </span>
-                                    <img src='./images/outlined-01.svg' class='tag-image'></img>
                                 </div>
-                                <div class='badge category'>
-                                    <span class='category-br'>   
+                                <div class='category'>
+                                    <span class='category-tag'>   
                                         <p class='category-text'>Program Eligibility</p>
+                                        <div class='tag-right'></div>
                                     </span>
-                                    <img src='./images/outlined-01.svg' class='tag-image'></img>
                                 </div>
-                                <div class='badge category'>
-                                    <span class='category-br'>   
+                                <div class='category'>
+                                    <span class='category-tag'>   
                                         <p class='category-text'>Recordkeeping</p>
+                                        <div class='tag-right'></div>
                                     </span>
-                                    <img src='./images/outlined-01.svg' class='tag-image'></img>
                                 </div>
-                                <div class='badge category'>
-                                    <span class='category-br'>   
+                                <div class='category'>
+                                    <span class='category-tag'>   
                                         <p class='category-text'>Reporting</p>
+                                        <div class='tag-right'></div>
                                     </span>
-                                    <img src='./images/outlined-01.svg' class='tag-image'></img>
                                 </div>
-                                <div class='badge category'>
-                                    <span class='category-br'>   
+                                <div class='category'>
+                                    <span class='category-tag'>   
                                         <p class='category-text'>Return of Title IV Funds</p>
+                                        <div class='tag-right'></div>
                                     </span>
-                                    <img src='./images/outlined-01.svg' class='tag-image'></img>
                                 </div>
-                                <div class='badge category'>
-                                    <span class='category-br'>   
+                                <div class='category'>
+                                    <span class='category-tag'>   
                                         <p class='category-text'>SAP</p>
+                                        <div class='tag-right'></div>
                                     </span>
-                                    <img src='./images/outlined-01.svg' class='tag-image'></img>
                                 </div>
-                                <div class='badge category'>
-                                    <span class='category-br'>   
+                                <div class='category'>
+                                    <span class='category-tag'>   
                                         <p class='category-text'>Student Eligibility</p>
+                                        <div class='tag-right'></div>
                                     </span>
-                                    <img src='./images/outlined-01.svg' class='tag-image'></img>
                                 </div>
-                                <div class='badge category'>
-                                    <span class='category-br'>   
+                                <div class='category'>
+                                    <span class='category-tag'>   
                                         <p class='category-text'>Tax Issues</p>
+                                        <div class='tag-right'></div>
                                     </span>
-                                    <img src='./images/outlined-01.svg' class='tag-image'></img>
                                 </div>
-                                <div class='badge category'>
-                                    <span class='category-br'>   
+                                <div class='category'>
+                                    <span class='category-tag'>   
                                         <p class='category-text'>TEACH Grant</p>
+                                        <div class='tag-right'></div>
                                     </span>
-                                    <img src='./images/outlined-01.svg' class='tag-image'></img>
                                 </div>
-                                <div class='badge category'>
-                                    <span class='category-br'>   
+                                <div class='category'>
+                                    <span class='category-tag'>   
                                         <p class='category-text'>Verification</p>
+                                        <div class='tag-right'></div>
                                     </span>
-                                    <img src='./images/outlined-01.svg' class='tag-image'></img>
                                 </div>
                             </div><!-- card-header -->
                         </section>
@@ -446,11 +457,12 @@
         </button>
     </nav>
     <div class='row bottomB m-0'>
-        <div class='container'>
+        <div class='container bottomContainer'>
             <p class='copyright'>© 2020 NASFAA. All rights reserved.</p>
         </div><!-- container -->
     </div><!-- row bottomB -->
-
+  
+    <script src='node_modules/jquery/dist/jquery.js'></script>
 
     <!-- Optional JavaScript -->
     <script src='app.js'></script>
