@@ -14,61 +14,59 @@
     <!-- FontAwesome -->
     <link href='css/all.css' rel='stylesheet'>
 
-
     <title>NASFAA</title>
   </head>
 
   <body>
-      <div class='navStyles'>
-          <nav class='navbar navbar-dark navbar-expand-lg container'>
-              <div class="container navContainer">
-                  <a class='navbar-brand' href='#'>
-                      <img src='images/nasfaa_white.png' alt='logo' class='logo'>
-                      <img src='images/nasfaa_askregs_white.png' alt='logo' class='logo'>
-                  </a>
-                  <button class='navbar-toggler' 
-                      type='button' 
-                      data-toggle='collapse' 
-                      data-target='#toggleNav'
-                      aria-controls='toggleNav'
-                      aria-expanded='false'
-                      aria-label='Toggle Navigation'>
-                      <span class='fas fa-bars'></span>    
-                  </button>
-                  <div class='collapse navbar-collapse navLinkContainer' id='toggleNav'>
-                      <div class='navbar-nav'>
-                          <a class='nav-item nav-link' href='#'>Search Knowledgebase</a>
-                          <a class='nav-item nav-link' href='#'>Resources</a>
-                          <a class='nav-item nav-link' href='#'>Ask a Question</a>
-                          <a class='nav-item nav-link' href='#'>MyAskRegs</a>
-                          <div class='dropdown login-dropdown'>
-                              <a class='nav-item nav-link dropdown-toggle' 
-                              data-toggle='dropdown' id='loginDropdown'
-                              aria-haspopup='true' aria-expanded='false'
-                              >Hi, Carrie!</a>
-                              <div class='dropdown-menu' aria-labelledby='loginDropdown'>
-                                  <button class='btn btn-orange'>Logout</button>
-                              </div>
-                          </div>
-                      </div> <!-- navbar-nav -->
-                  </div> <!-- collapse navbar-collapse navContainer -->
-      
-                  <!-- <div class='loginContainer'>
-                      <div class='dropdown login-dropdown'>
-                          <a class='nav-link dropdown-toggle' 
-                          data-toggle='dropdown' id='loginDropdown'
-                          aria-haspopup='true' aria-expanded='false'
-                          >Carrie</a>
-                          <div class='dropdown-menu' aria-labelledby='loginDropdown'>
-                              <button class='btn btn-orange'>Logout</button>
-                          </div>
-                      </div>
-                  </div> -->
-      
-              </div>  
-          </nav>
-      </div>
+    <div class='navStyles'>
+        <nav class='navbar navbar-dark navbar-expand-lg container'>
+            <div class='container navContainer'>
+                <a class='navbar-brand' href='#'>
+                    <img src='images/nasfaa_white.png' alt='logo' class='logo'>
+                    <img src='images/nasfaa_askregs_white.png' alt='logo' class='logo'>
+                </a>
+                <button class='navbar-toggler' 
+                    type='button' 
+                    data-toggle='collapse' 
+                    data-target='#toggleNav'
+                    aria-controls='toggleNav'
+                    aria-expanded='false'
+                    aria-label='Toggle Navigation'>
+                    <span class='fas fa-bars'></span>    
+                </button>
+                <div class='collapse navbar-collapse navLinkContainer' id='toggleNav'>
+                    <div class='navbar-nav'>
+                        <a class='nav-item nav-link' href='#'>Search Knowledgebase</a>
+                        <a class='nav-item nav-link' href='#'>Resources</a>
+                        <a class='nav-item nav-link' href='#'>Ask a Question</a>
+                        <a class='nav-item nav-link' href='#'>MyAskRegs</a>
+                        <div class='dropdown login-dropdown'>
+                            <a class='nav-item nav-link dropdown-toggle' 
+                            data-toggle='dropdown' id='loginDropdown'
+                            aria-haspopup='true' aria-expanded='false'
+                            >Hi, Carrie!</a>
+                            <div class='dropdown-menu' aria-labelledby='loginDropdown'>
+                                <button class='btn btn-orange'>Logout</button>
+                            </div><!-- dropdown-menu -->
+                        </div><!-- dropdown login-dropdown -->
+                    </div> <!-- navbar-nav -->
+                </div> <!-- collapse navbar-collapse navContainer -->
     
+                <!-- <div class='loginContainer'>
+                    <div class='dropdown login-dropdown'>
+                        <a class='nav-link dropdown-toggle' 
+                        data-toggle='dropdown' id='loginDropdown'
+                        aria-haspopup='true' aria-expanded='false'
+                        >Carrie</a>
+                        <div class='dropdown-menu' aria-labelledby='loginDropdown'>
+                            <button class='btn btn-orange'>Logout</button>
+                        </div>
+                    </div>
+                </div> -->
+    
+            </div>  <!-- container navContainer -->
+        </nav>
+    </div> <!-- navStyles -->
     <div class='my-0 py-0' id='ask-regs-accordion'>
         <div class='row askregs m-0' 
             onclick='showHideRegs()'>
@@ -81,30 +79,30 @@
                 </p>
             </a>
         </div><!-- row -->
-            <div id='ask-regs-all'
-                class='regs hide-all-regs'
-                onclick='showHideRegs()'>
-                <div class="container">
-                    <div class='row row-cols-1 row-cols-lg-4 v-separator-alert' >
-                        <div class='col alert-col'>
-                            <h6 class='alert-header'>Coronavirus: </h6>
-                            <p class='alert-content'>Refer to AskRegs Knowledgebase Q&A, Where Can I Find Guidance Related to the Coronavirus (COVID-19)?</p>
-                        </div>
-                        <div class='col alert-col'>  
-                            <h6 class='alert-header'>Broken IFAP Links:  </h6>
-                            <p class='alert-content'>Due to site-wide changes on the Information for Financial Aid Professionals (IFAP) website in February, links from Knowledgebase Q&As may be broken. We are working to reconnect these as soon as possible. In the meantime, if you need to find the referenced documents, please visit the IFAP home page and navigate to the intended item.</p>
-                        </div>
-                        <div class='col alert-col'>
-                            <h6 class='alert-header'>Revised Term Lengths:</h6>
-                            <p class='alert-content'>In the November 5, 2019 Electronic Announcement, Revised Policy for Standard Term Length, ED revised the definitions of standard terms. This guidance became effective immediately on the date of posting. As you review Q&As within the AskRegs Knowledgebase, please consider the answers within the context of ED’s new guidance and examples. We will be updating affected Knowledgebase Q&As over the coming weeks.</p>
-                        </div>
-                        <div class='col alert-col'>
-                            <h6 class='alert-header'>Coronavirus:  </h6>
-                            <p class='alert-content'>Refer to AskRegs Knowledgebase Q&A, Where Can I Find Guidance Related to the Coronavirus (COVID-19)?</p>
-                        </div>
-                    </div><!-- row -->
-                </div>
-            </div><!-- ask-regs-all container -->
+        <div id='ask-regs-all'
+            class='regs hide-all-regs'
+            onclick='showHideRegs()'>
+            <div class='container'>
+                <div class='row row-cols-1 row-cols-lg-4 v-separator-alert' >
+                    <div class='col alert-col'>
+                        <h6 class='alert-header'>Coronavirus: </h6>
+                        <p class='alert-content'>Refer to AskRegs Knowledgebase Q&A, Where Can I Find Guidance Related to the Coronavirus (COVID-19)?</p>
+                    </div>
+                    <div class='col alert-col'>  
+                        <h6 class='alert-header'>Broken IFAP Links:  </h6>
+                        <p class='alert-content'>Due to site-wide changes on the Information for Financial Aid Professionals (IFAP) website in February, links from Knowledgebase Q&As may be broken. We are working to reconnect these as soon as possible. In the meantime, if you need to find the referenced documents, please visit the IFAP home page and navigate to the intended item.</p>
+                    </div>
+                    <div class='col alert-col'>
+                        <h6 class='alert-header'>Revised Term Lengths:</h6>
+                        <p class='alert-content'>In the November 5, 2019 Electronic Announcement, Revised Policy for Standard Term Length, ED revised the definitions of standard terms. This guidance became effective immediately on the date of posting. As you review Q&As within the AskRegs Knowledgebase, please consider the answers within the context of ED’s new guidance and examples. We will be updating affected Knowledgebase Q&As over the coming weeks.</p>
+                    </div>
+                    <div class='col alert-col'>
+                        <h6 class='alert-header'>Coronavirus:  </h6>
+                        <p class='alert-content'>Refer to AskRegs Knowledgebase Q&A, Where Can I Find Guidance Related to the Coronavirus (COVID-19)?</p>
+                    </div>
+                </div><!-- row -->
+            </div>
+        </div><!-- ask-regs-all container -->
     </div><!-- accordion askregs -->    
     <div class='welcome '>
         <div class='container'>
@@ -122,7 +120,8 @@
                 </div><!-- input-group -->
             </div><!-- row -->
             <h5 class='welcome-header'>Welcome to NASFAA’s AskRegs Knowledgebase!</h5>
-            <p class='welcome-text'>NASFAA’s AskRegs provides a searchable Knowledgebase of answers to financial aid administrators' questions. Get started by browsing or searching the large library of questions and responses for an immediate answer. If you can't find an answer to your specific question, select “Questions” above to begin the submission process.
+            <p class='welcome-text'>
+                NASFAA’s AskRegs provides a searchable Knowledgebase of answers to financial aid administrators' questions. Get started by browsing or searching the large library of questions and responses for an immediate answer. If you can't find an answer to your specific question, select “Questions” above to begin the submission process.
 
                 Our experts will thoroughly research your question and provide you a comprehensive answer, including any applicable regulatory citations. That question and answer may then be added (without identifying information) as appropriate to further expand the Knowledgebase Q&A library.
             </p>
@@ -145,7 +144,6 @@
         <h5 class='announcement-header'>Announcement Header Here</h5>
         <p class='announcement-text'>Lorem ipsum dolor sit amet, consectetur, adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div><!-- container announcement-->
-
     <div class='container main-area'>
         <div class='row row-cols-1 row-cols-md-2'>
             <div class='main-inside-left col col-md-8'>
@@ -174,7 +172,7 @@
                                     Is a Student in Temporary Guardianship Automatically Considered Independent?
                                 </p>
                                 <button class='btn btn-vmore' style='background-color: #ec9825; color: white'> VIEW MORE</button>
-                            </div>
+                            </div><!-- card-header -->
                         </section>
                     </div><!-- col cardSize -->
                     <div class='col cardSize'>
@@ -255,7 +253,7 @@
                                     Is a Student in Temporary Guardianship Automatically Considered Independent?
                                 </p>
                                 <button class='btn btn-vmore' style='background-color: #78c06d; color: white'> VIEW MORE</button>
-                            </div>
+                            </div><!-- card-header -->
                         </section>
                     </div><!-- col cardSize -->
                 </div><!-- row row-cols-1 row-cols-sm-2 -->      
@@ -266,14 +264,12 @@
                         <section class='card' id='explore-categories'>
                             <div class='card-header'>
                                 <h4  class='card-title'>Explore Categories</h4>
-
-
                                 <div class='category'>
                                     <span class='category-tag'>   
                                         <p class='category-text'>Administrative Capability</p>
                                         <!-- <div class='tag-right'></div> -->
                                     </span>
-                                </div>
+                                </div><!-- category -->
                                     <!-- <span class='category-br'>   
                                         <p class='category-text'>Administrative Capability</p>
                                     </span>
@@ -297,145 +293,145 @@
                                         <p class='category-text'>Agreements Between Schools</p>
                                         <!-- <div class='tag-right'></div> -->
                                     </span>
-                                </div>
+                                </div><!-- category -->
                                 <div class='category'>
                                     <span class='category-tag'>   
                                         <p class='category-text'>Application Processing</p>
                                         <!-- <div class='tag-right'></div> -->
                                     </span>
-                                </div>
+                                </div><!-- category -->
                                 <div class='category'>
                                     <span class='category-tag'>   
                                         <p class='category-text'>Cash Management</p>
                                         <!-- <div class='tag-right'></div> -->
                                     </span>
-                                </div>
+                                </div><!-- category -->
                                 <div class='category'>
                                     <span class='category-tag'>   
                                         <p class='category-text'>Consumer Information</p>
                                         <!-- <div class='tag-right'></div> -->
                                     </span>
-                                </div>
+                                </div><!-- category -->
                                 <div class='category'>
                                     <span class='category-tag'>   
                                         <p class='category-text'>Cost of Attendance</p>
                                         <!-- <div class='tag-right'></div> -->
                                     </span>
-                                </div>
+                                </div><!-- category -->
                                 <div class='category'>
                                     <span class='category-tag'>   
                                         <p class='category-text'>Direct Loan/FFEL</p>
                                         <!-- <div class='tag-right'></div> -->
                                     </span>
-                                </div>
+                                </div><!-- category -->
                                 <div class='category'>
                                     <span class='category-tag'>   
                                         <p class='category-text'>FSEOG</p>
                                         <!-- <div class='tag-right'></div> -->
                                     </span>
-                                </div>
+                                </div><!-- category -->
                                 <div class='category'>
                                     <span class='category-tag'>   
                                         <p class='category-text'>FWS</p>
                                         <!-- <div class='tag-right'></div> -->
                                     </span>
-                                </div>
+                                </div><!-- category -->
                                 <div class='category'>
                                     <span class='category-tag'>   
                                         <p class='category-text'>Institutional Eligibility</p>
                                         <!-- <div class='tag-right'></div> -->
                                     </span>
-                                </div>
+                                </div><!-- category -->
                                 <div class='category'>
                                     <span class='category-tag'>   
                                         <p class='category-text'>Need Analysis</p>
                                         <!-- <div class='tag-right'></div> -->
                                     </span>
-                                </div>
+                                </div><!-- category -->
                                 <div class='category'>
                                     <span class='category-tag'>   
                                         <p class='category-text'>Non-Title IV Aid</p>
                                         <!-- <div class='tag-right'></div> -->
                                     </span>
-                                </div>
+                                </div><!-- category -->
                                 <div class='category'>
                                     <span class='category-tag'>   
                                         <p class='category-text'>Overawards/Overpackaging</p>
                                         <!-- <div class='tag-right'></div> -->
                                     </span>
-                                </div>
+                                </div><!-- category -->
                                 <div class='category'>
                                     <span class='category-tag'>   
                                         <p class='category-text'>Packaging</p>
                                         <!-- <div class='tag-right'></div> -->
                                     </span>
-                                </div>
+                                </div><!-- category -->
                                 <div class='category'>
                                     <span class='category-tag'>   
                                         <p class='category-text'>Perkins</p>
                                         <!-- <div class='tag-right'></div> -->
                                     </span>
-                                </div>
+                                </div><!-- category -->
                                 <div class='category'>
                                     <span class='category-tag'>   
                                         <p class='category-text'>Professional Judgment</p>
                                         <!-- <div class='tag-right'></div> -->
                                     </span>
-                                </div>
+                                </div><!-- category -->
                                 <div class='category'>
                                     <span class='category-tag'>   
                                         <p class='category-text'>Program Eligibility</p>
                                         <!-- <div class='tag-right'></div> -->
                                     </span>
-                                </div>
+                                </div><!-- category -->
                                 <div class='category'>
                                     <span class='category-tag'>   
                                         <p class='category-text'>Recordkeeping</p>
                                         <!-- <div class='tag-right'></div> -->
                                     </span>
-                                </div>
+                                </div><!-- category -->
                                 <div class='category'>
                                     <span class='category-tag'>   
                                         <p class='category-text'>Reporting</p>
                                         <!-- <div class='tag-right'></div> -->
                                     </span>
-                                </div>
+                                </div><!-- category -->
                                 <div class='category'>
                                     <span class='category-tag'>   
                                         <p class='category-text'>Return of Title IV Funds</p>
                                         <!-- <div class='tag-right'></div> -->
                                     </span>
-                                </div>
+                                </div><!-- category -->
                                 <div class='category'>
                                     <span class='category-tag'>   
                                         <p class='category-text'>SAP</p>
                                         <!-- <div class='tag-right'></div> -->
                                     </span>
-                                </div>
+                                </div><!-- category -->
                                 <div class='category'>
                                     <span class='category-tag'>   
                                         <p class='category-text'>Student Eligibility</p>
                                         <!-- <div class='tag-right'></div> -->
                                     </span>
-                                </div>
+                                </div><!-- category -->
                                 <div class='category'>
                                     <span class='category-tag'>   
                                         <p class='category-text'>Tax Issues</p>
                                         <!-- <div class='tag-right'></div> -->
                                     </span>
-                                </div>
+                                </div><!-- category -->
                                 <div class='category'>
                                     <span class='category-tag'>   
                                         <p class='category-text'>TEACH Grant</p>
                                         <!-- <div class='tag-right'></div> -->
                                     </span>
-                                </div>
+                                </div><!-- category -->
                                 <div class='category'>
                                     <span class='category-tag'>   
                                         <p class='category-text'>Verification</p>
                                         <!-- <div class='tag-right'></div> -->
                                     </span>
-                                </div>
+                                </div><!-- category -->
                             </div><!-- card-header -->
                         </section>
                     </div><!-- col cardSize -->
@@ -454,13 +450,13 @@
                     F: (202) 785-1487 <br>
                     E: info@nasfaa.org 
                     </p>
-                </div>
+                </div><!-- footerNav -->
                 <div class='footerNav'>
                     <a class='nav-item nav-link footer-link' href='#'>Search Knowledgebase</a>
                     <a class='nav-item nav-link footer-link' href='#'>Resources</a>
                     <a class='nav-item nav-link footer-link' href='#'>Ask a Question</a>
                     <a class='nav-item nav-link footer-link' href='#'>MyAskRegs</a>
-                </div>
+                </div><!-- footerNav -->
                 <div class='footerNavSocial'>
                     <a class='social' href='#'>
                         <i class='fab fa-linkedin'></i>                                
@@ -471,7 +467,7 @@
                     <a class='social' href='#'>
                         <i class='fab fa-twitter'></i>
                     </a>                                
-                </div>
+                </div><!-- footerNavSocial -->
             </div><!-- navbar-nav -->
         </section>
         <!-- <button class='navbar-toggler footer-toggler' 

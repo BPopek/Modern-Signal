@@ -24,10 +24,9 @@ function showHideRegs() {
 }
 
 $(document).ready(function() {
+    let childWidth = $('.category-tag').height()
+    $('.tag-right').width(childWidth);
 
-    var childWidth = $(".category-tag").height()
-    $(".tag-right").width(childWidth);
-
-    var childHeight = $(".category-tag").height()
-    $(".tag-right").height(childHeight);
+    let childHeight = $('.category-tag').height()
+    $('.tag-right').height(childHeight);
 })
