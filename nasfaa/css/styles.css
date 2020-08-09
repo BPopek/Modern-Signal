@@ -45,7 +45,7 @@ p {
 }
 .nav-link {
     color: white !important;
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 10px;
     padding: 5px 0px 5px 15px !important;
     user-select: none;
@@ -83,45 +83,59 @@ p {
     user-select: none;
 } */
 .btn-orange {
-    background-color: #ec9825;
-    margin: 10px;
+    /* background-color: #ec9825; */
+    /* margin: 10px; */
+    font-size: 16px;
 }
 .dropdown-menu {
-    min-width: 100px !important;
-    max-width: 100px !important;
+    min-width: 135px !important;
+    max-width: 135px !important;
+    /* border: 2px solid #23a2e0; */
+
 }
 div.dropdown-menu.show {
-    background-color: rgba(255, 255, 255, 0.836);
+    background-color: rgba(255, 255, 255, 0.89);
     border-radius: 0;
 }
 .askregs {
-    background-color: #a8bac4;
+    background-color: #a8bac4 !important;
     box-sizing: border-box;
     width: 100%;
     display: flex;
+    position: relative;
     -webkit-user-select: none;        
     -moz-user-select: none; 
     -ms-user-select: none;
         user-select: none;
     justify-content: space-between;
     height: 44px;
-    z-index: 999 !important;
+    /* z-index: 999 !important; */
 }
 #ask-regs-accordion {
     background-color: #a8bac4;
-    height: 44px;
-    z-index: 999 !important;
-    margin: 25px auto;
+    display: block;
+    position: relative;
+    /* z-index: 999 !important; */
 }
 #ask-regs-header {
     color: #ff0000;
     text-decoration: none;
     font-weight: 600;
     font-size: 20px;
-    z-index: 999 !important;
+    /* z-index: 999 !important; */
     display: flex;
     justify-content: space-between;
     margin: auto;
+}
+.accordian-hide {
+    display: block;
+    position: relative;
+    height: 44px !important;
+}
+.accordian-show {
+    display: block;
+    position: relative;
+    margin: 0;
 }
 .alertHead {
     font-family: 'Open Sans';
@@ -226,10 +240,11 @@ div.dropdown-menu.show {
   }
 .regs {
     position: relative;
-    background-color: #a8bac4;
+    display: block;
+    background-color: #a8bac4 !important;
     justify-content: center;
     padding: 15px 50px;
-    z-index: 999 !important;
+    /* z-index: 999 !important; */
     width: 100%;
     margin: 0 auto !important;
 }
@@ -261,6 +276,7 @@ div.dropdown-menu.show {
 .v-separator-alert {
     margin: auto;
     justify-content: center;
+    background-color: #a8bac4 !important;
 }
 .v-separator-alert .col:first-child {
     border-bottom: 1px solid black;
@@ -280,13 +296,19 @@ div.dropdown-menu.show {
     margin-right: 15px;
     position: relative;
 }
+.ask-regs-all {
+    display: block;
+    position: relative;
+    margin: 25px auto 0 !important;
+    background-color: #a8bac4 !important;
+}
 .regs.toggle-show-all-regs {
     display: block;
     position: relative;
-    margin: auto !important;
+    margin: 0 auto !important;
     padding-bottom: 25px;
-    z-index: 1000 !important;
-    background-color: #a8bac4;
+  background-color: #a8bac4 !important;
+    /* z-index: 1000 !important; */
     -webkit-animation: slide-in-top 1s  ease-in-out both;
         animation: slide-in-top 1s  ease-in-out both;
 }
@@ -319,7 +341,7 @@ div.dropdown-menu.show {
             transform: scaleY(0);
             transform-origin: top;
         opacity: 1;
-    }
+      }
     100% {
         -webkit-transform: translateY(0);
         -webkit-transform: scaleY(1);
@@ -328,7 +350,7 @@ div.dropdown-menu.show {
             transform: scaleY(1);
             transform-origin: top;
         opacity: 1;
-    }
+      }
 }
 .regs.hide-all-regs {
     display: none;
@@ -337,7 +359,9 @@ div.dropdown-menu.show {
     display: block;
     position: relative;
     margin: auto;
-    z-index: 1000 !important;
+    height: 44px !important;
+    background-color: #a8bac4 !important;
+    /* z-index: 1000 !important; */
 	-webkit-animation: slide-out-top 1s  ease-in-out both;
         animation: slide-out-top 1s  ease-in-out both;
 }
@@ -350,7 +374,8 @@ div.dropdown-menu.show {
               transform: scaleY(1);
               transform-origin: top;
         opacity: 1;
-        z-index: 1000 !important;
+        background-color: #a8bac4 !important;
+        /* z-index: 1000 !important; */
     }
     100% {
         -webkit-transform: translateY(-100px);
@@ -360,7 +385,8 @@ div.dropdown-menu.show {
               transform: scaleY(0);
               transform-origin: top;
         opacity: 1;
-        z-index: 1000 !important;
+        background-color: #a8bac4 !important;
+        /* z-index: 1000 !important; */
     }
 }
   @keyframes slide-out-top {
@@ -372,7 +398,8 @@ div.dropdown-menu.show {
               transform: scaleY(1);
               transform-origin: top;
         opacity: 1;
-        z-index: 1000 !important;
+        background-color: #a8bac4 !important;
+        /* z-index: 1000 !important; */
     }
     100% {
         -webkit-transform: translateY(-100px);
@@ -381,8 +408,10 @@ div.dropdown-menu.show {
               transform: translateY(-100px);
               transform: scaleY(0);
               transform-origin: top;
-        opacity: 1;     
-        z-index: 1000 !important;
+        opacity: 1;        
+        background-color: #a8bac4 !important;
+ 
+        /* z-index: 1000 !important; */
     }
 }
 .welcome {
@@ -458,6 +487,10 @@ div.dropdown-menu.show {
 .card-text {
     text-align: left;
 }
+.card-text:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
 /* .cardSize {
     padding: 0;
 } */
@@ -474,10 +507,11 @@ div.dropdown-menu.show {
     width: auto;
     margin-right: 2px;
     padding: 2px 4px;
-    border-top: 2px solid #dedede;
+    border: 2px solid #dedede;
+    /* border-top: 2px solid #dedede;
     border-left: 2px solid #dedede;
-    border-bottom: 2px solid #dedede;
-    border-radius: 1px 4px 4px 1px;
+    border-bottom: 2px solid #dedede; */
+    border-radius: 1px;
   }
 .tag-right {
     position: absolute;
@@ -570,11 +604,12 @@ p.category-text {
     text-align: left;
     margin: 0;
     padding: 0;
+    font-size: 14px;
 }
 .footer-link {
     text-decoration: underline;
     padding: 0px !important;
-    font-size: 16px;
+    font-size: 14px;
 }
 .copyright {
     color: white;
@@ -582,6 +617,7 @@ p.category-text {
     padding-bottom: 15px;
     text-align: left;
     margin: 0 auto;
+    font-size: 14px;
 }
 .bottomContainer {
     margin: auto;

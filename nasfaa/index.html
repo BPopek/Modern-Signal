@@ -39,16 +39,29 @@
                         <a class='nav-item nav-link' href='#'>Search Knowledgebase</a>
                         <a class='nav-item nav-link' href='#'>Resources</a>
                         <a class='nav-item nav-link' href='#'>Ask a Question</a>
-                        <a class='nav-item nav-link' href='#'>MyAskRegs</a>
+                        
                         <div class='dropdown login-dropdown'>
+                            <!-- <a class='nav-item nav-link' href='#'>MyAskRegs</a> -->
                             <a class='nav-item nav-link dropdown-toggle' 
                             data-toggle='dropdown' id='loginDropdown'
                             aria-haspopup='true' aria-expanded='false'
-                            >Hi, Carrie!</a>
+                            >MyAskRegs</a>
                             <div class='dropdown-menu' aria-labelledby='loginDropdown'>
+                                <button class='btn btn-orange'>My Questions</button>
+                                <button class='btn btn-orange'>Favorites</button>
+                                <button class='btn btn-orange'>Login/Logout</button>
+                            </div> 
+                              
+                            <!-- <a class='nav-item nav-link dropdown-toggle' 
+                            data-toggle='dropdown' id='loginDropdown'
+                            aria-haspopup='true' aria-expanded='false'
+                            >Hi, Carrie!</a> -->
+                            <!-- <div class='dropdown-menu' aria-labelledby='loginDropdown'>
                                 <button class='btn btn-orange'>Logout</button>
-                            </div><!-- dropdown-menu -->
+                            </div>  -->
+                                        <!-- dropdown-menu -->
                         </div><!-- dropdown login-dropdown -->
+
                     </div> <!-- navbar-nav -->
                 </div> <!-- collapse navbar-collapse navContainer -->
     
@@ -67,7 +80,7 @@
             </div>  <!-- container navContainer -->
         </nav>
     </div> <!-- navStyles -->
-    <div class='my-0 py-0' id='ask-regs-accordion'>
+    <div class='my-0 py-0 accordian-hide' id='ask-regs-accordion'>
         <div class='row askregs m-0' 
             onclick='showHideRegs()'>
             <a id='ask-regs-header' 
@@ -101,7 +114,7 @@
                         <p class='alert-content'>Refer to AskRegs Knowledgebase Q&A, Where Can I Find Guidance Related to the Coronavirus (COVID-19)?</p>
                     </div>
                 </div><!-- row -->
-            </div>
+            </div><!-- container -->
         </div><!-- ask-regs-all container -->
     </div><!-- accordion askregs -->    
     <div class='welcome '>
