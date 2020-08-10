@@ -90,8 +90,6 @@ p {
 .dropdown-menu {
     min-width: 135px !important;
     max-width: 135px !important;
-    /* border: 2px solid #23a2e0; */
-
 }
 div.dropdown-menu.show {
     background-color: rgba(255, 255, 255, 0.89);
@@ -244,7 +242,7 @@ div.dropdown-menu.show {
     background-color: #a8bac4 !important;
     justify-content: center;
     padding: 15px 50px;
-    /* z-index: 999 !important; */
+    z-index: 999 !important;
     width: 100%;
     margin: 0 auto !important;
 }
@@ -307,12 +305,12 @@ div.dropdown-menu.show {
     position: relative;
     margin: 0 auto !important;
     padding-bottom: 25px;
-  background-color: #a8bac4 !important;
+    background-color: #a8bac4 !important;
     /* z-index: 1000 !important; */
-    -webkit-animation: slide-in-top 1s  ease-in-out both;
-        animation: slide-in-top 1s  ease-in-out both;
+    -webkit-animation: slide-in-top-SHOW 500ms  ease-in-out both;
+        animation: slide-in-top-SHOW 500ms  ease-in-out both;
 }
- @-webkit-keyframes slide-in-top {
+ @-webkit-keyframes slide-in-top-SHOW {
     0% {
       -webkit-transform: translateY(-100px);
       -webkit-transform: scaleY(0);
@@ -321,6 +319,7 @@ div.dropdown-menu.show {
             transform: scaleY(0);
             transform-origin: top;
       opacity: 1;
+      height: 44px !important;
     }
     100% {
       -webkit-transform: translateY(0);
@@ -330,9 +329,10 @@ div.dropdown-menu.show {
             transform: scaleY(1);
             transform-origin: top;
       opacity: 1;
+      height: auto;
     }
 }
-  @keyframes slide-in-top {
+  @keyframes slide-in-top-SHOW {
     0% {
         -webkit-transform: translateY(-100px);
         -webkit-transform: scaleY(0);
@@ -341,6 +341,7 @@ div.dropdown-menu.show {
             transform: scaleY(0);
             transform-origin: top;
         opacity: 1;
+        height: 44px !important;
       }
     100% {
         -webkit-transform: translateY(0);
@@ -350,6 +351,7 @@ div.dropdown-menu.show {
             transform: scaleY(1);
             transform-origin: top;
         opacity: 1;
+        height: auto;
       }
 }
 .regs.hide-all-regs {
@@ -359,13 +361,13 @@ div.dropdown-menu.show {
     display: block;
     position: relative;
     margin: auto;
-    height: 44px !important;
+    /* height: 44px !important; */
     background-color: #a8bac4 !important;
     /* z-index: 1000 !important; */
-	-webkit-animation: slide-out-top 1s  ease-in-out both;
-        animation: slide-out-top 1s  ease-in-out both;
+	-webkit-animation: slide-out-top-HIDE 550ms  ease-in-out both;
+        animation: slide-out-top-HIDE 550ms  ease-in-out both;
 }
- @-webkit-keyframes slide-out-top {
+ @-webkit-keyframes slide-out-top-HIDE {
     0% {
         -webkit-transform: translateY(0);
         -webkit-transform: scaleY(1);
@@ -374,7 +376,8 @@ div.dropdown-menu.show {
               transform: scaleY(1);
               transform-origin: top;
         opacity: 1;
-        background-color: #a8bac4 !important;
+        width: 100vw;
+        height: auto;
         /* z-index: 1000 !important; */
     }
     100% {
@@ -385,11 +388,12 @@ div.dropdown-menu.show {
               transform: scaleY(0);
               transform-origin: top;
         opacity: 1;
-        background-color: #a8bac4 !important;
+        width: 100vw;
+        height: 44px !important;
         /* z-index: 1000 !important; */
     }
 }
-  @keyframes slide-out-top {
+  @keyframes slide-out-top-HIDE {
     0% {
         -webkit-transform: translateY(0);
         -webkit-transform: scaleY(1);
@@ -398,7 +402,9 @@ div.dropdown-menu.show {
               transform: scaleY(1);
               transform-origin: top;
         opacity: 1;
+        width: 100vw;
         background-color: #a8bac4 !important;
+        height: auto;
         /* z-index: 1000 !important; */
     }
     100% {
@@ -409,8 +415,9 @@ div.dropdown-menu.show {
               transform: scaleY(0);
               transform-origin: top;
         opacity: 1;        
-        background-color: #a8bac4 !important;
- 
+        width: 100vw;
+        height: 44px !important;
+        /* background-color: #a8bac4 !important; */
         /* z-index: 1000 !important; */
     }
 }
