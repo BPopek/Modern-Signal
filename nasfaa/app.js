@@ -31,10 +31,10 @@ function showHideRegs() {
     }
 }
 
-$(document).ready(function() {
-    let childWidth = $('.category-tag').height()
-    $('.tag-right').width(childWidth);
+// $(document).ready(function() {
+//     let childWidth = $('.category-tag').height()
+//     $('.tag-right').width(childWidth);
 
-    let childHeight = $('.category-tag').height()
-    $('.tag-right').height(childHeight);
-})
+//     let childHeight = $('.category-tag').height()
+//     $('.tag-right').height(childHeight);
+// })

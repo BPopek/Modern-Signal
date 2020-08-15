@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset='utf-8'>
+    <link rel="icon" href="./images/nasfaa_icon.png" />
+    <link rel="apple-touch-icon" href="./images/nasfaa_icon.png" />
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+
+    <link rel='stylesheet' href='node_modules/jquery/dist/jquery.js'> 
+
+    <!-- Bootstrap CSS -->
+    <link rel='stylesheet' href='css/bootstrap.min.css'>
+    <link rel='stylesheet' href='css/styles.css'>
+   
+    <!-- FontAwesome -->
+    <link href='css/all.css' rel='stylesheet'>
+    <title>Ask A Question</title>
+
+</head>
+<body>
+    <div class='navStyles'>
+        <nav class='navbar navbar-dark navbar-expand-lg container'>
+            <div class='container navContainer'>
+                <div class='navbar-brand' >
+                    <a href='index.html'>
+                        <img src='images/nasfaa_white.png' alt='logo' class='logo'>
+                    </a>
+                    <a href='#'>
+                        <img src='images/nasfaa_askregs_white.png' alt='logo' class='logo'>
+                    </a>
+                </div>
+                <button class='navbar-toggler' 
+                    type='button' 
+                    data-toggle='collapse' 
+                    data-target='#toggleNav'
+                    aria-controls='toggleNav'
+                    aria-expanded='false'
+                    aria-label='Toggle Navigation'>
+                    <span class='fas fa-bars'></span>    
+                </button>
+                <div class='collapse navbar-collapse navLinkContainer' id='toggleNav'>
+                    <div class='navbar-nav'>
+                        <a class='nav-item nav-link' href='search.html'>Search Knowledgebase</a>
+                        <a class='nav-item nav-link' href='#'>Resources</a>
+                        <a class='nav-item nav-link' href='ask-a-question.html'>Ask a Question</a>
+                        <div class='dropdown login-dropdown'>
+                            <a class='nav-item nav-link dropdown-toggle' 
+                            data-toggle='dropdown' id='loginDropdown'
+                            aria-haspopup='true' aria-expanded='false'
+                            >MyAskRegs</a>
+                            <div class='dropdown-menu' aria-labelledby='loginDropdown'>
+                                <button class='btn btn-orange'>
+                                    <a class='nav-item-dropdown' href='my-questions-myaskregs.html'>My Questions</a>
+                                </button>
+                                <button class='btn btn-orange'>
+                                    <a class='nav-item-dropdown' href='#'>Favorites</a>
+                                </button>
+                                <button class='btn btn-orange'>
+                                    <a class='nav-item-dropdown' href='#'>Login/Logout</a>
+                                </button>
+                            </div> 
+                        </div><!-- dropdown login-dropdown -->
+                    </div> <!-- navbar-nav -->
+                </div> <!-- collapse navbar-collapse navLinkContainer -->
+            </div> <!-- collapse navbar-collapse navContainer -->
+        </nav>
+    </div> <!-- navStyles -->
+    <div class='container main-area-question'>
+        <h4  class='card-title ask-question'>Ask A Question</h4>
+        <p class='question-intro'>Intro text can go here. This will be editable in the content management system. Intro text can go here. This will be editable in the content management system.</p>
+        <form>
+            <fieldset class='form-group offset-r-1'>
+                <div class='form-group row'>
+                    <p class='text-sm-left text-md-right col-sm-3 col-md-4'> <b>Name:</b></p>
+                        <p class='text-sm-left col-sm-4 col-md-7'> Carrie Conrad</p>
+                </div>
+                <div class='form-group row'>
+                    <p class='text-sm-left text-md-right col-sm-3 col-md-4'> <b>Institution:</b></p>
+                        <p class='text-sm-left col-sm-4 col-md-7'> NASFAA</p>
+                </div>
+
+                <div class='form-group row'>
+                    <label class='col-form-label text-md-right col-md-4 font-weight-bold' for='inputPhoneNumber'>*Preferred Phone Number:</label>
+                    <div class='col-md-7'>
+                        <input type='tel' class='form-control' id='inputPhoneNumber'>
+                        <small class='form-text text-muted'>Please provide your direct phone number so NASFAA can contact you with any questions.</small>
+                    </div>
+                </div>
+                <div class='form-group row'>
+                    <label class='col-form-label text-md-right col-md-4 font-weight-bold' for='inputCategory'>*Category:</label>
+                    <div class='col-md-7'>
+                        <select class='form-control' id='inputCategory'>  </select>
+                    </div>
+        
+                </div>
+                <div class='form-group row'>
+                    <label class='col-form-label text-md-right col-md-4 font-weight-bold' for='inputTopic'>*Topic (Limit to 7 words or less):</label>
+                    <div class='col-md-7'>
+                        <input type='text' class='form-control' id='inputTopic'>
+                    </div>
+                </div>
+                <div class='form-group row'>
+                    <label class='col-form-label text-md-right col-md-4 font-weight-bold' for='inputQuestionDetails'>*Question Details:</label>
+                    <div class='col-md-7'>
+                        <textarea class='form-control' id='inputQuestionDetails' rows='4'></textarea>
+                    </div>
+                </div>
+                <div class='form-group row'>
+                    <label class='col-form-label text-md-right col-md-4 font-weight-bold' for='inputAttachFiles'>Attach Supporting Files:
+                    </label>
+                    <div class='col-md-7'>
+                        <!-- <input type='text' class='form-control' id='inputAttachFiles'>
+                        <input type='file' class='form-control-file' id='inputAttachFiles'> -->
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="customFile">
+                            <label class="custom-file-label" for="customFile">Choose file</label>
+                          </div>
+                        <small class='form-text text-muted'>Please do not share any identifiable student information or attach password protected documents.</small>
+                        <div class='col-auto'>
+                            <p class='form-text' style='text-decoration: underline; text-align: left'>Add Another File</p>
+                        </div>
+                    </div>
+                </div>
+                <div class='form-group row'>
+                    <label class='form-check-label text-md-right col-md-4 font-weight-bold' for='inputMakeQuestionPrivate'>Make This Question Private:</label>
+                    <div class='col-md-7'>
+                        <div class='form-check form-check-inline'>
+                            <input type='checkbox' class='form-check-input mr-3' id='inputMakeQuestionPrivate'>
+                            <small class='form-text text-muted'>If selected, only the primary contact for your institution will see your question in your institution’s question history.</small>
+                        </div> <!-- form-check -->
+                    </div> <!-- col-md-8 -->
+                </div>
+                <div class='form-group row'>
+                    <div class='offset-md-4 col-auto'>
+                        <button type='submit' class='btn btn-custom'>Submit Question</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <nav class='navbar navbar-dark navbar-expand-lg bottomT'>
+        <section class='v-separator container'>
+            <div class='navbar-nav'>
+                <div class='footerNav'>
+                    <p class='address'>
+                    1801 Pennsylvania Avenue NW, Suite 850 <br>
+                    Washington, DC 20006-3606 <br>
+                    T: (202) 785-0453 <br>
+                    F: (202) 785-1487 <br>
+                    E: info@nasfaa.org 
+                    </p>
+                </div><!-- footerNav -->
+                <div class='footerNav'>
+                    <a class='nav-item nav-link footer-link' href='#'>Search Knowledgebase</a>
+                    <a class='nav-item nav-link footer-link' href='#'>Resources</a>
+                    <a class='nav-item nav-link footer-link' href='#'>Ask a Question</a>
+                    <a class='nav-item nav-link footer-link' href='#'>MyAskRegs</a>
+                </div><!-- footerNav -->
+                <div class='footerNavSocial'>
+                    <a class='social' href='#'>
+                        <i class='fab fa-linkedin'></i>                                
+                    </a>
+                    <a class='social' href='#'>
+                        <i class='fab fa-facebook-f'></i>
+                    </a>
+                    <a class='social' href='#'>
+                        <i class='fab fa-twitter'></i>
+                    </a>                                
+                </div><!-- footerNavSocial -->
+            </div><!-- navbar-nav -->
+        </section>
+     </nav>
+    <div class='row bottomB m-0'>
+        <div class='container bottomContainer'>
+            <p class='copyright'>© 2020 NASFAA. All rights reserved.</p>
+        </div><!-- container -->
+    </div><!-- row bottomB -->
+  
+    
+    <script src='node_modules/jquery/dist/jquery.js'></script>
+
+    <!-- Optional JavaScript -->
+    <!-- <script src='app.js'></script> -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src='js/jquery.slim.min.js'></script>
+    <script src='js/popper.min.js'></script>
+    <script src='js/bootstrap.min.js'></script>
+</body>
+</html>

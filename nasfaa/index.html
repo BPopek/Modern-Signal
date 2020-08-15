@@ -3,6 +3,9 @@
   <head>
     <!-- Required meta tags -->
     <meta charset='utf-8'>
+    <link rel="icon" href="./images/nasfaa_icon.png" />
+    <link rel="apple-touch-icon" href="./images/nasfaa_icon.png" />
+
     <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
 
     <link rel='stylesheet' href='node_modules/jquery/dist/jquery.js'> 
@@ -17,14 +20,18 @@
     <title>NASFAA</title>
   </head>
 
-  <body>
+  <body class='main-body'>
     <div class='navStyles'>
         <nav class='navbar navbar-dark navbar-expand-lg container'>
             <div class='container navContainer'>
-                <a class='navbar-brand' href='#'>
-                    <img src='images/nasfaa_white.png' alt='logo' class='logo'>
-                    <img src='images/nasfaa_askregs_white.png' alt='logo' class='logo'>
-                </a>
+                <div class='navbar-brand' >
+                    <a href='index.html'>
+                        <img src='images/nasfaa_white.png' alt='logo' class='logo'>
+                    </a>
+                    <a href='#'>
+                        <img src='images/nasfaa_askregs_white.png' alt='logo' class='logo'>
+                    </a>
+                </div>
                 <button class='navbar-toggler' 
                     type='button' 
                     data-toggle='collapse' 
@@ -36,18 +43,24 @@
                 </button>
                 <div class='collapse navbar-collapse navLinkContainer' id='toggleNav'>
                     <div class='navbar-nav'>
-                        <a class='nav-item nav-link' href='#'>Search Knowledgebase</a>
+                        <a class='nav-item nav-link' href='search.html'>Search Knowledgebase</a>
                         <a class='nav-item nav-link' href='#'>Resources</a>
-                        <a class='nav-item nav-link' href='#'>Ask a Question</a>
+                        <a class='nav-item nav-link' href='ask-a-question.html'>Ask a Question</a>
                         <div class='dropdown login-dropdown'>
                             <a class='nav-item nav-link dropdown-toggle' 
                             data-toggle='dropdown' id='loginDropdown'
                             aria-haspopup='true' aria-expanded='false'
                             >MyAskRegs</a>
                             <div class='dropdown-menu' aria-labelledby='loginDropdown'>
-                                <button class='btn btn-orange'>My Questions</button>
-                                <button class='btn btn-orange'>Favorites</button>
-                                <button class='btn btn-orange'>Login/Logout</button>
+                                <button class='btn btn-orange'>
+                                    <a class='nav-item-dropdown' href='my-questions-myaskregs.html'>My Questions</a>
+                                </button>
+                                <button class='btn btn-orange'>
+                                    <a class='nav-item-dropdown' href='#'>Favorites</a>
+                                </button>
+                                <button class='btn btn-orange'>
+                                    <a class='nav-item-dropdown' href='#'>Login/Logout</a>
+                                </button>
                             </div> 
 <!-- SAVING IN CASE LOGIN NEEDED IN NAV DROPDOWN -->
                             <!-- <a class='nav-item nav-link dropdown-toggle' 
@@ -446,7 +459,7 @@
         </div><!-- container -->
     </div><!-- row bottomB -->
   
-    
+
     <script src='node_modules/jquery/dist/jquery.js'></script>
 
     <!-- Optional JavaScript -->

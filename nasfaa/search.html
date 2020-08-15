@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset='utf-8'>
+    <link rel="icon" href="./images/nasfaa_icon.png" />
+    <link rel="apple-touch-icon" href="./images/nasfaa_icon.png" />
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+
+    <link rel='stylesheet' href='node_modules/jquery/dist/jquery.js'> 
+
+    <!-- Bootstrap CSS -->
+    <link rel='stylesheet' href='css/bootstrap.min.css'>
+    <link rel='stylesheet' href='css/styles.css'>
+   
+    <!-- FontAwesome -->
+    <link href='css/all.css' rel='stylesheet'>
+    <title>Search</title>
+
+</head>
+<body>
+    <div class='navStyles'>
+        <nav class='navbar navbar-dark navbar-expand-lg container'>
+            <div class='container navContainer'>
+                <div class='navbar-brand' >
+                    <a href='index.html'>
+                        <img src='images/nasfaa_white.png' alt='logo' class='logo'>
+                    </a>
+                    <a href='#'>
+                        <img src='images/nasfaa_askregs_white.png' alt='logo' class='logo'>
+                    </a>
+                </div>
+                <button class='navbar-toggler' 
+                    type='button' 
+                    data-toggle='collapse' 
+                    data-target='#toggleNav'
+                    aria-controls='toggleNav'
+                    aria-expanded='false'
+                    aria-label='Toggle Navigation'>
+                    <span class='fas fa-bars'></span>    
+                </button>
+                <div class='collapse navbar-collapse navLinkContainer' id='toggleNav'>
+                    <div class='navbar-nav'>
+                        <a class='nav-item nav-link' href='search.html'>Search Knowledgebase</a>
+                        <a class='nav-item nav-link' href='#'>Resources</a>
+                        <a class='nav-item nav-link' href='ask-a-question.html'>Ask a Question</a>
+                        <div class='dropdown login-dropdown'>
+                            <a class='nav-item nav-link dropdown-toggle' 
+                            data-toggle='dropdown' id='loginDropdown'
+                            aria-haspopup='true' aria-expanded='false'
+                            >MyAskRegs</a>
+                            <div class='dropdown-menu' aria-labelledby='loginDropdown'>
+                                <button class='btn btn-orange'>
+                                    <a class='nav-item-dropdown' href='my-questions-myaskregs.html'>My Questions</a>
+                                </button>
+                                <button class='btn btn-orange'>
+                                    <a class='nav-item-dropdown' href='#'>Favorites</a>
+                                </button>
+                                <button class='btn btn-orange'>
+                                    <a class='nav-item-dropdown' href='#'>Login/Logout</a>
+                                </button>
+                            </div> 
+                        </div><!-- dropdown login-dropdown -->
+                    </div> <!-- navbar-nav -->
+                </div> <!-- collapse navbar-collapse navLinkContainer -->
+            </div> <!-- collapse navbar-collapse navContainer -->
+        </nav>
+    </div> <!-- navStyles -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <nav class='navbar navbar-dark navbar-expand-lg bottomT'>
+        <section class='v-separator container'>
+            <div class='navbar-nav'>
+                <div class='footerNav'>
+                    <p class='address'>
+                    1801 Pennsylvania Avenue NW, Suite 850 <br>
+                    Washington, DC 20006-3606 <br>
+                    T: (202) 785-0453 <br>
+                    F: (202) 785-1487 <br>
+                    E: info@nasfaa.org 
+                    </p>
+                </div><!-- footerNav -->
+                <div class='footerNav'>
+                    <a class='nav-item nav-link footer-link' href='#'>Search Knowledgebase</a>
+                    <a class='nav-item nav-link footer-link' href='#'>Resources</a>
+                    <a class='nav-item nav-link footer-link' href='#'>Ask a Question</a>
+                    <a class='nav-item nav-link footer-link' href='#'>MyAskRegs</a>
+                </div><!-- footerNav -->
+                <div class='footerNavSocial'>
+                    <a class='social' href='#'>
+                        <i class='fab fa-linkedin'></i>                                
+                    </a>
+                    <a class='social' href='#'>
+                        <i class='fab fa-facebook-f'></i>
+                    </a>
+                    <a class='social' href='#'>
+                        <i class='fab fa-twitter'></i>
+                    </a>                                
+                </div><!-- footerNavSocial -->
+            </div><!-- navbar-nav -->
+        </section>
+     </nav>
+    <div class='row bottomB m-0'>
+        <div class='container bottomContainer'>
+            <p class='copyright'>© 2020 NASFAA. All rights reserved.</p>
+        </div><!-- container -->
+    </div><!-- row bottomB -->
+  
+    
+    <script src='node_modules/jquery/dist/jquery.js'></script>
+
+    <!-- Optional JavaScript -->
+    <!-- <script src='app.js'></script> -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src='js/jquery.slim.min.js'></script>
+    <script src='js/popper.min.js'></script>
+    <script src='js/bootstrap.min.js'></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
-body {
+.main-body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans';
@@ -10,6 +10,12 @@ body {
     background-size: 50%;
     background-repeat: no-repeat;
 }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+    box-sizing: border-box;
+}
 html {
     margin: 0;
     padding: 0;
@@ -17,6 +23,9 @@ html {
 }
 h5 {
     text-align: center;
+}
+a {
+    color: none;
 }
 p {
     text-align: center;
@@ -50,6 +59,7 @@ p {
     padding: 5px 0px 5px 15px !important;
     user-select: none;
 }
+
 .navbar-toggler {
     border: none;
     margin: 10px 0 0;
@@ -86,6 +96,9 @@ p {
     /* background-color: #ec9825; */
     /* margin: 10px; */
     font-size: 16px;
+}
+.nav-item-dropdown {
+    color: black;
 }
 .dropdown-menu {
     min-width: 135px !important;
@@ -619,8 +632,33 @@ p.category-text {
     position: relative;
 } 
 
+/* ASK A QUESTION */
+.ask-question {
+    margin: 50px auto 25px;
+}
+.question-intro {
+    text-align: left !important;
+}
+.input-label {
+    text-align: left !important;
+}
+.custom-file-input {
+    background-color: #14567c;
+}
+#inputMakeQuestionPrivate {
+    height: 25px;
+    width: 25px;
+}
+.btn-custom {
+    border-radius: 2px;
+    background-color: #14567c;
+    color: white;
+    margin-top: 20px;
+}
+
+
 @media only screen and (min-width: 575px) {
-    body {
+    .main-body {
         background-position: 99% 94% !important;
         background-size: 42% !important;
     }    
@@ -647,7 +685,7 @@ p.category-text {
 }
 
 @media only screen and (min-width: 767px) {
-    body {
+    .main-body {
         background-position: 99% 100% !important;
         background-size: 45% !important;
     }
@@ -673,7 +711,7 @@ p.category-text {
 }
 
 @media only screen and (min-width: 992px) {
-    body {
+    .main-body {
         background-position: 99% 94% !important;
         background-size: 42% !important;
     }
@@ -728,7 +766,7 @@ p.category-text {
 }
 
 @media only screen and (min-width: 1050px) {
-    body {
+    .main-body {
         background-position: 100% 97% !important;
         background-size: 42% !important;
     }
@@ -738,7 +776,7 @@ p.category-text {
     .regs {
         padding: 15px 125px;
     }
-    body {
+    .main-body {
         background-position: 100% 98% !important;
         background-size: 38% !important;
     }
