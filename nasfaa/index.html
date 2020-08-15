@@ -80,11 +80,11 @@
             </div>  <!-- container navContainer -->
         </nav>
     </div> <!-- navStyles -->
-    <div class='my-0 py-0 accordian-hide' id='ask-regs-accordion'>
+    <div class='my-0 py-0 accordian-show' id='ask-regs-accordion'>
         <div class='row askregs m-0' 
             onclick='showHideRegs()'>
             <a id='ask-regs-header' 
-                class='container fa collapsed-header'> 
+                class='container fa expanded-header'> 
                 <p class='textAnimation alertHead'>AskRegs Alerts</p>
                 <p class='textAnimation'>
                     <i class='far fa-caret-square-down alert-icons' id='toggle-alert-iconCaret' ></i>
@@ -92,8 +92,9 @@
                 </p>
             </a>
         </div><!-- row -->
+        <!--  class='regs hide-all-regs'   -->
         <div id='ask-regs-all'
-            class='regs hide-all-regs'
+            class='regs'
             onclick='showHideRegs()'>
             <div class='container'>
                 <div class='row row-cols-1 row-cols-lg-4 v-separator-alert' >

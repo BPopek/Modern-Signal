@@ -5,28 +5,27 @@ function showHideRegs() {
     let accordian = document.getElementById('ask-regs-accordion');
 
 
-    if(element.className == 'regs hide-all-regs') {
-        element.classList.remove('hide-all-regs');
-        element.classList.add('toggle-show-all-regs'); 
+    if(element.className == 'regs') {
+        element.classList.add('toggle-hide-all-regs');
+        element.classList.remove('toggle-show-all-regs'); 
+        iconElements.classList.toggle('expanded-header'); 
+        iconElements.classList.toggle('collapsed-header'); 
+        accordian.classList.add('accordian-hide');
+        accordian.classList.remove('accordian-show'); 
+    }
+    else if(element.className == 'regs toggle-hide-all-regs') {
+        element.classList.add('toggle-show-all-regs');
+        element.classList.remove('toggle-hide-all-regs');  
         iconElements.classList.toggle('expanded-header'); 
         iconElements.classList.toggle('collapsed-header'); 
         accordian.classList.remove('accordian-hide');
         accordian.classList.add('accordian-show'); 
     }
     else if(element.className == 'regs toggle-show-all-regs') {
-        element.classList.remove('toggle-show-all-regs');
-        element.classList.add('toggle-hide-all-regs');  
-        iconElements.classList.toggle('expanded-header'); 
-        iconElements.classList.toggle('collapsed-header'); 
-     
+        element.classList.add('toggle-hide-all-regs');   
+        element.classList.remove('toggle-show-all-regs');   
         accordian.classList.add('accordian-hide');
         accordian.classList.remove('accordian-show'); 
-    }
-    else if(element.className == 'regs toggle-hide-all-regs') {
-        element.classList.remove('toggle-hide-all-regs');   
-        element.classList.add('toggle-show-all-regs');   
-        accordian.classList.remove('accordian-hide');
-        accordian.classList.add('accordian-show'); 
         iconElements.classList.toggle('expanded-header'); 
         iconElements.classList.toggle('collapsed-header'); 
     }
