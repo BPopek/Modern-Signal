@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
     <!-- Required meta tags -->
     <meta charset='utf-8'>
-    <link rel="icon" href="./images/nasfaa_icon.png" />
-    <link rel="apple-touch-icon" href="./images/nasfaa_icon.png" />
+    <link rel='icon' href='./images/nasfaa_icon.png' />
+    <link rel='apple-touch-icon' href='./images/nasfaa_icon.png' />
     <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
 
     <link rel='stylesheet' href='node_modules/jquery/dist/jquery.js'> 
@@ -26,7 +26,7 @@
                     <a href='index.html'>
                         <img src='images/nasfaa_white.png' alt='logo' class='logo'>
                     </a>
-                    <a href='#'>
+                    <a href='article-details.html'>
                         <img src='images/nasfaa_askregs_white.png' alt='logo' class='logo'>
                     </a>
                 </div>
@@ -66,19 +66,176 @@
             </div> <!-- collapse navbar-collapse navContainer -->
         </nav>
     </div> <!-- navStyles -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div class='my-0 py-0 accordian-show' id='ask-regs-accordion'>
+        <div class='row askregs m-0' 
+            onclick='showHideRegs()'>
+            <a id='ask-regs-header' 
+                class='container fa expanded-header'> 
+                <p class='textAnimation alertHead'>AskRegs Alerts</p>
+                <p class='textAnimation'>
+                    <i class='far fa-caret-square-down alert-icons' id='toggle-alert-iconCaret' ></i>
+                    <i class='far fa-window-close alert-icons'  id='toggle-alert-iconX'></i>
+                </p>
+            </a>
+        </div><!-- row -->
+        <div id='ask-regs-all'
+            class='regs'
+            onclick='showHideRegs()'>
+            <div class='container'>
+                <div class='row row-cols-1 row-cols-lg-4 v-separator-alert' >
+                    <div class='col alert-col'>
+                        <h6 class='alert-header'>Coronavirus: </h6>
+                        <p class='alert-content'>Refer to AskRegs Knowledgebase Q&A, Where Can I Find Guidance Related to the Coronavirus (COVID-19)?</p>
+                    </div>
+                    <div class='col alert-col'>  
+                        <h6 class='alert-header'>Broken IFAP Links:  </h6>
+                        <p class='alert-content'>Due to site-wide changes on the Information for Financial Aid Professionals (IFAP) website in February, links from Knowledgebase Q&As may be broken. We are working to reconnect these as soon as possible. In the meantime, if you need to find the referenced documents, please visit the IFAP home page and navigate to the intended item.</p>
+                    </div>
+                    <div class='col alert-col'>
+                        <h6 class='alert-header'>Revised Term Lengths:</h6>
+                        <p class='alert-content'>In the November 5, 2019 Electronic Announcement, Revised Policy for Standard Term Length, ED revised the definitions of standard terms. This guidance became effective immediately on the date of posting. As you review Q&As within the AskRegs Knowledgebase, please consider the answers within the context of ED’s new guidance and examples. We will be updating affected Knowledgebase Q&As over the coming weeks.</p>
+                    </div>
+                    <div class='col alert-col'>
+                        <h6 class='alert-header'>Coronavirus:  </h6>
+                        <p class='alert-content'>Refer to AskRegs Knowledgebase Q&A, Where Can I Find Guidance Related to the Coronavirus (COVID-19)?</p>
+                    </div>
+                </div><!-- row -->
+            </div><!-- container -->
+        </div><!-- ask-regs-all container -->
+    </div><!-- accordion askregs -->    
+    <div class='container search-container'>
+        <h4  class='card-title page-head'>Search</h4>
+        <div class='row search-field'>
+            <div class='input-group'>
+                <input class='form-control' 
+                        type='search' 
+                        id='search-input'
+                        placeholder='Research Your Topic'>
+                <span class='input-group-append'>
+                    <button class='btn btn-search' type='button'>
+                        <i class='fa fa-search'></i>
+                    </button>
+                </span>
+            </div><!-- input-group -->
+        </div><!-- row -->
+    </div><!-- container -->
+    <div class='container search-container'>
+        <section>
+            <div class='row'>
+                <div class='col col-3'>
+                    <h6 class='filter-results'>Filter Results</h6>
+                    <div class='card-search'>
+                        <p class='search-category-box'>Category</p>
+                        <div class='search-category-line'></div>
+                        <div class='form-check search-category-div'>
+                            <input type='checkbox' class='form-check-input' id='need-analysis'>
+                            <label class='form-check-label search-page-category' for='need-analysis'>Need Analysis (98)</label>
+                        </div>
+                        <div class='form-check search-category-div'>
+                            <input type='checkbox' class='form-check-input' id='perkins'>
+                            <label class='form-check-label search-page-category' for='perkins'>Perkins (47)</label>
+                        </div>
+                        <div class='form-check search-category-div'>
+                            <input type='checkbox' class='form-check-input' id='cash-management'>
+                            <label class='form-check-label search-page-category' for='cash-management'>Cash Management (32)</label>
+                        </div>
+                        <div class='form-check search-category-div'>
+                            <input type='checkbox' class='form-check-input' id='tax-issues'>
+                            <label class='form-check-label search-page-category' for='tax-issues'>Tax Issues (18)</label>
+                        </div>
+                        <div class='form-check search-category-div'>
+                            <input type='checkbox' class='form-check-input' id='non-title-iv-aid'>
+                            <label class='form-check-label search-page-category' for='non-title-iv-aid'>Non-Title IV Aid (14)</label>
+                        </div>
+                        <div class='form-check search-category-div'>
+                            <input type='checkbox' class='form-check-input' id='consumer-information'>
+                            <label class='form-check-label search-page-category' for='consumer-information'>Consumer Information (11)</label>
+                        </div>
+                        <div class='form-check search-category-div'>
+                            <input type='checkbox' class='form-check-input' id='professional-judgement'>
+                            <label class='form-check-label search-page-category' for='professional-judgement'>Professional Judgment (9)</label>
+                        </div>
+                        <div class='form-check search-category-div'>
+                            <input type='checkbox' class='form-check-input' id='fws'>
+                            <label class='form-check-label search-page-category' for='fws'>FWS (7)</label>
+                        </div>
+                        <div class='form-check search-category-div'>
+                            <input type='checkbox' class='form-check-input' id='packaging'>
+                            <label class='form-check-label search-page-category' for='packaging'>Packaging (4)</label>
+                        </div>
+                        <div class='form-check search-category-div'>
+                            <input type='checkbox' class='form-check-input' id='sap'>
+                            <label class='form-check-label search-page-category' for='sap'>SAP (3)</label>
+                        </div>   
+                        <p class='search-more-categories'>More</p>  
+                    </div>
+                         
+                </div>
+                <div class='col col-9 mb-5'>
+                    <h6 class='results-list'>Results 1-10 of 547 for “marital status”</h6>
+                    <div class='btn-group'>
+                        <button class='btn btn-sm dropdown-toggle search-sort-dropdown' type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                          Relevance
+                        </button>
+                        <div class='dropdown-menu'>
+                            <a class='dropdown-item' href='#'>Title</a>
+                            <a class='dropdown-item' href='#'>Date Updated</a>
+                        </div>
+                      </div>
+                      <div class='search-result'>
+                        <a class='search-article-title' href='#'>Are Schools Required To Verify Parents’ Marital Status Or the Validity Of a Same-Sex Marriage?</a>
+                        <h6 class='search-category-title'>NEED ANALYSIS, PERKINS, PACKAGING</h6>
+                        <p class='search-article-text'>First 200 characters of the article will be displayed as the article snippet here. If desired, we can add a search results description field to the admin tool if NASFAA wants to be able to override this. We can explore that more in wireframing. This is a low priority feature.</p>
+                      </div>
+                      <div class='search-result'>
+                        <a class='search-article-title' href='#'>What Are the Rules for Updating Marital Status After the FAFSA is Filed?</a>
+                        <h6 class='search-category-title'>CONSUMER INFORMATION</h6>
+                        <p class='search-article-text'>This snippet is an example of bolding the matching search term. In this instance the snippet includes the word <b>marital.</b></p>
+                      </div>
+                      <div class='search-result'>
+                        <a class='search-article-title' href='#'>Is Verification Required Before Updating the Student's Marital Status In Special Circumstances?</a>
+                        <h6 class='search-category-title'>NEED ANALYSIS</h6>
+                        <p class='search-article-text'>First 200 characters of the article will be displayed as the article snippet here. If desired, we can add a search results description field to the admin tool if NASFAA wants to be able to override this. We can explore that more in wireframing.</p>
+                      </div>
+                      <div class='search-result'>
+                        <a class='search-article-title' href='#'>Can We Update an Independent Student's Marital Status After the FAFSA Was Filed?</a>
+                        <h6 class='search-category-title'>CONSUMER INFORMATION, FWS</h6>
+                        <p class='search-article-text'>First 200 characters of the article will be displayed as the article snippet here. If desired, we can add a search results description field to the admin tool if NASFAA wants to be able to override this. We can explore that more in wireframing.</p>
+                      </div>
+                      <div class='search-result'>
+                        <a class='search-article-title' href='#'>What Is the Marital Status of an Applicant When Spouse Lives in a Foreign Country?</a>
+                        <h6 class='search-category-title'>PACKAGING</h6>
+                        <p class='search-article-text'>First 200 characters of the article will be displayed as the article snippet here. If desired, we can add a search results description field to the admin tool if NASFAA wants to be able to override this. We can explore that more in wireframing.</p>
+                      </div>
+                      <div class='search-result'>
+                        <a class='search-article-title' href='#'>Does It Matter What Current Status Is Indicated on the Transcript DataBase View (TRDBV) to Be Acceptable for Verification?</a>
+                        <h6 class='search-category-title'>SAP</h6>
+                        <p class='search-article-text'>First 200 characters of the article will be displayed as the article snippet here. If desired, we can add a search results description field to the admin tool if NASFAA wants to be able to override this. We can explore that more in wireframing.</p>
+                      </div>
+                      <div class='search-result'>
+                        <a class='search-article-title' href='#'>Can a Student Appeal Dependency Status Based on Marriage?</a>
+                        <h6 class='search-category-title'>CASH MANAGEMENT, NON-TITLE IV AID</h6>
+                        <p class='search-article-text'>First 200 characters of the article will be displayed as the article snippet here. If desired, we can add a search results description field to the admin tool if NASFAA wants to be able to override this. We can explore that more in wireframing.</p>
+                      </div>
+                      <div class='search-result'>
+                        <a class='search-article-title' href='#'>Which Tax Return Completion Status Is Reported If the Parents Filed Separately With Different Statuses?</a>
+                        <h6 class='search-category-title'>NEED ANALYSIS</h6>
+                        <p class='search-article-text'>First 200 characters of the article will be displayed as the article snippet here. If desired, we can add a search results description field to the admin tool if NASFAA wants to be able to override this. We can explore that more in wireframing.</p>
+                      </div>
+                      <div class='search-result'>
+                        <a class='search-article-title' href='#'>Resource Title Goes Here</a>
+                        <h6 class='search-category-title'>CASH MANAGEMENT, PROFESSIONAL JUDGMENT</h6>
+                        <p class='search-article-text'> </p>
+                      </div>
+                      <div class='search-result'>
+                        <a class='search-article-title' href='#'>Are Schools Required To Verify That a Student Answered the Dependency Status Questions Correctly On the FAFSA?</a>
+                        <h6 class='search-category-title'>PERKINS</h6>
+                        <p class='search-article-text'>First 200 characters of the article will be displayed as the article snippet here. If desired, we can add a search results description field to the admin tool if NASFAA wants to be able to override this. We can explore that more in wireframing.</p>
+                      </div>
+                </div>
+            </div>
+        </section>
+    </div>    
     <nav class='navbar navbar-dark navbar-expand-lg bottomT'>
         <section class='v-separator container'>
             <div class='navbar-nav'>
@@ -121,7 +278,7 @@
     <script src='node_modules/jquery/dist/jquery.js'></script>
 
     <!-- Optional JavaScript -->
-    <!-- <script src='app.js'></script> -->
+    <script src='app.js'></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src='js/jquery.slim.min.js'></script>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
     <!-- Required meta tags -->
     <meta charset='utf-8'>
-    <link rel="icon" href="./images/nasfaa_icon.png" />
-    <link rel="apple-touch-icon" href="./images/nasfaa_icon.png" />
+    <link rel='icon' href='./images/nasfaa_icon.png' />
+    <link rel='apple-touch-icon' href='./images/nasfaa_icon.png' />
     <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
 
     <link rel='stylesheet' href='node_modules/jquery/dist/jquery.js'> 
@@ -26,7 +26,7 @@
                     <a href='index.html'>
                         <img src='images/nasfaa_white.png' alt='logo' class='logo'>
                     </a>
-                    <a href='#'>
+                    <a href='article-details.html'>
                         <img src='images/nasfaa_askregs_white.png' alt='logo' class='logo'>
                     </a>
                 </div>
@@ -66,11 +66,49 @@
             </div> <!-- collapse navbar-collapse navContainer -->
         </nav>
     </div> <!-- navStyles -->
+    <div class='my-0 py-0 accordian-show' id='ask-regs-accordion'>
+        <div class='row askregs m-0' 
+            onclick='showHideRegs()'>
+            <a id='ask-regs-header' 
+                class='container fa expanded-header'> 
+                <p class='textAnimation alertHead'>AskRegs Alerts</p>
+                <p class='textAnimation'>
+                    <i class='far fa-caret-square-down alert-icons' id='toggle-alert-iconCaret' ></i>
+                    <i class='far fa-window-close alert-icons'  id='toggle-alert-iconX'></i>
+                </p>
+            </a>
+        </div><!-- row -->
+        <div id='ask-regs-all'
+            class='regs'
+            onclick='showHideRegs()'>
+            <div class='container'>
+                <div class='row row-cols-1 row-cols-lg-4 v-separator-alert' >
+                    <div class='col alert-col'>
+                        <h6 class='alert-header'>Coronavirus: </h6>
+                        <p class='alert-content'>Refer to AskRegs Knowledgebase Q&A, Where Can I Find Guidance Related to the Coronavirus (COVID-19)?</p>
+                    </div>
+                    <div class='col alert-col'>  
+                        <h6 class='alert-header'>Broken IFAP Links:  </h6>
+                        <p class='alert-content'>Due to site-wide changes on the Information for Financial Aid Professionals (IFAP) website in February, links from Knowledgebase Q&As may be broken. We are working to reconnect these as soon as possible. In the meantime, if you need to find the referenced documents, please visit the IFAP home page and navigate to the intended item.</p>
+                    </div>
+                    <div class='col alert-col'>
+                        <h6 class='alert-header'>Revised Term Lengths:</h6>
+                        <p class='alert-content'>In the November 5, 2019 Electronic Announcement, Revised Policy for Standard Term Length, ED revised the definitions of standard terms. This guidance became effective immediately on the date of posting. As you review Q&As within the AskRegs Knowledgebase, please consider the answers within the context of ED’s new guidance and examples. We will be updating affected Knowledgebase Q&As over the coming weeks.</p>
+                    </div>
+                    <div class='col alert-col'>
+                        <h6 class='alert-header'>Coronavirus:  </h6>
+                        <p class='alert-content'>Refer to AskRegs Knowledgebase Q&A, Where Can I Find Guidance Related to the Coronavirus (COVID-19)?</p>
+                    </div>
+                </div><!-- row -->
+            </div><!-- container -->
+        </div><!-- ask-regs-all container -->
+    </div><!-- accordion askregs -->    
+
     <div class='container main-area-question'>
-        <h4  class='card-title ask-question'>Ask A Question</h4>
+        <h4  class='card-title page-head'>Ask A Question</h4>
         <p class='question-intro'>Intro text can go here. This will be editable in the content management system. Intro text can go here. This will be editable in the content management system.</p>
         <form>
-            <fieldset class='form-group offset-r-1'>
+            <fieldset class='form-group'>
                 <div class='form-group row'>
                     <p class='text-sm-left text-md-right col-sm-3 col-md-4'> <b>Name:</b></p>
                         <p class='text-sm-left col-sm-4 col-md-7'> Carrie Conrad</p>
@@ -112,9 +150,9 @@
                     <div class='col-md-7'>
                         <!-- <input type='text' class='form-control' id='inputAttachFiles'>
                         <input type='file' class='form-control-file' id='inputAttachFiles'> -->
-                        <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="customFile">
-                            <label class="custom-file-label" for="customFile">Choose file</label>
+                        <div class='custom-file'>
+                            <input type='file' class='custom-file-input' id='customFile'>
+                            <label class='custom-file-label' for='customFile'>Choose file</label>
                           </div>
                         <small class='form-text text-muted'>Please do not share any identifiable student information or attach password protected documents.</small>
                         <div class='col-auto'>
@@ -182,7 +220,7 @@
     <script src='node_modules/jquery/dist/jquery.js'></script>
 
     <!-- Optional JavaScript -->
-    <!-- <script src='app.js'></script> -->
+    <script src='app.js'></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src='js/jquery.slim.min.js'></script>
