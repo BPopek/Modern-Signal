@@ -722,9 +722,9 @@ p.category-text {
 }
 
 /* ------------------------ SEARCH PAGE ------------------------ */
-.search-container {
+/* .search-container {
     padding: 0;
-}   
+}    */
 .search-field {
     margin: 0; 
 }
@@ -790,7 +790,16 @@ p.category-text {
     -webkit-line-clamp: 2;
     overflow: hidden;
 }
-
+.btn-custom-ask-new {
+    border-radius: 2px;
+    background-color: #14567c;
+    color: white;
+    margin: 20px auto;
+}
+.btn-custom-ask-new:hover {
+    background-color: #a8bac4;
+    color: white;
+}
 /* --------------------------------------------------------------- */
 /* ------------------------ MEDIA QUERIES ------------------------ */
 
