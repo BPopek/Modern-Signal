@@ -619,6 +619,9 @@ p.category-text {
 .page-head {
     margin: 30px auto 25px;
 }
+.card-title.page-head {
+    font-size: 24px;
+}
 .question-intro {
     text-align: left !important;
 }
@@ -627,10 +630,6 @@ p.category-text {
 }
 .custom-file-input {
     background-color: #14567c;
-}
-#inputMakeQuestionPrivate {
-    height: 25px;
-    width: 25px;
 }
 .btn-custom {
     border-radius: 2px;
@@ -642,27 +641,99 @@ p.category-text {
     background-color: #a8bac4;
     color: white;
 }
+.question-container {
+    height: 40px;
+    width: auto;
+    padding: 10px 0;
+    margin: 5px auto;
+}
+.question-container2 {
+    height: 40px;
+    width: auto;
+    margin: 10px auto;
+}
+.btn-custom.add-file {
+    background-color: #a8bac4;
+    color: black;
+    margin: 15px 0 10px;
+    cursor: pointer;
+}
+.btn-custom:hover {
+    background-color: #75848d;
+}
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    height: 25px;
+    width: 25px;
+    /* background-color: #eee; */
+    border-radius: 3px;
+    border: 1px black solid;
+  }
+  /* On mouse-over, add a grey background color */
+  .checkbox-container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  /* When the checkbox is checked, add a blue background */
+  .checkbox-container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  /* Show the checkmark when checked */
+  .checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  /* Style the checkmark/indicator */
+  .checkbox-container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
 
 /* ------------------------ ARTICLE DETAILS ------------------------ */
 .container-article-details {
     margin: 25px auto;
 }
-.article-header {
+/* .article-header {
     font-weight: 600;
     margin: 0;
-}
+} */
 .article-id {
-    color: #78c06d;
+    /* color: #78c06d; */
     position: relative;
     display: block;
     margin: 5px 0;
+    font-size: 14px;
 }
 .article-views {
     position: relative;
     display: block;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-style: italic;
     margin: 5px 0;
+    font-size: 14px;
 }
 .star-rating {
     margin: 0;
@@ -703,6 +774,9 @@ p.category-text {
 .article {
     margin: 25px 0 0;
 }
+.article-rating {
+    font-size: 14px;
+}
 .article-sub-head {
     font-weight: bolder;
     text-decoration: underline;
@@ -717,8 +791,10 @@ p.category-text {
     text-decoration: underline;
 }
 .disclaimer {
-    color: #78c06d;
-    margin: 25px auto;
+    /* color: #78c06d; */
+    margin: 55px auto 45px;
+    font-size: 14px;
+    font-style: italic;
 }
 
 /* ------------------------ SEARCH PAGE ------------------------ */

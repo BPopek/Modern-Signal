@@ -103,19 +103,18 @@
             </div><!-- container -->
         </div><!-- ask-regs-all container -->
     </div><!-- accordion askregs -->    
-
     <div class='container main-area-question'>
-        <h4  class='card-title page-head'>Ask A Question</h4>
+        <h1  class='card-title page-head'>Ask A Question</h1>
         <p class='question-intro'>Intro text can go here. This will be editable in the content management system. Intro text can go here. This will be editable in the content management system.</p>
         <form>
             <fieldset class='form-group'>
                 <div class='form-group row'>
-                    <p class='text-sm-left text-md-right col-sm-3 col-md-4'> <b>Name:</b></p>
-                        <p class='text-sm-left col-sm-4 col-md-7'> Carrie Conrad</p>
+                    <p class='text-left text-md-right col-sm-3 col-md-4'> <b>Name:</b></p>
+                        <p class='text-left col-sm-4 col-md-7'> Carrie Conrad</p>
                 </div>
                 <div class='form-group row'>
-                    <p class='text-sm-left text-md-right col-sm-3 col-md-4'> <b>Institution:</b></p>
-                        <p class='text-sm-left col-sm-4 col-md-7'> NASFAA</p>
+                    <p class='text-left text-md-right col-sm-3 col-md-4'> <b>Institution:</b></p>
+                        <p class='text-left col-sm-4 col-md-7'> NASFAA</p>
                 </div>
 
                 <div class='form-group row'>
@@ -150,23 +149,29 @@
                     <div class='col-md-7'>
                         <!-- <input type='text' class='form-control' id='inputAttachFiles'>
                         <input type='file' class='form-control-file' id='inputAttachFiles'> -->
+                        <small class='form-text text-muted mb-1'>Please do not share any identifiable student information or attach password protected documents.</small>
                         <div class='custom-file'>
                             <input type='file' class='custom-file-input' id='customFile'>
                             <label class='custom-file-label' for='customFile'>Choose file</label>
                           </div>
-                        <small class='form-text text-muted'>Please do not share any identifiable student information or attach password protected documents.</small>
-                        <div class='col-auto'>
-                            <p class='form-text' style='text-decoration: underline; text-align: left'>Add Another File</p>
+                        
+                        <div class='col-auto px-0'>
+                            <!-- <p class='form-text' style='text-decoration: underline; text-align: left'>Add Another File</p> -->
+                            <button class='btn btn-custom add-file' name='addAnother' type='button'>Add Another File</button>
                         </div>
                     </div>
                 </div>
                 <div class='form-group row'>
                     <label class='form-check-label text-md-right col-md-4 font-weight-bold' for='inputMakeQuestionPrivate'>Make This Question Private:</label>
                     <div class='col-md-7'>
-                        <div class='form-check form-check-inline'>
-                            <input type='checkbox' class='form-check-input mr-3' id='inputMakeQuestionPrivate'>
-                            <small class='form-text text-muted'>If selected, only the primary contact for your institution will see your question in your institution’s question history.</small>
-                        </div> <!-- form-check -->
+                            <div class='pl-3'>
+
+                            <label class='checkbox-container' >
+                                <input type='checkbox'>
+                                <span class='checkmark'></span>
+                                <small class='form-text text-muted ml-4'>If selected, only the primary contact for your institution will see your question in your institution’s question history.</small>
+                            </label>
+                        </div> <!-- custom-control-->
                     </div> <!-- col-md-8 -->
                 </div>
                 <div class='form-group row'>
