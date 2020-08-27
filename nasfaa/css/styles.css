@@ -669,15 +669,12 @@ p.category-text {
     height: 0;
     width: 0;
   }
-  
-  /* Create a custom checkbox */
   .checkmark {
     position: absolute;
     top: 5px;
     left: 15px;
     height: 25px;
     width: 25px;
-    /* background-color: #eee; */
     border-radius: 3px;
     border: 1px black solid;
   }
@@ -685,21 +682,17 @@ p.category-text {
   .checkbox-container:hover input ~ .checkmark {
     background-color: #ccc;
   }
-  /* When the checkbox is checked, add a blue background */
   .checkbox-container input:checked ~ .checkmark {
     background-color: #2196F3;
   }
-  /* Create the checkmark/indicator (hidden when not checked) */
   .checkmark:after {
     content: "";
     position: absolute;
     display: none;
   }
-  /* Show the checkmark when checked */
   .checkbox-container input:checked ~ .checkmark:after {
     display: block;
   }
-  /* Style the checkmark/indicator */
   .checkbox-container .checkmark:after {
     left: 9px;
     top: 5px;
@@ -813,7 +806,10 @@ p.category-text {
 }
 .search-category-box {
     text-align: left;
-    margin: 5px 5px 5px 10px;
+    font-weight: 600;
+    padding: 5px 10px;
+    margin-bottom: 0;
+    background-color: #ec9825;
 }
 .search-category-line {
     border-bottom: #dedede 4px solid;
@@ -824,6 +820,7 @@ p.category-text {
 }
 .filter-results {
     margin: 25px auto 15px;
+    font-weight: 600;
 }
 .search-page-category {
     font-size: 14px;
@@ -842,6 +839,24 @@ p.category-text {
     border: 1px solid black;
     border-radius: 0;
     margin: 8px auto 25px;
+    width: 130px;
+    text-align: left;
+}
+.dropdown-item-sort {
+    color: black;
+    display: block;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+.dropdown-menu.sort {
+    min-width: 130px !important;
+    max-width: 130px !important;
+}
+div.dropdown-menu.sort.show {
+    background-color: white;
+    border: #dedede solid 4px;
+    border-radius: 0;
+    margin: 0;
 }
 .search-result {
     margin: 20px auto;
@@ -876,6 +891,32 @@ p.category-text {
     background-color: #a8bac4;
     color: white;
 }
+/* ------------------------ MY QUESTIONS / MYASKREGS ------------------------ */
+.question-number {
+    font-weight: 500 !important;
+}
+.question-number-link {
+    cursor: pointer;
+    color: black;
+}
+.question-topic-link {
+    cursor: pointer;
+    color: black;
+}
+.table-th {
+    background-color: #14567c;
+    color: white;
+    text-align: center;
+}
+.table tbody:nth-child(odd) {
+    background-color:#dedede;
+}
+#my-questions-table {
+    border: #dedede 4px solid;
+}
+
+
+
 /* --------------------------------------------------------------- */
 /* ------------------------ MEDIA QUERIES ------------------------ */
 
@@ -904,12 +945,12 @@ p.category-text {
     .bottomContainer {
         padding: 0;
     }
-/* ------------------------ ARTICLE DETAILS ------------------------ */
+    /* ------------------------ ARTICLE DETAILS ------------------------ */
     .star-rating {
     margin: 0 0 0 15px;
     display: inline-block;
     text-align: left;
-}
+    }
     .article-social-icons {
         text-align: right;
     }
