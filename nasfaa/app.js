@@ -70,3 +70,24 @@ $(document).ready(function() {
 //     $('#my-questions-table').DataTable();
 //     $('.dataTables_length').addClass('bs-select');
 //     });
+
+
+//to display more than 10 items in category list 
+$('div.category-list').each(function(){
+    var $div = $(this),
+        $lis = $div.find('div:gt(9)'),
+        isExpanded = $div.hasClass('expanded');
+    $lis[isExpanded ? 'show' : 'hide']();
+    
+    if($lis.length > 0){
+        $div
+            .append($('<p class="search-more-categories expand" id="show-more">' + (isExpanded ? 'Less' : 'More') + '</p>')
+            .click(function(event){
+                var isExpanded = $div.hasClass('expanded');
+                event.preventDefault();
+                $(this).html(isExpanded ? 'More' : 'Less');
+                $div.toggleClass('expanded');
+                $lis.toggle();
+            }));
+    }
+});
