@@ -798,11 +798,15 @@ p.category-text {
     margin: 0; 
 }
 .card-search {
-    border: #dedede 4px solid;
-    margin: 0px auto;
+    margin: 25px auto 15px;
     border-radius: 2px;
     position: relative;
-    /* padding: 5px 10px; */
+}
+.search-category-medium {
+    display: none;
+}
+.search-category-mobile {
+    display: block;
 }
 .search-category-box {
     text-align: left;
@@ -810,23 +814,37 @@ p.category-text {
     padding: 5px 10px;
     margin-bottom: 0;
     background-color: #ec9825;
+    color: white;
+    border: #ec9825 4px solid;
 }
+
 .search-category-line {
     border-bottom: #dedede 4px solid;
     width: 100%;
 }
+.search-category-container-sm {
+    display: block !important;
+    margin-top: -2px;
+    padding: 5px 0;
+}
+.search-category-container-md {
+    display: block !important;
+    border-left: #dedede 4px solid;
+    border-right: #dedede 4px solid;
+    border-bottom: #dedede 4px solid;
+    margin-top: -2px;
+    padding: 5px 0;
+}
 .search-category-div {
-    display: block;
+    display: block !important;
     margin: 2px 5px;
     padding: 0;
 }
-/* .search-category-div:nth-child(n+11) {
+/* #category-list div{
     display: none;
 } */
-#category-list div{
-    display: none;
-}
 #show-more {
+    display: none;
     text-align: left;
     margin: 0 0 10px 35px;
     text-decoration: underline;
@@ -841,15 +859,11 @@ p.category-text {
     font-size: 14px;
     display: none;
 }
-.filter-results {
-    margin: 25px auto 15px;
-    font-weight: 600;
-}
 .search-page-category {
     font-size: 14px;
     margin-left: 30px;
 }
-.checkbox-container search {
+.checkbox-container search input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -865,10 +879,10 @@ p.category-text {
     border-radius: 3px;
     border: 1px black solid;
   }
-  .checkbox-container search:hover ~ .checkmark {
+  .checkbox-container search:hover input~ .checkmark {
     background-color: #ccc;
   }
-  .checkbox-container search:checked ~ .checkmark {
+  .checkbox-container search input:checked ~ .checkmark {
     background-color: #2196F3;
   }
   .checkmark-search:after {
@@ -876,7 +890,7 @@ p.category-text {
     position: absolute;
     display: none;
   }
-  .checkbox-container search:checked ~ .checkmark:after {
+  .checkbox-container search input:checked ~ .checkmark:after {
     display: block;
   }
   .checkbox-container search .checkmark:after {
@@ -890,13 +904,6 @@ p.category-text {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
-/* .search-more-categories {
-    text-align: left;
-    margin: 0 0 10px 30px;
-    text-decoration: underline;
-    cursor: pointer;
-    font-size: 14px;
-} */
 .results-list {
     margin: 25px auto 10px;
 }
@@ -1016,7 +1023,7 @@ div.dropdown-menu.sort.show {
     .bottomContainer {
         padding: 0;
     }
-    /* ------------------------ ARTICLE DETAILS ------------------------ */
+    /* ---------- ARTICLE DETAILS -------------- */
     .star-rating {
     margin: 0 0 0 15px;
     display: inline-block;
@@ -1026,7 +1033,7 @@ div.dropdown-menu.sort.show {
         text-align: right;
     }
 }
-
+/* MEDIUM SCREEN */
 @media only screen and (min-width: 767px) {
     .main-body {
         background-position: 99% 100% !important;
@@ -1042,14 +1049,25 @@ div.dropdown-menu.sort.show {
         width: 80%;
         margin: 15px auto 25px;
     }
-    /* .main-inside-left {
-        padding: 0 5px 0 0px;
-    } */
-    .main-inside-right {
+     .main-inside-right {
         padding: 0 15px 0 15px;
     }
     .card {
         margin: 15px auto;
+    }
+
+    /* -------- SEARCH PAGE -------- */
+    /* .search-category-container {
+        display: block;
+    } */
+    #show-more {
+        display: block;
+    }
+    .search-category-medium {
+        display: block !important;
+    }
+    .search-category-mobile {
+        display: none !important;
     }
 }
 

@@ -2,7 +2,7 @@ let element = document.getElementById('ask-regs-all');
 let iconElements = document.getElementById('ask-regs-header');
 let accordian = document.getElementById('ask-regs-accordion');
 
-//accordion already shown once, set to hide on loading of new pages
+        //accordion already shown once, set to hide on loading of new pages
 if (sessionStorage.getItem('show_banner') === '1'){
     element.classList.add('hide-all-regs');
     iconElements.classList.add('collapsed-header'); 
@@ -11,7 +11,7 @@ if (sessionStorage.getItem('show_banner') === '1'){
     accordian.classList.add('accordian-hide'); 
 
 }
-//accordion not yet shown, show accordian and set to shown
+        //accordion not yet shown, show accordian and set to shown
 if (sessionStorage.getItem('show_banner') === null){
     sessionStorage.setItem('show_banner', '1');
     element.classList.add('toggle-show-all-regs');
@@ -23,16 +23,7 @@ if (sessionStorage.getItem('show_banner') === null){
 }
 
 function showHideRegs() {
-    //first time page loads, just has classname of regs
-    // if(element.className == 'regs') {
-    //     element.classList.add('toggle-hide-all-regs');
-    //     element.classList.remove('toggle-show-all-regs'); 
-    //     iconElements.classList.add('expanded-header'); 
-    //     iconElements.classList.remove('collapsed-header'); 
-    //     accordian.classList.add('accordian-hide');
-    //     accordian.classList.remove('accordian-show'); 
-    // }
-     if(element.className == 'regs hide-all-regs') {
+    if(element.className == 'regs hide-all-regs') {
         element.classList.add('toggle-show-all-regs');
         element.classList.remove('hide-all-regs');  
         iconElements.classList.remove('collapsed-header'); 
