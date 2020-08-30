@@ -833,7 +833,7 @@ p.category-text {
     border-right: #dedede 4px solid;
     border-bottom: #dedede 4px solid;
     margin-top: -2px;
-    padding: 5px 0;
+    padding: 5px 7px 0 5px;
 }
 .search-category-div {
     display: block !important;
@@ -861,16 +861,9 @@ p.category-text {
 }
 .search-page-category {
     font-size: 14px;
-    margin-left: 30px;
+    margin-left: 40px;
 }
-.checkbox-container search input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  .checkmark-search {
+.checkmark-search {
     position: absolute;
     top: 7px;
     left: 5px;
@@ -879,23 +872,24 @@ p.category-text {
     border-radius: 3px;
     border: 1px black solid;
   }
-  .checkbox-container search:hover input~ .checkmark {
-    background-color: #ccc;
-  }
-  .checkbox-container search input:checked ~ .checkmark {
-    background-color: #2196F3;
-  }
   .checkmark-search:after {
     content: "";
     position: absolute;
     display: none;
   }
-  .checkbox-container search input:checked ~ .checkmark:after {
+
+  .checkbox-container:hover input~ .checkmark-search {
+    background-color: #ccc;
+  }
+  .checkbox-container input:checked ~ .checkmark-search {
+    background-color: #2196F3;
+  }
+  .checkbox-container input:checked ~ .checkmark-search:after {
     display: block;
   }
-  .checkbox-container search .checkmark:after {
-    left: 9px;
-    top: 5px;
+  .checkbox-container .checkmark-search:after {
+    left: 7px;
+    top: 3px;
     width: 5px;
     height: 10px;
     border: solid white;

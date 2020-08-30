@@ -108,16 +108,17 @@
         <div class='table-responsive'>
             <table class='table table-hover table-bordered' 
                     id='my-questions-table'
+                    data-toggle="table"
                     >
                 <thead>
                     <tr>
-                        <th scope='col' class='table-th' data-sortable="true">Question Number</th>
-                        <th scope='col' class='table-th' data-sortable="true">Old Case Number</th>
-                        <th scope='col' class='table-th' data-sortable="true">Created On</th>
-                        <th scope='col' class='table-th' data-sortable="true">Category</th>
-                        <th scope='col' class='table-th' data-sortable="true">Question Topic</th>
-                        <th scope='col' class='table-th' data-sortable="true">Status</th>
-                        <th scope='col' class='table-th' data-sortable="true">Last Updated</th>
+                        <th scope='col' class='table-th' data-order='desc' data-field='question-number' data-sortable='true'>Question Number</th>
+                        <th scope='col' class='table-th' data-order='desc' data-field='old-number' data-sortable='true'>Old Case Number</th>
+                        <th scope='col' class='table-th' data-order='desc' data-field='date-created' data-sortable='true'>Created On</th>
+                        <th scope='col' class='table-th' data-order='desc' data-field='category' data-sortable='true'>Category</th>
+                        <th scope='col' class='table-th' data-order='desc' data-field='topic' data-sortable='true'>Question Topic</th>
+                        <th scope='col' class='table-th' data-order='desc' data-field='status' data-sortable='true'>Status</th>
+                        <th scope='col' class='table-th' data-order='desc' data-field='updated' data-sortable='true'>Last Updated</th>
                     </tr>
                 </thead>
                 <tbody>
