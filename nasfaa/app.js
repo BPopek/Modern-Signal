@@ -51,16 +51,15 @@ function showHideRegs() {
 //to add more files
 $(document).ready(function() {      
     $("button[name='addAnother']").click(function() {
-        var domElement = $('<div class="question-container2"><div class="custom-file"><input type="file" class="custom-file-input" id="customFile"><label class="custom-file-label" for="customFile">Choose file</label></div></div>');
+        var domElement = $('<div class="question-container2 input-group"><div class="custom-file"><input type="file" class="custom-file-input" id="customFile"><label class="custom-file-label" for="customFile">Choose file</label></div><div class="input-group-append"><button class="btn btn-custom-close">&times;</button></div></div>');
         $(this).before(domElement);
     });  
 });
 
 //to make table sortable by column
-// $(document).ready(function () {
-//     $('#my-questions-table').DataTable();
-//     $('.dataTables_length').addClass('bs-select');
-//     });
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
 
 
 //to display more than 10 items in category list 
