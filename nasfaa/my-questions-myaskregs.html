@@ -14,7 +14,7 @@
     <link rel='stylesheet' href='css/styles.css'>
     
     <!-- DataTables CSS -->
-    <link rel="stylesheet" type="text/css" href="./dataTablesFiles/datatables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./dataTablesFiles/datatables.css"/>
 
     <!-- FontAwesome -->
     <link href='css/all.css' rel='stylesheet'>
@@ -111,17 +111,16 @@
         <div class='table-responsive'>
             <table class='table table-hover table-bordered' 
                     id='my-questions-table'
-                    data-toggle="table"
                     >
                 <thead>
                     <tr>
-                        <th scope='col' class='table-th' data-order='desc' data-field='question-number' data-sortable='true'>Question Number</th>
-                        <th scope='col' class='table-th' data-order='desc' data-field='old-number' data-sortable='true'>Old Case Number</th>
-                        <th scope='col' class='table-th' data-order='desc' data-field='date-created' data-sortable='true'>Created On</th>
-                        <th scope='col' class='table-th' data-order='desc' data-field='category' data-sortable='true'>Category</th>
-                        <th scope='col' class='table-th' data-order='desc' data-field='topic' data-sortable='true'>Question Topic</th>
-                        <th scope='col' class='table-th' data-order='desc' data-field='status' data-sortable='true'>Status</th>
-                        <th scope='col' class='table-th' data-order='desc' data-field='updated' data-sortable='true'>Last Updated</th>
+                        <th scope='col' class='table-th'>Question Number</th>
+                        <th scope='col' class='table-th'>Old Case Number</th>
+                        <th scope='col' class='table-th'>Created On</th>
+                        <th scope='col' class='table-th'>Category</th>
+                        <th scope='col' class='table-th'>Question Topic</th>
+                        <th scope='col' class='table-th'>Status</th>
+                        <th scope='col' class='table-th'>Last Updated</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -138,8 +137,6 @@
                         <td>Open</td>
                         <td>9/26/2019</td>
                     </tr>
-                </tbody>
-                <tbody>
                     <tr>
                         <th scope='row' class='question-number'>
                             <a href='#'class='question-number-link'>234567</a>
@@ -153,8 +150,6 @@
                         <td>Closed</td>
                         <td>8/17/2019</td>
                     </tr>
-                </tbody>
-                <tbody>
                     <tr>
                         <th scope='row' class='question-number'>
                             <a href='#'class='question-number-link'>123456</a>
@@ -174,16 +169,16 @@
         <h1  class='card-title page-head'>My Institution's Questions</h1>
         <div class='table-responsive'>
             <table class='table table-hover table-bordered'
-                    id='my-questions-table'>
+                    id='my-institutions-questions-table'>
                 <thead>
                     <tr>
-                        <th scope='col' class='table-th' data-sortable="true">Question Number</th>
-                        <th scope='col' class='table-th' data-sortable="true">Old Case Number</th>
-                        <th scope='col' class='table-th' data-sortable="true">Created On</th>
-                        <th scope='col' class='table-th' data-sortable="true">Category</th>
-                        <th scope='col' class='table-th' data-sortable="true">Question Topic</th>
-                        <th scope='col' class='table-th' data-sortable="true">Status</th>
-                        <th scope='col' class='table-th' data-sortable="true">Last Updated</th>
+                        <th scope='col' class='table-th'>Question Number</th>
+                        <th scope='col' class='table-th'>Old Case Number</th>
+                        <th scope='col' class='table-th'>Created On</th>
+                        <th scope='col' class='table-th'>Category</th>
+                        <th scope='col' class='table-th'>Question Topic</th>
+                        <th scope='col' class='table-th'>Status</th>
+                        <th scope='col' class='table-th'>Last Updated</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -200,8 +195,6 @@
                         <td>Open</td>
                         <td>9/26/2019</td>
                     </tr>
-                </tbody>
-                <tbody>
                     <tr>
                         <th scope='row' class='question-number'>
                             <a href='#'class='question-number-link'>234567</a>
@@ -215,8 +208,6 @@
                         <td>Closed</td>
                         <td>8/17/2019</td>
                     </tr>
-                </tbody>
-                <tbody>
                     <tr>
                         <th scope='row' class='question-number'>
                             <a href='#'class='question-number-link'>123456</a>
@@ -278,12 +269,13 @@
 
     <!-- Optional JavaScript -->
     <script src='app.js'></script>
-    <!-- DataTables JS -->
-    <script type="text/javascript" src="./dataTablesFiles/datatables.min.js"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src='js/jquery.slim.min.js'></script>
     <script src='js/popper.min.js'></script>
     <script src='js/bootstrap.min.js'></script>
+
+    <!-- DataTables JS -->
+    <script type="text/javascript" src="./dataTablesFiles/datatables.js"></script>
 </body>
 </html>

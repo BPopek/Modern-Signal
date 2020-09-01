@@ -628,9 +628,6 @@ p.category-text {
 .input-label {
     text-align: left !important;
 }
-.custom-file-input {
-    /* background-color: #14567c; */
-}
 .btn-custom {
     border-radius: 2px;
     background-color: #14567c;
@@ -981,18 +978,22 @@ div.dropdown-menu.sort.show {
     cursor: pointer;
     color: black;
 }
+
 .table-th {
     background-color: #14567c;
     color: white;
     text-align: center;
+    /* vertical-align: middle !important; */
 }
-.table tbody:nth-child(odd) {
+.table tr:nth-child(even) {
     background-color:#dedede;
 }
 #my-questions-table {
     border: #dedede 4px solid;
 }
-
+.page-item.active .page-link{
+    background-color: #23a2e0 !important;
+}
 
 
 /* --------------------------------------------------------------- */

@@ -48,7 +48,7 @@ function showHideRegs() {
         iconElements.classList.add('collapsed-header'); 
     }
 }
-//to add more files
+// to add additional 'add another file' divs
 $(document).ready(function() {      
     $("button[name='addAnother']").click(function() {
         var domElement = $('<div class="question-container2 input-group"><div class="custom-file"><input type="file" class="custom-file-input" id="customFile"><label class="custom-file-label" for="customFile">Choose file</label></div><div class="input-group-append"><button class="btn btn-custom-close">&times;</button></div></div>');
@@ -56,13 +56,12 @@ $(document).ready(function() {
     });  
 });
 
-//to make table sortable by column
+// to make table sortable by column
 $(document).ready(function() {
-    $('#example').DataTable();
+    $('#my-questions-table, #my-institutions-questions-table').DataTable();
 } );
 
-
-//to display more than 10 items in category list 
+// to display more than 10 items in category list 
 $('div.category-list').each(function(){
     var $div = $(this),
         $lis = $div.find('div:gt(9)'),
