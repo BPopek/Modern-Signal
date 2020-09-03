@@ -15,11 +15,18 @@ body {
     padding: 0;
     font-family: 'Open Sans';
     box-sizing: border-box;
+    color: #444444;
 }
 html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+h1 {
+    color: #0d67a1;
+}
+h2 {
+    color: #0d67a1;
 }
 h5 {
     text-align: center;
@@ -69,6 +76,9 @@ p {
     padding: 5px 0px 5px 15px !important;
     user-select: none;
 }
+.nav-link:hover {
+    color: #cdcdcd !important;
+}
 .navbar-toggler {
     border: none;
     margin: 10px 0 0;
@@ -87,27 +97,14 @@ p {
 .fa-bars:focus {
     user-select: none;
 }
-/* .loginContainer {
-    top: -5px;
-    cursor: pointer;
-    z-index: 1000;
-    position: relative;
-} */
 .login-dropdown {
     cursor: pointer;
 }
-/* #loginDropdown.nav-link.dropdown-toggle {
-    font-size: 12px !important;
-    margin: 0;
-    user-select: none;
-} */
 .btn-orange {
-    /* background-color: #ec9825; */
-    /* margin: 10px; */
     font-size: 16px;
 }
 .nav-item-dropdown {
-    color: black;
+    color: #444444;
 }
 .dropdown-menu {
     min-width: 135px !important;
@@ -470,7 +467,7 @@ div.dropdown-menu.show {
     padding: 0;
 }
 .announcement-header {
-    font-weight: 300;
+    font-weight: 700;
     padding-top: 25px;
 }
 .announcement-text {
@@ -517,7 +514,10 @@ div.dropdown-menu.show {
     padding: 2px 4px;
     border: 2px solid #dedede;
     border-radius: 1px;
-  }
+}
+.category-tag:hover {
+    background-color: #f5f5f5;
+}
 p.category-text {
     margin: 2px;
     font-weight: 400;
@@ -538,6 +538,34 @@ p.category-text {
     border-radius: 0;
     padding: 5px 5px;
     margin: 15px auto;
+}
+.btn-vmore.timely {
+    background-color: #ec9825; 
+    color: white;
+}
+.btn-vmore.timely:hover {
+    background-color: #db8d22; 
+}
+.btn-vmore.most-recent {
+    background-color: #7d0065; 
+    color: white;
+}
+.btn-vmore.most-recent:hover {
+    background-color: #660052; 
+}
+.btn-vmore.trending {
+    background-color: #0d67a1; 
+    color: white;
+}
+.btn-vmore.trending:hover {
+    background-color: #0b5686; 
+}
+.btn-vmore.most-helpful {
+    background-color: #78c06d; 
+    color: white;
+}
+.btn-vmore.most-helpful:hover {
+    background-color: #6cac62; 
 }
 .footerNav {
     justify-content: flex-start;
@@ -629,7 +657,7 @@ p.category-text {
     text-align: left !important;
 }
 .btn-custom {
-    border-radius: 2px;
+    border-radius: 0px;
     background-color: #14567c;
     color: white;
     margin-top: 20px;
@@ -651,7 +679,7 @@ p.category-text {
 }
 .btn-custom.add-file {
     background-color: #a8bac4;
-    color: black;
+    color: #444444;
     margin: 15px 0 10px;
     cursor: pointer;
 }
@@ -659,7 +687,7 @@ p.category-text {
     background-color: #75848d;
 }
 .btn-custom-close {
-    border-radius: 2px;
+    border-radius: 0px;
     background-color: #ec9825;
     color: white;
     height: 38px;
@@ -716,12 +744,11 @@ p.category-text {
 .container-article-details {
     margin: 25px auto;
 }
-/* .article-header {
-    font-weight: 600;
-    margin: 0;
-} */
+.page-head.article-details {
+    margin: 30px auto 25px;
+    color: #14567c;
+}
 .article-id {
-    /* color: #78c06d; */
     position: relative;
     display: block;
     margin: 5px 0;
@@ -730,7 +757,6 @@ p.category-text {
 .article-views {
     position: relative;
     display: block;
-    /* text-decoration: underline; */
     font-style: italic;
     margin: 5px 0;
     font-size: 14px;
@@ -744,17 +770,22 @@ p.category-text {
 .fa-info-circle {
     cursor: pointer;
 }
+.p-head {
+    color: #14567c;
+}
 .btn-custom-article {
-    border-radius: 2px;
+    border-radius: 0px;
     background-color: #14567c;
     color: white;
-    padding: 2px 4px;
+    padding: 4px 5px;
     vertical-align: top;
     margin: 9px 0 0;
     font-size: 14px;
+    text-align: center;
+    font-weight: 600;
 }
 .btn-custom-article:hover {
-    background-color: #a8bac4;
+    background-color: #0b5686 !important;
     color: white;
 }
 .article-social-icons {
@@ -764,11 +795,12 @@ p.category-text {
     color: #14567c;
     margin: 0 3px;
     padding: 5px 0 0;
-    font-size: 30px;
+    font-size: 34px;
     text-align: center;
+    border-radius: 0px;
 }
 .social-solid:hover {
-    color: #a8bac4;
+    color: #0b5686 !important;
     text-decoration: none;
 }
 .article {
@@ -782,12 +814,13 @@ p.category-text {
     text-decoration: underline;
     text-align: left;
     margin: 0;
+    color: #14567c;
 }
 .article-copy {
     text-align: left;
 }
 .article-link {
-    color: black;
+    color: #444444;
     text-decoration: underline;
 }
 .disclaimer {
@@ -819,10 +852,11 @@ p.category-text {
     text-align: left;
     font-weight: 600;
     padding: 5px 10px;
-    margin-bottom: 0;
+    margin-bottom: 2px;
     background-color: #ec9825;
     color: white;
     border: #ec9825 4px solid;
+    z-index: 1;
 }
 
 .search-category-line {
@@ -833,6 +867,7 @@ p.category-text {
     display: block !important;
     margin-top: -2px;
     padding: 5px 0;
+    z-index: 0;
 }
 .search-category-container-md {
     border-left: #dedede 4px solid;
@@ -840,6 +875,7 @@ p.category-text {
     border-bottom: #dedede 4px solid;
     margin-top: -2px;
     padding: 5px 7px 5px 5px;
+    z-index: 0;
 }
 .search-category-div {
     display: block !important;
@@ -903,6 +939,8 @@ p.category-text {
   }
 .results-list {
     margin: 25px auto 10px;
+    color: #0d67a1;
+    font-weight: 700;
 }
 .search-sort-dropdown {
     border: 1px solid black;
@@ -912,7 +950,7 @@ p.category-text {
     text-align: left;
 }
 .dropdown-item-sort {
-    color: black;
+    color: #444444;
     display: block;
     padding: 5px 10px;
     font-size: 14px;
@@ -935,7 +973,7 @@ div.dropdown-menu.sort.show {
 }
 .search-article-title {
     text-decoration: underline;
-    color: black;
+    color: #444444;
     margin: 0 0 5px 0;
 }
 .search-category-title {
@@ -972,13 +1010,12 @@ div.dropdown-menu.sort.show {
 }
 .question-number-link {
     cursor: pointer;
-    color: black;
+    color: #444444;
 }
 .question-topic-link {
     cursor: pointer;
-    color: black;
+    color: #444444;
 }
-
 .table-th {
     background-color: #14567c;
     color: white;
@@ -986,7 +1023,10 @@ div.dropdown-menu.sort.show {
     /* vertical-align: middle !important; */
 }
 .table tr:nth-child(even) {
-    background-color:#dedede;
+    background-color:#f3f3f3;
+}
+.table-bordered td, .table-bordered th {
+    border: 1px solid #dedede;
 }
 #my-questions-table {
     border: #dedede 4px solid;
