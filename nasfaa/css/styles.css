@@ -777,12 +777,10 @@ p.category-text {
     border-radius: 0px;
     background-color: #14567c;
     color: white;
-    padding: 4px 5px;
+    /* padding: 4px 5px; */
     vertical-align: top;
     margin: 9px 0 0;
-    font-size: 14px;
     text-align: center;
-    font-weight: 600;
 }
 .btn-custom-article:hover {
     background-color: #0b5686 !important;
