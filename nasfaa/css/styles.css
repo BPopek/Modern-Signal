@@ -683,7 +683,7 @@ p.category-text {
     margin: 15px 0 10px;
     cursor: pointer;
 }
-.btn-custom:hover {
+.btn-custom.add-file:hover {
     background-color: #75848d;
 }
 .btn-custom-close {
@@ -783,7 +783,7 @@ p.category-text {
     text-align: center;
 }
 .btn-custom-article:hover {
-    background-color: #0b5686 !important;
+    background-color: #a8bac4 !important;
     color: white;
 }
 .article-social-icons {
@@ -798,7 +798,7 @@ p.category-text {
     border-radius: 0px;
 }
 .social-solid:hover {
-    color: #0b5686 !important;
+    color: #a8bac4 !important;
     text-decoration: none;
 }
 .article {
