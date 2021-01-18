@@ -7,6 +7,7 @@
 
 /* grey text in dropdown: 7c7c7c */
 /* Web Dev body text and learm more buttons: #a9afb8 */
+/* dark blue bottom: 07516e */
 
 /* light: 300
 Regular: 400
@@ -33,33 +34,98 @@ html {
     font-family: 'Montserrat';
     font-size: 12px;
     font-weight: 700;
+    white-space: nowrap;
+    margin: auto;
+    max-width: 300px;
+    padding: 3px 10px;
 }
 .btn-outline-primary { 
     border-radius: 0; 
     border: 2px #e4621c solid;
     color: #e4621c;
+    white-space: nowrap;
+}
+.btn-outline-primary:hover { 
+    border-radius: 0; 
+    border: 2px #1797b7 solid;
+    color: #1797b7;
+    white-space: nowrap;
+    background-color: #fff;
+}
+.btn-outline-primary.contact { 
+    margin-top: 5px;
+}
+.btn-outline-primary.contact:hover { 
+    margin-top: 5px;
 }
 .btn-outline-grey { 
     border-radius: 0; 
-    border: 2px #7c7c7c solid;
-    color: #7c7c7c;
+    border: 2px #9198a1 solid;
+    color: #a9afb8;
+    white-space: nowrap;
+}
+.btn-outline-grey:hover { 
+    border-radius: 0; 
+    border: 2px #e4621c solid;
+    color: #e4621c;
+    white-space: nowrap;
 }
 .btn-outline-white { 
     border-radius: 0; 
     border: 2px #fff solid;
     color: #fff;
+    white-space: nowrap;
+}
+.btn-outline-white:hover { 
+    border-radius: 0; 
+    border: 2px #e4621c solid;
+    color: #e4621c;
+    white-space: nowrap;
 }
 .dropdown-toggle:after {
     content: none;
+}
+.logo {
+    width: 30vw;
 }
 .phone {
     background: #e4621c;
     color: #fff;
     text-align: right;
+    font-size: 12px;
+}
+.phone-container {
+    padding: 0;
+}
+.nav-styles {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff !important;
+    z-index: 5;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
 }
 .navbar-toggler {
     color: #e4621c !important;
     border: none;
+    padding: 0;
+}
+.nav-link {
+    user-select: none;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 2px 10px !important;
+}
+.navbar {
+    width: 100%;
+}
+.navbar-menu {
+    display: flex;
+    justify-content: flex-end;
 }
 .dropdown-menu {
     left: auto;
@@ -72,21 +138,39 @@ html {
     color: #7c7c7c;
     margin: 5px auto;
 }
-.hero {
+.hero-color {
     background: #1797b7;
     color: #fff;
     text-align: center;
-    padding: 50px 0;
+    transform: skew(0, 5deg);
+    position: relative;
+    height: 500px;
+    z-index: 0;
+}
+.hero-image {
+    position: relative;
+    background-image: url('../images/Lighthouse.png');
+    background-size: cover;
+    background-position: right top;
+    transform: skew(0, -5deg);
+    height: 550px;
+    padding-top: 50px;
+}
+.hero-container {
+    margin: 50px auto 0;
+    text-align: center;
 }
 .ms-headline {
     font-weight: 900;
-    margin-right: 100px;
+    font-size: 26px;
 }
 .ms-head-min {
-    font-size: 14px;
+    color: #fff;
 }
 .ms-head-min.top {
-    margin-right: 100px;
+    width: 275px;
+    font-size: 12px;
+    margin: 0 auto !important;
 }
 .ms-head {
     color: #fff;
@@ -94,25 +178,32 @@ html {
 }
 .ms-head-min.middle {
     color: #e4621c;
+    font-size: 12px;
+}
+.clutch {
+    margin-top: 10px;
+}
+.clutch-logo {
+    width: 75px;
+}
+.ms-info {
+    max-width: 600px;
+    text-align: center;
+    margin: 25px auto 0 auto !important;
+    font-size: 10px;
 }
 .services {
     position: relative;
     background: #292929;
     text-align: center;
     padding: 50px 0;
+    height: 975px;
+    transform: skew(0, 5deg);
 }
-/* .services:after {
-    content: '';
-    display: block;
-    background: #292929;
-    position: absolute;
-    height: 100%;
-    top: 0px;
-    transform: skew(20deg);
-    -webkit-transform: skew(20deg);
-   -moz-transform: skew(20deg);
-   -o-transform: skew(20deg);
-} */
+.services-container {
+    position: relative;
+    transform: skew(0, -5deg) !important;
+}
 .home-example {
     width: 300px;
     height: auto;
@@ -120,48 +211,138 @@ html {
 .ms-info {
     font-size: 12px;
     color: #a9afb8;
+    line-height: 1.4;
+    margin: 20px auto 30px !important;
+}
+.services-logo {
+    width: 30px;
+    margin: 0 auto 10px;
 }
 .card-title {
-    font-size: 14px;
+    font-size: 11px;
     color: #fff;
+    white-space: normal;
 }
 .card-text {
-    font-size: 12px;
+    font-size: 10px;
     color: #a9afb8;
+    line-height: 1.4;
+    max-width: 400px;
+    margin: 0 auto 15px;
 }
 .card-text.project {
-    font-size: 12px;
+    font-size: 10px;
     color: black;
+    text-align: center;
+    line-height: 2;
+    width: 300px;
+}
+.services-container {
+    padding: auto 15px;
 }
 .card-size {
-    padding: 50px;
+    padding: 20px 0;
+    text-align: center;
+}
+.card-size-info {
+    padding: 0px 0 20px;
+    text-align: center;
+}
+.card-size-NASFAA {
+    padding: 20px 0;
+    text-align: center;
+    order: 1;
+}
+.card-size-info-NASFAA {
+    padding: 0px 0 20px;
+    text-align: center;
+    order: 2;
+}
+.home-example {
+    height: 250px;
+    /* mix-blend-mode: multiply; */
+    position: relative;
+}
+.example-logo {
+    position: relative;
+    width: 150px;
+    margin: 0 auto 15px;
+}
+.example-logo-grey {
+    width: 150px;
+    /* mix-blend-mode: multiply; */
+    background: #f0f0f0;
+    margin: 0 auto 15px;
 }
 .card-grey {
+    position: relative;
     background: #f0f0f0;
+    transform: skew(0, 5deg);
+    padding: 15px auto;
+}
+.card-white {
+    position: relative;
+    margin: auto;
+}
+.card-grey-inner {
+    position: relative;
+    transform: skew(0, -5deg);
 }
 .card {
-    background: none;
     border: none;
+    margin: auto;
+    background: none;
 }
-.nav-link {
-    user-select: none;
-}
-.testimonial {
+.testimonial-image {
+    position: relative;
+    top: -60px;
     background: #7c7c7c;
+    background-image: url('../images/AdobeStock_305724406.png');
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    z-index: -1;
+    margin: 0;
+}
+.ms-head.testimonial {
+    font-size: 14px;
+    padding: 100px 0 0;
+    text-align: center;
+}
+.testimonial-quote {
+    font-style: italic;
+    font-size: 12px;
+    color: #fff;
+    max-width: 600px;
+    margin: 35px auto 15px;
+    text-align: center;
+}
+.testimonial-name {
+    font-size: 12px;
+    font-weight: 500;
     color: #fff;
     text-align: center;
-    padding: 50px 0;
 }
-.consultation {
+.consultation-container {
     background: #1797b7;
     color: #fff;
     text-align: center;
-    padding: 50px 0;
+    padding: 75px 0;
+    margin-top: -60px;
+}
+.btn-outline-white.consultation {
+    margin: 25px auto 0;
+    padding: auto;
+}
+.lighthouse-scene {
+    width: 50vw;
+    position: absolute;
+    bottom: 0;
 }
 .bottom {
-    background: #1742b7;
+    background: #07516e;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 .copyright {
     color: white;
@@ -171,4 +352,114 @@ html {
 .privacy {
     color: white;
     text-decoration: underline;
+}
+.privacy:hover {
+    color: #e4621c;
+}
+
+/* --------------------------------------------------------------- */
+/* ------------------------ MEDIA QUERIES ------------------------ */
+
+/* SMALL SCREEN */
+@media only screen and (min-width: 575px) {
+    .phone {
+        font-size: 14px;
+    }
+}
+
+/* MEDIUM SCREEN */
+@media only screen and (min-width: 768px) {
+    .logo {
+        width: 20vw;
+    }
+    .phone {
+        font-size: 16px;
+    }
+    .nav-link {
+        font-size: 14px;
+        padding: 5px 10px 0px !important;
+    }
+    .btn-outline-primary.contact { 
+        margin-top: 0;
+    }
+    .btn-outline-primary.contact:hover { 
+        margin-top: 0;
+    }
+    .hero-container {
+        padding-right: 200px;
+    }
+    .services {
+        height: 530px;
+    }
+    .ms-headline {
+        font-size: 30px;
+    }
+    .ms-head-min {
+        font-size: 14px;
+    }
+    .ms-head-min.top {
+        width: auto;
+    }
+    .ms-info {
+        max-width: 800px;
+        font-size: 12px;
+    }
+    .card-title {
+        font-size: 12px;
+    }
+    .card-text {
+        font-size: 11px;
+    }
+    .card-size {
+        padding: 10px;
+    }
+    .card-size-info {
+        padding: 30px;
+    }
+    .card-size-NASFAA {
+        order: 2;
+        padding: 30px;
+    }
+    .card-size-info-NASFAA {
+        order: 1;
+    }
+    .card-text.project {
+        font-size: 11px;
+        width: 500px;
+    }
+    .ms-head.testimonial {
+        font-size: 16px;
+    }
+    .example-logo {
+        padding-top: 15px;
+    }
+    .example-logo-grey {
+        padding-top: 15px;
+    }
+}
+
+/* LARGE SCREEN */
+@media only screen and (min-width: 992px) {
+    .card-size {
+        padding: 30px;
+    }
+    .hero-container {
+        padding-right: 300px;
+    }
+}
+
+/* X-LARGE SCREEN */
+@media only screen and (min-width: 1050px) {
+
+    
+}
+
+/* XX-LARGE SCREEN */
+@media only screen and (min-width: 1200px) {
+    .hero-container {
+        padding-right: 400px;
+    }
+    .services {
+        height: 490px;
+    }
 }
