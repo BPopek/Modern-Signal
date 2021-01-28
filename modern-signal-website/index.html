@@ -21,43 +21,52 @@
 </head>
 <body class='main-body'>
     <div class='phone'>
-        <div class='container phone-container'>(202) 365-7367</div>
+        <div class='container-fluid phone-container'>(202) 365-7367</div>
     </div>
-
     <div class='nav-styles'>
+        <button class='navbar-toggler' 
+            onclick='toggleIcon()'
+            type='button' 
+            data-toggle='collapse' 
+            data-target='#toggleNav'
+            aria-controls='toggleNav'
+            aria-expanded='false'
+            aria-label='Toggle Navigation'>
+            <span class='fas fa-bars'></span>    
+            <!-- <span class='fa fa-times navX icon-hide' id='toggle2' ></span>     -->
+        </button>
         <nav class='navbar navbar-light navbar-expand-md'>
-            <div class='container nav-container'>
+            <div class='container-fluid nav-container'>
                 <div class='navbar-brand' >
                     <a href='index.html'>
                         <img src='images/MS-logo.png' alt='logo' class='logo'>
                     </a>
                 </div>
-                <button class='navbar-toggler' 
-                    type='button' 
-                    data-toggle='collapse' 
-                    data-target='#toggleNav'
-                    aria-controls='toggleNav'
-                    aria-expanded='false'
-                    aria-label='Toggle Navigation'>
-                    <span class='fas fa-bars'></span>    
-                </button>
                 <div class='collapse navbar-collapse navbar-menu' id='toggleNav'>
                     <div class='navbar-nav'>
+                        <div class="dropdown-divider-mobile"></div>
                         <div class='dropdownAbout'>
                             <a class='nav-item nav-link dropdown-toggle' 
                             id="navbarDropdownAbout" 
                             data-toggle="dropdown" 
                             aria-haspopup='true' 
                             aria-expanded="false">ABOUT US</a>
-                            <div class='dropdown-menu dropdown-menu-end' aria-labelledby='navbarDropdownAbout'>
-                                <a class='dropdown-item' href='#'>About Modern Signal</a>
-                                <a class='dropdown-item' href='#'>Our Project Process</a>
-                                <a class='dropdown-item' href='#'>Our Team</a>
-                                <a class='dropdown-item' href='#'>News</a>
-                                <a class='dropdown-item' href='#'>Partnership and Subcontracting</a>
-                                <a class='dropdown-item' href='#'>Job Openings</a>
+                            <div class='dropdown-menu ' aria-labelledby='navbarDropdownAbout'>
+                                <div class="dropdown-divider"></div>
+                                <span class='mobile-dash'> -</span><a class='dropdown-item' href='#'>About Modern Signal</a>
+                                <div class="dropdown-divider"></div>
+                                <span class='mobile-dash'> -</span><a class='dropdown-item' href='#'>Our Project Process</a>
+                                <div class="dropdown-divider"></div>
+                                <span class='mobile-dash'> -</span><a class='dropdown-item' href='#'>Our Team</a>
+                                <div class="dropdown-divider"></div>
+                                <span class='mobile-dash'> -</span><a class='dropdown-item' href='#'>News</a>
+                                <div class="dropdown-divider"></div>
+                                <span class='mobile-dash'> -</span><a class='dropdown-item' href='#'>Partnership and Subcontracting</a>
+                                <div class="dropdown-divider"></div>
+                                <span class='mobile-dash'> -</span><a class='dropdown-item' href='#'>Job Openings</a>
                             </div>  <!-- navbarDropdownAbout -->
                         </div>
+                        <div class="dropdown-divider-mobile"></div>
                         <div class='dropdownServices'>
                             <a class='nav-item nav-link dropdown-toggle' 
                             id="navbarDropdownServices" 
@@ -65,12 +74,17 @@
                             aria-haspopup='true' 
                             aria-expanded="false">SERVICES</a>
                             <div class='dropdown-menu' aria-labelledby='navbarDropdownServices'>
-                                <a class='dropdown-item' href='#'>Custom Website Development</a>
-                                <a class='dropdown-item' href='#'>Responsive Web Design</a>
-                                <a class='dropdown-item' href='#'>Database Development</a>
-                                <a class='dropdown-item' href='#'>Systems Integration & Data Migration</a>
+                                <div class="dropdown-divider"></div>
+                                <span class='mobile-dash'> -</span><a class='dropdown-item' href='#'>Custom Website Development</a>
+                                <div class="dropdown-divider"></div>
+                                <span class='mobile-dash'> -</span><a class='dropdown-item' href='#'>Responsive Web Design</a>
+                                <div class="dropdown-divider"></div>
+                                <span class='mobile-dash'> -</span><a class='dropdown-item' href='#'>Database Development</a>
+                                <div class="dropdown-divider"></div>
+                                <span class='mobile-dash'> -</span><a class='dropdown-item' href='#'>Systems Integration & Data Migration</a>
                             </div>  <!-- navbarDropdownServices -->
                         </div>
+                        <div class="dropdown-divider-mobile"></div>
                         <div class='dropdownCaseStudies'>
                             <a class='nav-item nav-link dropdown-toggle' 
                             href='#' 
@@ -79,44 +93,61 @@
                             aria-haspopup='true' 
                             aria-expanded="false">CASE STUDIES</a>
                             <div class='dropdown-menu' aria-labelledby='navbarDropdownCaseStudies'>
-                                <a class='dropdown-item' href='#'>Item 1</a>
-                                <a class='dropdown-item' href='#'>Item 2</a>
-                                <a class='dropdown-item' href='#'>Item 3</a>
+                                <div class="dropdown-divider"></div>
+                                <span class='mobile-dash'> -</span><a class='dropdown-item' href='#'>Item 1</a>
+                                <div class="dropdown-divider"></div>
+                                <span class='mobile-dash'> -</span><a class='dropdown-item' href='#'>Item 2</a>
+                                <div class="dropdown-divider"></div>
+                                <span class='mobile-dash'> -</span><a class='dropdown-item' href='#'>Item 3</a>
                             </div>  <!-- navbarDropdownCaseStudies -->
                         </div>
-                        <button class="btn btn-default btn-outline-primary contact" type="submit">CONTACT US</button>
-                    </div>  <!-- nav-item dropdown -->
+                        <div class='dropdownMobile'>
+                            <div class="dropdown-divider-mobile"></div>
+                            <a class='nav-item nav-link dropdown-toggle contact-mobile-text' 
+                                id="navbarDropdownMobileContact" 
+                                data-toggle="dropdown" 
+                                aria-haspopup='true' 
+                                aria-expanded="false">CONTACT US</a>
+                            <button class="btn btn-default btn-outline-primary contact-button" type="submit">CONTACT US</button>
+                            <div class='dropdown-menu'  
+                                aria-labelledby='navbarDropdownMobileContact'>
+                                <div class="dropdown-divider-mobile"></div>
+                                <button class="btn btn-default btn-outline-primary contact-button-mobile" type="submit">REQUEST A CONSULTATION</button>                                
+                                <a class='mobile-contact' 
+                                href='#'>(202) 365-7367</a>                        
+                            </div>  <!-- navbarDropdownMobileContact -->
+                        </div>
                     </div><!-- navbar-nav -->
                 </div><!-- collapse -->
-            </div><!-- container nav-container -->
+            </div><!-- container-fluid nav-container -->
         </nav>
     </div><!-- nav-styles -->
     <section class='main-area'>
         <div class='hero-color'>
             <div class='hero-image'>
-                <div class='container hero-container'>
+                <div class='container-fluid hero-container'>
                     <h2 class='ms-headline'>FULL SERVICE <br> 
                         WEB DESIGN & DEVELOPMENT</h2> 
                     <h3 class='ms-head-min top'>SYSTEMS INTEGRATIONS, SOFTWARE & DATABASE DEVELOPMENT</h3>
-                    <div class='clutch'>
-                        <img src='images/Clutch-DC.png' alt='Clutch Logo' class='clutch-logo'>
-                        <img src='images/Clutch-Baltimore.png' alt='Clutch Logo' class='clutch-logo'>
-                    </div>
-                </div><!-- container --> 
-                </div><!-- hero-image --> 
+                </div><!-- container-fluid --> 
+            </div><!-- hero-image --> 
         </div><!-- hero-color --> 
         <div class='services'>
-            <div class='services-container'>
-                <div class='container'>
-                    <h2 class='ms-head'>Web Development Services</h2>
+            <div class='clutch'>
+                <img src='images/Clutch-DC.png' alt='Clutch Logo' class='clutch-logo'>
+                <img src='images/Clutch-Baltimore.png' alt='Clutch Logo' class='clutch-logo'>
+            </div>
+            <div class='container-fluid services-container'>
+                <div class='container-fluid'>
+                    <h2 class='ms-head ms-services'>Web Development Services</h2>
                     <h3 class='ms-head-min middle'>THAT STREAMLINE OPERATIONS</h3>
                     <p class='ms-info'>
                         Modern Signal offers custom website designs that streamline operations, increase sales and membership, strengthen marketing efforts, improve customer service, and tackle data management challenges to help you run your organization. 
                     </p>
                 </div><!-- container --> 
-                <div class="container">
+                <div class="container-fluid">
                     <div class='row row-cols-1 row-cols-md-4'>
-                        <div class='col card-size'>
+                        <div class='col card-size-services-left'>
                             <section class='card'>
                                 <img src='images/Custom-Web-Dev-Icon.png' alt='Web Development Logo' class='services-logo'>                     <h4 class='card-title'>Custom Website Development</h4>
                                 <p class='card-text'>
@@ -125,7 +156,7 @@
                                 <button class="btn btn-default btn-outline-grey" type="submit">LEARN MORE</button>
                             </section>
                         </div><!-- col cardSize -->
-                        <div class='col card-size'>
+                        <div class='col card-size-services'>
                             <section class='card'>
                                 <img src='images/Responsive-Web-Design-Icon.png' alt='Web Design Logo' class='services-logo'>  
                                 <h4 class='card-title'>Responsive Web Design</h4>
@@ -135,7 +166,7 @@
                                 <button class="btn btn-default btn-outline-grey" type="submit">LEARN MORE</button>
                             </section>
                         </div><!-- col cardSize -->
-                        <div class='col card-size'>
+                        <div class='col card-size-services'>
                             <section class='card'>
                                 <img src='images/Database-Development-Icon.png' alt='Database Development Logo' class='services-logo'>  
                                 <h4 class='card-title'>Database Development</h4>
@@ -145,7 +176,7 @@
                                 <button class="btn btn-default btn-outline-grey" type="submit">LEARN MORE</button>
                             </section>
                         </div><!-- col cardSize -->
-                        <div class='col card-size'>
+                        <div class='col card-size-services-right'>
                             <section class='card'>
                                 <img src='images/Systems-Integration-&-Data-Migration-Icon.png' alt='Web Development Logo' class='services-logo'>  
                                 <h4 class='card-title'>Systems Integration <br> & Data Migration</h4>
@@ -160,14 +191,14 @@
             </div><!-- services-container --> 
         </div><!-- services --> 
         <div class='card-grey'>
-            <section class='card container'>
+            <section class='card container-fluid'>
                 <div class='card-body'>
                     <div class='card-grey-inner'>
                         <div class='row row-cols-1 row-cols-md-2'>
-                            <div class='col card-size'>
+                            <div class='col card-size-grey'>
                                 <img src='images/CL-mobile.png' alt='Crop Life Example Design' class='home-example'>
                             </div>
-                            <div class='col card-size-info'>
+                            <div class='col card-size-info-grey'>
                                 <img src='images/Crop-Life-logo.png' alt='Crop Life Example Design' class='example-logo-grey'> 
                                 <p class='card-text project'>
                                     Modern Signal developed an mobile app for CropLife America that allows its members to easily share their news and connect. Croplife America represents the developers, manufacturers, formulators and distributors of plant science solutions for agriculture and pest management in the United States.
@@ -180,17 +211,17 @@
             </section>
         </div>
         <div class='card-white'>
-            <section class='card'>
+            <section class='card container-fluid'>
                 <div class='card-body'>
                     <div class='row row-cols-1 row-cols-md-2'>
-                        <div class='col card-size-info-NASFAA'>
+                        <div class='col card-size-info-white'>
                             <img src='images/NASFAA-CE.png' alt='NASFAA-CE Logo' class='example-logo'> 
                             <p class='card-text project'>
                                 Modern Signal launches NASFAA's new Compliance Engine, a members-only centralized, collaborative platform that helps members efficiently manage their compliance tasks across their organization. Modern Signal designed and developed a front-end system that enables task assignments, commenting, checklists, and printing of reports. The back-end system includes a form-building tool and integration with iMIS.
                             </p>
                             <button class="btn btn-default btn-outline-primary" type="submit">LEARN MORE</button>
                         </div><!-- col card-size --> 
-                        <div class='col card-size-NASFAA'>
+                        <div class='col card-size-white'>
                             <img src='images/NASFAA-Tablet.png' alt='NASFAA Example Design' class='home-example'>
                         </div><!-- col card-size --> 
                     </div><!-- row row-cols-1 row-cols-md-2 -->
@@ -198,14 +229,14 @@
             </section>
         </div>
         <div class='card-grey'>
-            <section class='card container'>
+            <section class='card container-fluid'>
                 <div class='card-body'>
                     <div class='card-grey-inner'>
                         <div class='row row-cols-1 row-cols-md-2'>
-                            <div class='col card-size'>
+                            <div class='col card-size-grey'>
                                 <img src='images/PSJD-laptop.png' alt='PSJD Example Design' class='home-example'>
                             </div>
-                            <div class='col card-size-info'>
+                            <div class='col card-size-info-grey'>
                                 <img src='images/PSJD-logo.png' alt='PSJD Logo' class='example-logo-grey'>                        
                                 <p class='card-text project'>
                                     Modern Signal worked with the National Association of Legal Professionals to rebrand, redesign and develop PSJD, a comprehensive directory of legal public sectors jobs. PSJD guides law students and practicing lawyers looking to bring their talents to public service. We're working on the mobile website next!
@@ -218,7 +249,7 @@
             </section>
         </div><!-- card-grey -->  
         <div class='testimonial-image'>
-            <div class='container'>
+            <div class='container-fluid'>
                 <h2 class='ms-head testimonial'>Client Testimonials</h2>
                 <p class='testimonial-quote'>
                     “This was by far the smoothest website redevelopment I have ever experienced. Modern Signal was a wonderful company to work with and we greatly value our working relationship.”
@@ -226,22 +257,22 @@
                 <p class='testimonial-name'>
                     National Association of Student Financial Aid Administrators
                 </p>
-            </div><!-- container --> 
+            </div><!-- container-fluid --> 
             <img src='images/Lighthouse-Scene.png' alt='Lighthouse Scene Image' class='lighthouse-scene'>
         </div><!-- testimonial-image --> 
         <div class='consultation-container'>
-            <div class='container'>
+            <div class='container-fluid'>
                 <h2 class='ms-head'>HOW CAN WE HELP STREAMLINE YOUR OPERATIONS?</h2>
                 <button class="btn btn-default btn-outline-white consultation" type="submit">REQUEST A CONSULTATION</button>
-            </div><!-- container --> 
+            </div><!-- container-fluid --> 
         </div><!-- consultation --> 
         <div class='bottom'>
-            <div class='container'>
+            <div class='container-fluid'>
                 <p class='copyright'>
                     Copyright © 2020 Modern Signal. All rights reserved.
                     <a class='privacy' href='#'>Privacy Policy.</a>
                 </p>
-            </div><!-- container -->
+            </div><!-- container-fluid -->
         </div><!-- row bottomB -->    
     </section><!-- main-area -->    
 
@@ -253,7 +284,7 @@
     <script src='node_modules/jquery/dist/jquery.js'></script>
 
     <!-- Optional JavaScript -->
-    <!-- <script src='app.js'></script> -->
+    <script src='app.js'></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src='js/jquery.slim.min.js'></script>
