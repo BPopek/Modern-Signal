@@ -363,7 +363,7 @@ html {
     text-align: center;
 }
 .card-size-grey {
-    padding: 30px 0 10px;
+    padding: 30px 0 0px;
     text-align: center;
 }
 .card-size-info-grey {
@@ -545,10 +545,10 @@ html {
         padding: 20px 0 25px 10px;
     }
     .card-size-grey {
-        padding: 0 0 20px;
+        padding: 30px 0 20px;
     }
     .card-size-info-grey {
-        padding: 40px 0 20px;
+        padding: 40px 0 40px;
         text-align: center;
     }
     .hero-color {
