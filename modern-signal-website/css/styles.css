@@ -35,7 +35,7 @@ html {
     box-sizing: border-box;
 }
 .container-fluid {
-    padding: 0px 20px !important;
+    padding: 0px 50px !important;
 }
 .btn-default { 
     border-radius: 0; 
@@ -133,7 +133,7 @@ html {
     padding: 0;
     margin: 0;
     top: 20px;
-    right: 20px;
+    right: 50px;
     z-index: 10 !important;
     position: absolute;
     color: #e4621c !important;
@@ -147,6 +147,9 @@ html {
     font-size: 14px;
     padding: 10px 10px !important;
     color: #fff !important;
+}
+.nav-link:hover {
+    color: #1797b7 !important;
 }
 .navbar {
     width: 100%;
@@ -211,11 +214,15 @@ html {
     margin: 5px auto;
     font-size: 14px;
 }
+.dropdown-item:hover {
+    color: #9198a1;
+    background: none !important;
+}
 .dropdown-divider-mobile {
     border-top: 1px solid #7c7c7c;
 }
 .dropdown-divider {
-    border-top: 2px solid #7c7c7c;
+    border-top: 1px solid #7c7c7c;
 }
 .hero-color {
     background: #1797b7;
@@ -229,7 +236,7 @@ html {
 .hero-image {
     position: relative;
     background-image: url('../images/Lighthouse.png');
-    background-size: 160%;
+    background-size: 140%;
     background-repeat: no-repeat;
     background-position: right top;
     transform: skew(0, -5deg);
@@ -327,14 +334,14 @@ html {
     font-weight: 600;
 }
 .card-text {
-    font-size: 14px;
+    font-size: 16px;
     color: #a9afb8;
     line-height: 1.5;
     max-width: 300px;
     margin: 0 auto 15px;
 }
 .card-text.project {
-    font-size: 12px;
+    font-size: 16px;
     color: black;
     text-align: center;
     line-height: 2;
@@ -392,8 +399,6 @@ html {
 }
 .example-logo-grey {
     width: 150px;
-    /* mix-blend-mode: multiply; */
-    /* background: #f0f0f0; */
     margin: 0 auto 15px;
 }
 .card-grey {
@@ -432,7 +437,7 @@ html {
 }
 .testimonial-quote {
     font-style: italic;
-    font-size: 14px;
+    font-size: 16px;
     color: #fff;
     max-width: 600px;
     margin: 35px auto 15px;
@@ -467,7 +472,7 @@ html {
 }
 .copyright {
     color: white;
-    font-size: 12px;
+    font-size: 14px;
     margin: auto;
     width: 300px;
 }
@@ -487,21 +492,19 @@ html {
     .logo {
         width: 30vw;
     }
-    .hero-image {
-        background-size: 140%;
-    }
     .ms-headline {
         font-size: 26px;
         margin-top: -30px;
     }
     .ms-head-min.top {
-        font-size: 12px;
+        font-size: 16px;
+        width: 350px;
     }
     .ms-head {
         font-size: 18px;
     }
     .ms-head-min.middle {
-        font-size: 12px;
+        font-size: 16px;
     }
     .services {
         position: relative;
@@ -512,28 +515,31 @@ html {
     }
     .ms-head.ms-services{
         color: #fff;
-        font-size: 18px;
+        font-size: 22px;
     }
     .ms-info {
         max-width: 600px;
         text-align: center;
         margin: 25px auto 0 auto !important;
-        font-size: 12px;
+        font-size: 16px;
     }
     .services-logo {
         width: 30px;
         margin: 0 auto 10px;
     }
     .card-title {
-        font-size: 11px;
+        font-size: 18px;
         color: #fff;
     }
     .card-text {
-        font-size: 12px;
+        font-size: 16px;
         color: #a9afb8;
         line-height: 1.4;
         max-width: 300px;
         margin: 0 auto 15px;
+    }
+    .card-text.project {
+        font-size: 16px;
     }
     .card-size-services {
         padding: 20px 10px 25px;
@@ -573,13 +579,20 @@ html {
     .copyright {
         width: auto;
     }
+    .ms-head.testimonial {
+        font-size: 22px;
+    }
+    .testimonial-quote {
+        font-size: 16px;
+    }
 }
 
 /* MEDIUM SCREEN */
 @media only screen and (min-width: 768px) {
     .container-fluid {
-        padding: 0px 50px !important;
-    }.logo {
+        padding: 0px 100px !important;
+    }
+    .logo {
         width: 20vw;
     }
     .phone {
@@ -631,6 +644,9 @@ html {
     .dropdown-divider-mobile {
         display: none;
     }
+    .dropdown-divider-mobile {
+        border-top: 2px solid #7c7c7c;
+    }
     .contact-mobile-text {
         display: none;
     }
@@ -645,8 +661,8 @@ html {
     .navbar-nav {
         background: none;
         width: auto;
-        right: 20px;
-        padding: 10px 30px 10px 0;
+        right: 0px;
+        padding: 10px 100px 10px 0;
     }
     .btn-outline-primary.contact { 
         margin-top: 0;
@@ -674,7 +690,7 @@ html {
         margin-top: -30px;
     }
     .ms-head-min {
-        font-size: 14px;
+        font-size: 16px;
     }
     .ms-head-min.top {
         width: 400px;
@@ -697,16 +713,16 @@ html {
     }
     .ms-info {
         max-width: 800px;
-        font-size: 14px;
+        font-size: 16px;
     }
     .card-grey {
         height: auto;
     }
     .card-title {
-        font-size: 14px;
+        font-size: 18px;
     }
     .card-text {
-        font-size: 12px;
+        font-size: 16px;
         max-width: 450px
     }
     .card-size {
@@ -727,7 +743,7 @@ html {
         padding: 0px 0 70px;
     }
     .card-text.project {
-        font-size: 14px;
+        font-size: 16px;
         width: 300px;
     }
     .example-logo {
@@ -813,6 +829,15 @@ html {
     }
     .testimonial-quote {
         max-width: 1000px;
+    }
+    .card-title {
+        font-size: 18px;
+    }
+    .ms-head.ms-services {
+        font-size: 24px;
+    }
+    .card-text {
+        font-size: 14px;
     }
     .card-text.project {
         font-size: 14px;
