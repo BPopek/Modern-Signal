@@ -147,6 +147,22 @@ html {
     font-size: 14px;
     padding: 10px 10px !important;
     color: #fff !important;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-link[aria-expanded="true"] .caret-up{
+    display: inline;
+    padding-top: 3px;
+}
+.nav-link[aria-expanded="false"] .caret-up{
+    display: none;
+}
+.nav-link[aria-expanded="true"] .caret-down{
+    display: none;
+}
+.nav-link[aria-expanded="false"] .caret-down{
+    display: inline;
+    padding-top: 3px;
 }
 .nav-link:hover {
     color: #1797b7 !important;
@@ -238,7 +254,7 @@ html {
     background-image: url('../images/Lighthouse.png');
     background-size: 140%;
     background-repeat: no-repeat;
-    background-position: right top;
+    background-position: top right;
     transform: skew(0, -5deg);
     height: 500px;
     padding-top: 50px;
@@ -389,7 +405,6 @@ html {
 }
 .home-example {
     height: 250px;
-    /* mix-blend-mode: multiply; */
     position: relative;
 }
 .example-logo {
@@ -422,14 +437,13 @@ html {
 }
 .testimonial-image {
     position: relative;
-    top: -60px;
     background: #7c7c7c;
     background-image: url('../images/AdobeStock_305724406.png');
     background-size: cover;
-    background-position: center;
+    background-position: top center;
     height: 450px;
     z-index: -1;
-    margin: 0;
+    margin: -60px 0 0;
 }
 .ms-head.testimonial {
     padding: 150px 0 0;
@@ -454,7 +468,7 @@ html {
     color: #fff;
     text-align: center;
     padding: 50px 0;
-    margin-top: -60px;
+    /* margin-top: 0px; */
 }
 .btn-outline-white.consultation {
     margin: 25px auto 0;
@@ -564,8 +578,10 @@ html {
         position: relative;
         background-image: url('../images/Lighthouse.png');
         background-size: cover;
-        background-position: right top;
+        /* background-position: right top; */
         height: 550px;
+        background-position: top center;
+
     }
     .hero-container {
         margin: 50px auto 0;
@@ -754,6 +770,8 @@ html {
     }
     .testimonial-image {
         height: 550px;
+        margin: -60px 0 0;
+        background-position: top -100px center;
     }
 }
 
@@ -789,6 +807,7 @@ html {
     }
     .testimonial-image {
         height: 600px;
+        background-position: top -100px center;
     }
     .testimonial-quote {
         font-size: 16px;
@@ -801,7 +820,9 @@ html {
 
 /* X-LARGE SCREEN */
 @media only screen and (min-width: 1050px) {
-    
+    .testimonial-image {
+        background-position: top -150px center;
+    }
 }
 
 /* XX-LARGE SCREEN */
@@ -827,6 +848,11 @@ html {
     .services {
         margin-top: -120px;
     }
+    .testimonial-image {
+        margin: -100px 0 0;
+        background-position: top -180px center;
+        height: 700px;
+    }
     .testimonial-quote {
         max-width: 1000px;
     }
@@ -842,5 +868,11 @@ html {
     .card-text.project {
         font-size: 14px;
         width: 500px;
+    }
+}
+@media only screen and (min-width: 1550px) {
+    .testimonial-image {
+        background-position: top -220px center;
+        height: 800px;
     }
 }
