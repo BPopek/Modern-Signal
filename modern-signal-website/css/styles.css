@@ -190,9 +190,6 @@ html {
 .dropdown-toggle:after {
     content: none;
 }
-/* .navbar-collapse.navbar-menu.collapse.show {
-    margin-right: -20px;
-} */
 .dropdown-menu {
     left: auto;
     top: auto;
@@ -241,7 +238,6 @@ html {
     border-top: 1px solid #7c7c7c;
 }
 .hero-color {
-    background: #1797b7;
     color: #fff;
     text-align: center;
     transform: skew(0, 5deg);
@@ -468,7 +464,6 @@ html {
     color: #fff;
     text-align: center;
     padding: 50px 0;
-    /* margin-top: 0px; */
 }
 .btn-outline-white.consultation {
     margin: 25px auto 0;
@@ -497,6 +492,139 @@ html {
 .privacy:hover {
     color: #e4621c;
 }
+/* PORTFOLIO PAGE */
+.hero-color-portfolio {
+    color: #fff;
+    text-align: center;
+    transform: skew(0, 5deg);
+    position: relative;
+    height: 300px;
+    z-index: 0;
+}
+.hero-image-portfolio {
+    position: relative;
+    background-image: url('../images/OurWorkColor.png');
+    background-size: 140%;
+    background-repeat: no-repeat;
+    background-position: top right;
+    transform: skew(0, -5deg);
+    height: 500px;
+    padding-top: 50px;
+    z-index: 0;
+}
+.hero-container-portfolio {
+    margin: 30px auto;
+    text-align: center;
+}
+.testimonial-image-portfolio {
+    position: relative;
+    background: #7c7c7c;
+    background-image: url('../images/AdobeStock_305724406.png');
+    background-size: cover;
+    background-position: top center;
+    height: 450px;
+    z-index: -1;
+    margin: 0px 0 0;
+}
+.portfolio-main {
+    transform: skew(0, 5deg);
+    background: #fff;
+    z-index: 1;
+    margin: -30px 0 0;
+    padding-bottom: 1px;
+}
+.portfolio-filter {
+    margin: 100px auto 0;
+}
+.portfolio-container {
+    transform: skew(0, -5deg);
+    z-index: 1;
+    text-align: center;
+}
+.filter-container {
+    margin: 30px auto 0;
+    width: 100%;
+}
+.filter-dropdown {
+    border: 1px solid #a9afb8;
+    border-radius: 0;
+    margin: 0px 5px 0;
+    width: auto;
+    flex: 1;
+}
+
+.btn.btn-search {
+    background-color: #ec9825;
+    color: white;
+    padding: 0px 10px;
+    height: 38px;
+    width: 38px !important;
+    margin-left: 5px;
+}
+.ms-headline-portfolio {
+    font-weight: 900;
+    font-size: 34px;
+    margin-top: 50px;
+}
+.portfolio-examples {
+    margin: 100px auto;
+}
+.ms-head.ms-portfolio{
+    color: black;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 100px 0 0;
+}
+.ms-head-min.middle-portfolio {
+    color: #e4621c;
+    font-size: 18px;
+}
+.ms-head-min.middle-portfolio-filter {
+    color: #a9afb8;
+    font-size: 18px;
+}
+.ms-info-portfolio-bold {
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+.portfolio-logo {
+    width: 200px;
+    margin: 50px auto 10px;
+}
+.card-size-portfolio {
+    padding: 20px;
+    text-align: center;
+}
+.card-title-portfolio {
+    font-size: 18px;
+    color: black;
+    white-space: normal;
+    font-weight: 600;
+}
+.card-text.portfolio {
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    line-height: 2;
+    width: auto;
+}
+.testimonial-image-portfolio {
+    position: relative;
+    background: #7c7c7c;
+    background-image: url('../images/AdobeStock_305724406.png');
+    background-size: cover;
+    background-position: top center;
+    height: 450px;
+    z-index: -1;
+    margin: -60px 0 0;
+}
+
+
+
+
+
+
 
 /* --------------------------------------------------------------- */
 /* ------------------------ MEDIA QUERIES ------------------------ */

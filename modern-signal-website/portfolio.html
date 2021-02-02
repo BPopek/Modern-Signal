@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+
+    <!-- <link rel='icon' href='./images/nasfaa_icon.png' /> -->
+    <!-- <link rel='apple-touch-icon' href='./images/nasfaa_icon.png' /> -->
+
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+
+    <link rel='stylesheet' href='node_modules/jquery/dist/jquery.js'> 
+
+    <!-- Bootstrap CSS -->
+    <link rel='stylesheet' href='css/bootstrap.min.css'>
+    <link rel='stylesheet' href='css/styles.css'>
+   
+    <!-- FontAwesome -->
+    <link href='css/all.css' rel='stylesheet'>
+    <title>Modern Signal</title>
+</head>
+<body class='main-body'>
+    <div class='phone'>
+        <div class='container-fluid phone-container'>(202) 365-7367</div>
+    </div>
+    <div class='nav-styles'>
+        <button class='navbar-toggler' 
+            onclick='toggleIcon()'
+            type='button' 
+            data-toggle='collapse' 
+            data-target='#toggleNav'
+            aria-controls='toggleNav'
+            aria-expanded='false'
+            aria-label='Toggle Navigation'>
+            <span class='fas fa-bars'></span>    
+            <!-- <span class='fa fa-times navX icon-hide' id='toggle2' ></span>     -->
+        </button>
+        <nav class='navbar navbar-light navbar-expand-md'>
+            <div class='container-fluid nav-container'>
+                <div class='navbar-brand' >
+                    <a href='index.html'>
+                        <img src='images/MS-logo.png' alt='logo' class='logo'>
+                    </a>
+                </div>
+                <div class='collapse navbar-collapse navbar-menu' id='toggleNav'>
+                    <div class='navbar-nav'>
+                        <div class="dropdown-divider-mobile"></div>
+                        <div class='dropdownAbout'>
+                            <a class='nav-item nav-link dropdown-toggle' 
+                            id="navbarDropdownAbout" 
+                            data-toggle="dropdown" 
+                            aria-haspopup='true' 
+                            aria-expanded="false">
+                            ABOUT US
+                            <i class="fa fa-angle-up fa-lg caret-up" aria-hidden="true"></i>
+                            <i class="fa fa-angle-down fa-lg caret-down" aria-hidden="true"></i>
+                        </a>
+
+                            <div class='dropdown-menu ' aria-labelledby='navbarDropdownAbout'>
+                                <div class="dropdown-divider"></div>
+                                <span class='mobile-dash'> -</span><a class='dropdown-item' href='#'>About Modern Signal</a>
+                                <div class="dropdown-divider"></div>
+                                <span class='mobile-dash'> -</span><a class='dropdown-item' href='#'>Our Project Process</a>
+                                <div class="dropdown-divider"></div>
+                                <span class='mobile-dash'> -</span><a class='dropdown-item' href='#'>Our Team</a>
+                                <div class="dropdown-divider"></div>
+                                <span class='mobile-dash'> -</span><a class='dropdown-item' href='#'>News</a>
+                                <div class="dropdown-divider"></div>
+                                <span class='mobile-dash'> -</span><a class='dropdown-item' href='#'>Partnership and Subcontracting</a>
+                                <div class="dropdown-divider"></div>
+                                <span class='mobile-dash'> -</span><a class='dropdown-item' href='#'>Job Openings</a>
+                            </div>  <!-- navbarDropdownAbout -->
+                        </div>
+                        <div class="dropdown-divider-mobile"></div>
+                        <div class='dropdownServices'>
+                            <a class='nav-item nav-link dropdown-toggle' 
+                            id="navbarDropdownServices" 
+                            data-toggle="dropdown" 
+                            aria-haspopup='true' 
+                            aria-expanded="false">
+                            SERVICES
+                            <i class="fa fa-angle-up fa-lg caret-up" aria-hidden="true"></i>
+                            <i class="fa fa-angle-down fa-lg caret-down" aria-hidden="true"></i>
+                        </a>
+                             
+                            <div class='dropdown-menu' aria-labelledby='navbarDropdownServices'>
+                                <div class="dropdown-divider"></div>
+                                <span class='mobile-dash'> -</span><a class='dropdown-item' href='#'>Custom Website Development</a>
+                                <div class="dropdown-divider"></div>
+                                <span class='mobile-dash'> -</span><a class='dropdown-item' href='#'>Responsive Web Design</a>
+                                <div class="dropdown-divider"></div>
+                                <span class='mobile-dash'> -</span><a class='dropdown-item' href='#'>Database Development</a>
+                                <div class="dropdown-divider"></div>
+                                <span class='mobile-dash'> -</span><a class='dropdown-item' href='#'>Systems Integration & Data Migration</a>
+                            </div>  <!-- navbarDropdownServices -->
+                        </div>
+                        <div class="dropdown-divider-mobile"></div>
+                        <div class='dropdownCaseStudies'>
+                            <a class='nav-item nav-link dropdown-toggle' 
+                            href='#' 
+                            id="navbarDropdownCaseStudies" 
+                            data-toggle="dropdown" 
+                            aria-haspopup='true' 
+                            aria-expanded="false">
+                            CASE STUDIES
+                            <i class="fa fa-angle-up fa-lg caret-up" aria-hidden="true"></i>
+                            <i class="fa fa-angle-down fa-lg caret-down" aria-hidden="true"></i>
+                        </a>
+
+                            <div class='dropdown-menu' aria-labelledby='navbarDropdownCaseStudies'>
+                                <div class="dropdown-divider"></div>
+                                <span class='mobile-dash'> -</span><a class='dropdown-item' href='#'>Item 1</a>
+                                <div class="dropdown-divider"></div>
+                                <span class='mobile-dash'> -</span><a class='dropdown-item' href='#'>Item 2</a>
+                                <div class="dropdown-divider"></div>
+                                <span class='mobile-dash'> -</span><a class='dropdown-item' href='#'>Item 3</a>
+                            </div>  <!-- navbarDropdownCaseStudies -->
+                        </div>
+                        <div class='dropdownMobile'>
+                            <div class="dropdown-divider-mobile"></div>
+                            <a class='nav-item nav-link dropdown-toggle contact-mobile-text' 
+                                id="navbarDropdownMobileContact" 
+                                data-toggle="dropdown" 
+                                aria-haspopup='true' 
+                                aria-expanded="false">
+                                CONTACT US
+                                <i class="fa fa-angle-up fa-lg caret-up" aria-hidden="true"></i>
+                            <i class="fa fa-angle-down fa-lg caret-down" aria-hidden="true"></i>
+                            </a>
+                            <button class="btn btn-default btn-outline-primary contact-button" type="submit">CONTACT US</button>
+                            <div class='dropdown-menu'  
+                                aria-labelledby='navbarDropdownMobileContact'>
+                                <div class="dropdown-divider-mobile"></div>
+                                <button class="btn btn-default btn-outline-primary contact-button-mobile" type="submit">REQUEST A CONSULTATION</button>                                
+                                <a class='mobile-contact' 
+                                href='#'>(202) 365-7367</a>                        
+                            </div>  <!-- navbarDropdownMobileContact -->
+                        </div>
+                    </div><!-- navbar-nav -->
+                </div><!-- collapse -->
+            </div><!-- container-fluid nav-container -->
+        </nav>
+    </div><!-- nav-styles -->
+    <section class='main-area'>
+        <div class='hero-color-portfolio'>
+            <div class='hero-image-portfolio'>
+                    <h2 class='ms-headline-portfolio'>OUR WORK</h2> 
+            </div><!-- hero-image-portfolio --> 
+        </div><!-- hero-color-portfolio --> 
+        <div class='portfolio-main'>
+            <div class='container-fluid portfolio-container'>
+                <h2 class='ms-head ms-portfolio'>Lorem Ipum Dolor Sit Amet Consectetur</h2>
+                <h3 class='ms-head-min middle-portfolio'>SIT AMET CONSECTETUR ADIPISCING</h3>
+                <p class='ms-info-portfolio'>
+                    Below are some examples of our custom web application and database work, including members-only websites, conference and event registration systems, email marketing systems, membership databases, time entry and tracking systems, and E-commerce. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. 
+                    <br />
+                    <p class='ms-info-portfolio-bold'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur voluptatem. </p>
+                </p>
+                <div class='portfolio-filter'>
+                    <!-- /////////////// -->
+                    <h3 class='ms-head-min middle-portfolio-filter'>FILTER BY:</h3>
+                    <div class='btn-group filter-container d-flex'>
+                        <div class="dropdown show flex-fill">
+                            <a class="btn filter-dropdown dropdown-toggle" href="#" role="button" id="dropdownMenuLinkService" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              SERVICE <i class="fa fa-angle-down caret-down" aria-hidden="true"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkService">
+                              <a class="dropdown-item" href="#">Service #1</a>
+                              <a class="dropdown-item" href="#">Service #2</a>
+                              <a class="dropdown-item" href="#">Service #3</a>
+                              <a class="dropdown-item" href="#">Service #4</a>
+                            </div>
+                          </div>
+                          <div class="dropdown show flex-fill">
+                            <a class="btn filter-dropdown dropdown-toggle" href="#" role="button" id="dropdownMenuLinkSector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              SECTOR <i class="fa fa-angle-down caret-down" aria-hidden="true"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkSector">
+                              <a class="dropdown-item" href="#">Sector #1</a>
+                              <a class="dropdown-item" href="#">Sector #2</a>
+                              <a class="dropdown-item" href="#">Sector #3</a>
+                              <a class="dropdown-item" href="#">Sector #4</a>
+                            </div>
+                          </div>
+                          <div class="dropdown show flex-fill">
+                            <a class="btn filter-dropdown dropdown-toggle" href="#" role="button" id="dropdownMenuLinkFeature" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              FEATURE <i class="fa fa-angle-down caret-down" aria-hidden="true"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkFeature">
+                              <a class="dropdown-item" href="#">Feature #1</a>
+                              <a class="dropdown-item" href="#">Feature #2</a>
+                              <a class="dropdown-item" href="#">Feature #3</a>
+                              <a class="dropdown-item" href="#">Feature #4</a>
+                            </div>
+                          </div>
+                          <div class="dropdown show flex-fill">
+                            <a class="btn filter-dropdown dropdown-toggle" href="#" role="button" id="dropdownMenuLinkTechnology" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              TECHNOLOGY <i class="fa fa-angle-down caret-down" aria-hidden="true"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkTechnology">
+                              <a class="dropdown-item" href="#">Technology #1</a>
+                              <a class="dropdown-item" href="#">Technology #2</a>
+                              <a class="dropdown-item" href="#">Technology #3</a>
+                              <a class="dropdown-item" href="#">Technology #4</a>
+                            </div>
+                          </div>
+                          <button class='btn btn-search' type='button'>
+                            <i class='fa fa-search'></i>
+                        </button>
+                    </div>
+
+
+
+
+
+
+
+
+                    <!-- /////////////// -->
+                </div>
+                <div class='portfolio-examples'>
+                    <div class='row row-cols-1 row-cols-md-2 row-cols-xlg-3'>
+                        <div class='col card-size-portfolio'>
+                            <section class='card'>
+                                <img src='images/PSJD-logo.png' alt='PSJD Logo' class='portfolio-logo'>                   
+                                <h4 class='card-title-portfolio'>PUBLIC SERVICE JOBS DIRECTORY</h4>
+                                <p class='card-text-portfolio'>
+                                    Modern Signal worked with the National Association of Legal Professionals to rebrand, redesign and develop PSJD, a comprehensive directory of legal public sectors jobs. PSJD guides law students and practicing lawyers...
+                                </p>
+                                <button class="btn btn-default btn-outline-primary" type="submit">READ MORE</button>
+                            </section>
+                        </div><!-- col cardSize -->
+                        <div class='col card-size-portfolio'>
+                            <section class='card'>
+                                <img src='images/Crop-Life-Logo.png' alt='Crop Life Logo' class='portfolio-logo'>                   
+                                <h4 class='card-title-portfolio'>CROP LIFE AMERICA</h4>
+                                <p class='card-text-portfolio'>
+                                    Modern Signal developed an mobile app for CropLife America that allows its members to easily share their news and connect. Croplife America represents the developers, manufacturers, formulators and distributors of plant science solutions for agriculture and...
+                                </p>
+                                <button class="btn btn-default btn-outline-primary" type="submit">READ MORE</button>
+                            </section>
+                        </div><!-- col cardSize -->
+                        <div class='col card-size-portfolio'>
+                            <section class='card'>
+                                <img src='images/NASFAA-CE.png' alt='NASFAA-CE Logo' class='portfolio-logo'>                   
+                                <h4 class='card-title-portfolio'>NASFAA COMPLIANCE ENGINE</h4>
+                                <p class='card-text-portfolio'>
+                                    Modern Signal launches NASFAA's new Compliance Engine, a members-only centralized, collaborative platform that helps members efficiently manage their compliance tasks across their organization. Modern Signal designed and developed a front-end system...
+                                </p>
+                                <button class="btn btn-default btn-outline-primary" type="submit">READ MORE</button>
+                            </section>
+                        </div><!-- col cardSize -->
+                        <div class='col card-size-portfolio'>
+                            <section class='card'>
+                                <img src='images/Crop-Life-Logo.png' alt='Crop Life Logo' class='portfolio-logo'>                   
+                                <h4 class='card-title-portfolio'>CROP LIFE AMERICA</h4>
+                                <p class='card-text-portfolio'>
+                                    Modern Signal developed an mobile app for CropLife America that allows its members to easily share their news and connect. Croplife America represents the developers, manufacturers, formulators and distributors of plant science solutions for agriculture and...
+                                </p>
+                                <button class="btn btn-default btn-outline-primary" type="submit">READ MORE</button>
+                            </section>
+                        </div><!-- col cardSize -->
+                        <div class='col card-size-portfolio'>
+                            <section class='card'>
+                                <img src='images/NASFAA-CE.png' alt='NASFAA-CE Logo' class='portfolio-logo'>                   
+                                <h4 class='card-title-portfolio'>NASFAA COMPLIANCE ENGINE</h4>
+                                <p class='card-text-portfolio'>
+                                    Modern Signal launches NASFAA's new Compliance Engine, a members-only centralized, collaborative platform that helps members efficiently manage their compliance tasks across their organization. Modern Signal designed and developed a front-end system...
+                                </p>
+                                <button class="btn btn-default btn-outline-primary" type="submit">READ MORE</button>
+                            </section>
+                        </div><!-- col cardSize -->
+                        <div class='col card-size-portfolio'>
+                            <section class='card'>
+                                <img src='images/PSJD-logo.png' alt='PSJD Logo' class='portfolio-logo'>                   
+                                <h4 class='card-title-portfolio'>PUBLIC SERVICE JOBS DIRECTORY</h4>
+                                <p class='card-text-portfolio'>
+                                    Modern Signal worked with the National Association of Legal Professionals to rebrand, redesign and develop PSJD, a comprehensive directory of legal public sectors jobs. PSJD guides law students and practicing lawyers...
+                                </p>
+                                <button class="btn btn-default btn-outline-primary" type="submit">READ MORE</button>
+                            </section>
+                        </div><!-- col cardSize -->
+                        <div class='col card-size-portfolio'>
+                            <section class='card'>
+                                <img src='images/PSJD-logo.png' alt='PSJD Logo' class='portfolio-logo'>                   
+                                <h4 class='card-title-portfolio'>PUBLIC SERVICE JOBS DIRECTORY</h4>
+                                <p class='card-text-portfolio'>
+                                    Modern Signal worked with the National Association of Legal Professionals to rebrand, redesign and develop PSJD, a comprehensive directory of legal public sectors jobs. PSJD guides law students and practicing lawyers...
+                                </p>
+                                <button class="btn btn-default btn-outline-primary" type="submit">READ MORE</button>
+                            </section>
+                        </div><!-- col cardSize -->
+                        <div class='col card-size-portfolio'>
+                            <section class='card'>
+                                <img src='images/Crop-Life-Logo.png' alt='Crop Life Logo' class='portfolio-logo'>                   
+                                <h4 class='card-title-portfolio'>CROP LIFE AMERICA</h4>
+                                <p class='card-text-portfolio'>
+                                    Modern Signal developed an mobile app for CropLife America that allows its members to easily share their news and connect. Croplife America represents the developers, manufacturers, formulators and distributors of plant science solutions for agriculture and...
+                                </p>
+                                <button class="btn btn-default btn-outline-primary" type="submit">READ MORE</button>
+                            </section>
+                        </div><!-- col cardSize -->
+                        <div class='col card-size-portfolio'>
+                            <section class='card'>
+                                <img src='images/NASFAA-CE.png' alt='NASFAA-CE Logo' class='portfolio-logo'>                   
+                                <h4 class='card-title-portfolio'>NASFAA COMPLIANCE ENGINE</h4>
+                                <p class='card-text-portfolio'>
+                                    Modern Signal launches NASFAA's new Compliance Engine, a members-only centralized, collaborative platform that helps members efficiently manage their compliance tasks across their organization. Modern Signal designed and developed a front-end system...
+                                </p>
+                                <button class="btn btn-default btn-outline-primary" type="submit">READ MORE</button>
+                            </section>
+                        </div><!-- col cardSize -->
+                    </div>
+                </div>
+            </div><!-- portfolio-container --> 
+        </div><!-- portfolio-main --> 
+
+
+
+        <div class='testimonial-image-portfolio'>
+            <div class='container-fluid'>
+                <h2 class='ms-head testimonial'>Client Testimonials</h2>
+                <p class='testimonial-quote'>
+                    “This was by far the smoothest website redevelopment I have ever experienced. Modern Signal was a wonderful company to work with and we greatly value our working relationship.”
+                </p>
+                <p class='testimonial-name'>
+                    National Association of Student Financial Aid Administrators
+                </p>
+            </div><!-- container-fluid --> 
+            <img src='images/Lighthouse-Scene.png' alt='Lighthouse Scene Image' class='lighthouse-scene'>
+        </div><!-- testimonial-image --> 
+        <div class='consultation-container'>
+            <div class='container-fluid'>
+                <h2 class='ms-head'>HOW CAN WE HELP STREAMLINE YOUR OPERATIONS?</h2>
+                <button class="btn btn-default btn-outline-white consultation" type="submit">REQUEST A CONSULTATION</button>
+            </div><!-- container-fluid --> 
+        </div><!-- consultation --> 
+        <div class='bottom'>
+            <div class='container-fluid'>
+                <p class='copyright'>
+                    Copyright © 2020 Modern Signal. All rights reserved.
+                    <a class='privacy' href='#'>Privacy Policy.</a>
+                </p>
+            </div><!-- container-fluid -->
+        </div><!-- row bottomB -->    
+    </section><!-- main-area -->    
+
+
+
+
+
+
+    <script src='node_modules/jquery/dist/jquery.js'></script>
+
+    <!-- Optional JavaScript -->
+    <script src='app.js'></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src='js/jquery.slim.min.js'></script>
+    <script src='js/popper.min.js'></script>
+    <script src='js/bootstrap.min.js'></script>
+</body>
+</html>
