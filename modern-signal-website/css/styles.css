@@ -190,14 +190,14 @@ html {
 .dropdown-toggle:after {
     content: none;
 }
-.dropdown-menu.nav {
+.dropdown-nav {
     left: auto;
     top: auto;
     border: none;
     margin-top: 10px;
     border-radius: 0;
 }
-.dropdown-menu.nav.show {
+.dropdown-nav.show {
     left: auto;
     top: auto;
     border: none;
@@ -791,14 +791,14 @@ html {
     .nav-link[aria-expanded="false"] .caret-down{
         display: none;
     }
-    .dropdown-menu.nav {
+    .dropdown-nav {
         left: auto;
         top: auto;
         border: none;
         margin-top: 10px;
         border-radius: 0;
     }
-    .dropdown-menu.nav.show {
+    .dropdown-nav.show {
         margin-top: 14px;
         background: #fff;
     }
