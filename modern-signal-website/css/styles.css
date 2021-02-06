@@ -492,7 +492,7 @@ html {
 .privacy:hover {
     color: #e4621c;
 }
-/* PORTFOLIO PAGE */
+/* ////////////////////////// PORTFOLIO PAGE ////////////////////////// */
 .hero-color-portfolio {
     color: #fff;
     text-align: center;
@@ -534,35 +534,35 @@ html {
     padding-bottom: 1px;
 }
 .portfolio-filter {
-    margin: 100px auto 0;
+    margin: 100px 5px 0;
+    text-align: center;
 }
 .portfolio-container {
     transform: skew(0, -5deg);
     z-index: 1;
-    text-align: center;
 }
 .filter-container {
-    margin: 30px auto 0;
-    width: 100%;
+    margin: 10px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .filter-dropdown {
     border: 2px solid #a9afb8;
     border-radius: 0;
-    margin: 0px 5px 0;
-    min-width: 200px;
+    margin: 5px 5px 0;
+    width: 100%;
     color: #a9afb8;
-}
-.flex-even {
-    flex: 1;
 }
 .filter-dropdown-item {
     color: #a9afb8;
-    margin: 5px auto;
+    margin: 5px 5px 0;
+    width: 100%;
 }
 .filter-menu.show {
     color: #fff;
     border: 2px solid #a9afb8;
-    min-width: 200px;
+    width: 100%;
     padding: 0;
     margin: -2px 0 0;
     border-radius: 0;
@@ -571,13 +571,21 @@ html {
 .dropdown-divider-filter {
     border-top: 2px solid #a9afb8;
 }
-.btn-search {
+.btn.btn-group {
+    margin: 0 auto 0 !important;
+    align-content: center;
+}
+.btn.btn-search {
     background-color: #ec9825;
     color: white;
     padding: 0px 10px;
     height: 38px;
-    width: 38px !important;
-    margin-left: 5px;
+    width: 100%;
+    margin: 5px 0 0 5px !important;
+    border-radius: 0;
+}
+.filter-rows {
+    margin: 0;
 }
 .ms-headline-portfolio {
     font-weight: 900;
@@ -585,7 +593,7 @@ html {
     margin-top: 50px;
 }
 .portfolio-examples {
-    margin: 100px auto;
+    margin: 50px auto;
 }
 .ms-head.ms-portfolio{
     color: black;
@@ -641,13 +649,10 @@ html {
 
 
 
-
-
-
 /* --------------------------------------------------------------- */
 /* ------------------------ MEDIA QUERIES ------------------------ */
 
-/* SMALL SCREEN */
+/* ------------------------ SMALL SCREEN ------------------------*/
 @media only screen and (min-width: 575px) {
     .logo {
         width: 30vw;
@@ -724,10 +729,8 @@ html {
         position: relative;
         background-image: url('../images/Lighthouse.png');
         background-size: cover;
-        /* background-position: right top; */
         height: 550px;
         background-position: top center;
-
     }
     .hero-container {
         margin: 50px auto 0;
@@ -747,9 +750,29 @@ html {
     .testimonial-quote {
         font-size: 16px;
     }
+    /* ////////////////////////// PORTFOLIO PAGE ////////////////////////// */
+    .filter-container {
+        margin: 10px 50px 0; 
+    }
+    .filter-show-dropdown {
+        width: 200px !important;
+    }
+    .filter-dropdown {
+        width: 98%;
+    }
+    .filter-dropdown-item {
+        width: 98%;
+    }
+    .btn.btn-search {
+        width: 98% !important;
+        margin-left: 5px !important;
+    }
+    .filter-menu.show {
+        width: 98%;
+    }
 }
 
-/* MEDIUM SCREEN */
+/* ------------------------ MEDIUM SCREEN ------------------------ */
 @media only screen and (min-width: 768px) {
     .container-fluid {
         padding: 0px 75px !important;
@@ -841,9 +864,6 @@ html {
     .hero-image {
         background-size: 100%;
     }
-    /* .hero-container {
-
-    } */
     .card-size-services {
         padding: 20px 25px 25px;
     }
@@ -925,9 +945,30 @@ html {
         margin: -60px 0 0;
         background-position: top -100px center;
     }
+    /* ////////////////////////// PORTFOLIO PAGE ////////////////////////// */
+    .container-fluid.portfolio {
+        padding: 0px 100px !important;
+    }
+    .navbar-nav.portfolio-nav {
+        background: none;
+        width: auto;
+        right: 0px;
+        padding: 10px 100px 10px 0;
+    }
+    .card-size-portfolio {
+        padding: 20px 40px;
+        text-align: center;
+    }
+    .portfolio-examples {
+        margin: 100px auto;
+    }
+    .btn.btn-search {
+        width: 99% !important;
+        margin-left: 5px !important;
+    }
 }
 
-/* LARGE SCREEN */
+/* ------------------------ LARGE SCREEN ------------------------ */
 @media only screen and (min-width: 992px) {
     .nav-link {
         font-size: 14px;
@@ -968,16 +1009,41 @@ html {
     .testimonial-name {
         font-size: 16px;
     }
+    /* ////////////////////////// PORTFOLIO PAGE ////////////////////////// */
+    .container-fluid.portfolio {
+        padding: 0px 150px !important;
+    }
+    .btn.btn-search {
+        margin: 5px !important;
+        width: 38px !important;
+    }
+    .filter-dropdown {
+        margin: 5px 5px 0;
+    }
+    .filter-container {
+        margin: 30px auto 0;
+        flex-direction: row;
+    }
+    .filter-flex {
+        width: 175px;
+    }
+    .navbar-nav.portfolio-nav {
+        padding: 10px 150px 10px 0;
+    }
 }
 
-/* X-LARGE SCREEN */
+/* ------------------------ X-LARGE SCREEN ------------------------ */
 @media only screen and (min-width: 1050px) {
     .testimonial-image {
         background-position: top -150px center;
     }
+    /* ////////////////////////// PORTFOLIO PAGE ////////////////////////// */
+    .filter-flex {
+        width: 225px;
+    }
 }
 
-/* XX-LARGE SCREEN */
+/* ------------------------ XX-LARGE SCREEN ------------------------ */
 @media only screen and (min-width: 1200px) {
     .hero-container {
         padding-right: 200px;
@@ -1021,10 +1087,24 @@ html {
         font-size: 14px;
         width: 500px;
     }
+    /* ////////////////////////// PORTFOLIO PAGE ////////////////////////// */
+    .filter-flex {
+        width: 275px;
+    }
+    .filter-dropdown-item {
+        width: 98%;
+    }
 }
 @media only screen and (min-width: 1550px) {
     .testimonial-image {
         background-position: top -220px center;
         height: 800px;
+    }
+    /* ////////////////////////// PORTFOLIO PAGE ////////////////////////// */
+    .filter-flex {
+        width: 300px;
+    }
+    .filter-dropdown-item {
+        width: 300px;
     }
 }
