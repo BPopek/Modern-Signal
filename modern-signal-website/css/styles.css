@@ -526,7 +526,7 @@ html {
 .hero-image-portfolio {
     position: relative;
     background-image: url('../images/OurWorkColor.png');
-    background-size: 140%;
+    background-size: 180%;
     background-repeat: no-repeat;
     background-position: top right;
     transform: skew(0, -5deg);
@@ -538,7 +538,7 @@ html {
     margin: 30px auto;
     text-align: center;
 }
-.testimonial-image-portfolio {
+/* .testimonial-image-portfolio {
     position: relative;
     background: #7c7c7c;
     background-image: url('../images/AdobeStock_305724406.png');
@@ -546,8 +546,8 @@ html {
     background-position: top center;
     height: 450px;
     z-index: -1;
-    margin: 0px 0 0;
-}
+    margin: -60px 0 0;
+} */
 .portfolio-main {
     transform: skew(0, 5deg);
     background: #fff;
@@ -562,6 +562,7 @@ html {
 .portfolio-container {
     transform: skew(0, -5deg);
     z-index: 1;
+    text-align: center;
 }
 .filter-container {
     margin: 10px auto 0;
@@ -657,16 +658,7 @@ html {
     line-height: 2;
     width: auto;
 }
-.testimonial-image-portfolio {
-    position: relative;
-    background: #7c7c7c;
-    background-image: url('../images/AdobeStock_305724406.png');
-    background-size: cover;
-    background-position: top center;
-    height: 450px;
-    z-index: -1;
-    margin: -60px 0 0;
-}
+
 
 
 
@@ -791,6 +783,12 @@ html {
     }
     .filter-menu.show {
         width: 98%;
+    }
+    .hero-image-portfolio {
+        background-size: 150%;
+    }
+    .portfolio-main {
+        margin: -20px 0 0;
     }
 }
 
@@ -988,6 +986,9 @@ html {
         right: 0px;
         padding: 10px 100px 10px 0;
     }
+    .hero-image-portfolio {
+        background-size: 120%;
+    }
     .card-size-portfolio {
         padding: 20px 40px;
         text-align: center;
@@ -998,6 +999,9 @@ html {
     .btn.btn-search {
         width: 99% !important;
         margin-left: 5px !important;
+    }
+    .portfolio-main {
+        margin: -10px 0 0;
     }
 }
 
@@ -1063,6 +1067,9 @@ html {
     .navbar-nav.portfolio-nav {
         padding: 10px 150px 10px 0;
     }
+    .hero-image-portfolio {
+        background-size: 110%;
+    }
 }
 
 /* ------------------------ X-LARGE SCREEN ------------------------ */
@@ -1127,6 +1134,12 @@ html {
     .filter-dropdown-item {
         width: 98%;
     }
+    .hero-image-portfolio {
+        background-size: 100%;
+    }
+    .portfolio-main {
+        margin: 10px 0 0;
+    }
 }
 @media only screen and (min-width: 1550px) {
     .testimonial-image {
@@ -1140,4 +1153,5 @@ html {
     .filter-dropdown-item {
         width: 300px;
     }
+
 }
