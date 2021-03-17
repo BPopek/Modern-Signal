@@ -572,7 +572,7 @@ html {
     background-color: none !important;
 }
 .filter-dropdown.btn:focus {
-    box-shadow: 0 0 0 0.2rem rgb(23 151 183 / 80%);
+    box-shadow: 0 0 0 0.2rem rgb(23 151 183 / 100%);
 }
 .filter-dropdown-item {
     color: #a9afb8;
