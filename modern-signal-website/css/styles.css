@@ -22,11 +22,12 @@ body {
     font-family: 'Montserrat';
     box-sizing: border-box;
     color: #444444;
-    -ms-overflow-style: none;
+    -ms-overflow-style: auto;
     scrollbar-width: none;
+    overflow: auto;
 }
 body::-webkit-scrollbar {
-    display: none;
+    display: auto;
 }
 html {
     margin: 0;
@@ -570,6 +571,9 @@ html {
     color: #a9afb8;
     background-color: none !important;
 }
+.filter-dropdown.btn:focus {
+    box-shadow: 0 0 0 0.2rem rgb(23 151 183 / 80%);
+}
 .filter-dropdown-item {
     color: #a9afb8;
     margin: 5px 5px 0;
@@ -791,6 +795,9 @@ html {
     .portfolio-main {
         margin: 0px;
     }
+    .ms-headline-portfolio {
+        margin-top: 70px;
+    }
 }
 
 /* ------------------------ MEDIUM SCREEN ------------------------ */
@@ -902,7 +909,7 @@ html {
         font-size: 16px;
     }
     .ms-head-min.top {
-        width: 400px;
+        width: 600px;
         font-size: 16px;
     }
     .ms-head {
@@ -1031,6 +1038,13 @@ html {
     .testimonial-image {
         background-position: top -100px center;
     }
+    .hero-image {
+        padding-top: 70px;
+    }
+    /* ////////////////////////// PORTFOLIO PAGE ////////////////////////// */
+    .ms-headline-portfolio {
+        margin-top: 90px;
+    }
 }
 
 /* ------------------------ LARGE SCREEN ------------------------ */
@@ -1048,14 +1062,18 @@ html {
     .hero-container {
         padding-right: 300px;
     }
+    .hero-image {
+        padding-top: 85px;
+    }
     .ms-headline {
         font-size: 36px;
     }
     .ms-head-min.top {
         font-size: 18px;
+        width: 700px;
     }
     .clutch {
-        top: -250px;
+        top: -210px;
     }
     .clutch-logo {
         width: 150px;
@@ -1115,6 +1133,13 @@ html {
     }
     .hero-image {
         height: 700px;
+        padding-top: 70px;
+    }
+    .clutch-logo {
+        width: 180px;
+    }
+    .clutch {
+        top: -230px;
     }
     /* ////////////////////////// PORTFOLIO PAGE ////////////////////////// */
     .filter-flex {
@@ -1133,6 +1158,9 @@ html {
     .testimonial-image {
         background-position: top -160px center;
     }
+    .clutch {
+        top: -275px;
+    }
     /* ////////////////////////// PORTFOLIO PAGE ////////////////////////// */
     .hero-image-portfolio {
         height: 800px;
@@ -1149,6 +1177,7 @@ html {
     }
     .hero-image {
         height: 800px;
+        padding-top: 80px;
     }
     .hero-color {
         height: 725px;
@@ -1157,10 +1186,7 @@ html {
         font-size: 40px;
     }
     .clutch {
-        top: -350px;
-    }
-    .clutch-logo {
-        width: 150px;
+        top: -300px;
     }
     .services {
         margin-top: -120px;
@@ -1196,6 +1222,9 @@ html {
     .portfolio-main {
         margin: 80px 0 0;
     }
+    .ms-headline-portfolio {
+        margin-top: 120px;
+    }
 }
 
 @media only screen and (min-width: 1350px) {
@@ -1204,6 +1233,12 @@ html {
     }
     .testimonial-image {
         background-position: top -245px center;
+    }
+    .hero-image {
+        padding-top: 120px;
+    }
+    .clutch {
+        top: -340px;
     }
 }
 
@@ -1239,11 +1274,17 @@ html {
         background-position: top -275px center;
         height: 800px;
     }
+    .clutch {
+        top: -370px;
+    }
 }
 
 @media only screen and (min-width: 1700px) {
     .services {
         margin-top: 70px;
+    }
+    .clutch {
+        top: -400px;
     }
 }
 @media only screen and (min-width: 1800px) {
@@ -1252,5 +1293,8 @@ html {
     }
     .services {
         margin-top: 120px;
+    }
+    .clutch {
+        top: -450px;
     }
 }
